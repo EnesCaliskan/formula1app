@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart' show timeDilation;
+import 'package:carousel_slider/carousel_slider.dart';
 
 Color redBullBlue = const Color(0xFF1E41FF);
 Color mercedesAccent = const Color(0xFF00D2BE);
@@ -10,7 +11,6 @@ Color renaultYellow = const Color(0xFFFFF500);
 Color romeoRed = const Color(0xFF9B0000);
 Color atBlue = const Color(0xFF00003c);
 Color williamsBlue = const Color(0xFF0082FA);
-
 
 class PhotoHero extends StatelessWidget {
   const PhotoHero({Key key, this.photo, this.onTap, this.width, this.height})
@@ -350,13 +350,13 @@ class HeroVers extends StatelessWidget {
                     padding: const EdgeInsets.all(32.0),
                     child: Text(
                       "Max Emilian Verstappen (d. 30 Eylül 1997, Hasselt, Belçika),"
-                          "Hollandalı Formula 1 pilotudur."
-                          " Babası Jos Verstappen de eski bir Formula 1 pilotu olan Max Verstappen sezon içinde geçtiği Red Bull Racing "
-                          "kokpitinde katıldığı ilk yarış olan 2016 İspanya Grand Prix'ini kazanarak kariyerinin ilk yarış galibiyetini kazınırken "
-                          "Formula 1 tarihinin yarış kazanan en genç pilotu unvanını da ele geçirmiştir."
-                          "2014'te Verstappen Scuderia Toro Rosso takımıyla anlaşmıştır.Carlos Sainz Jr. ile beraber yarışmışlardır."
-                          "2016'da Red Bull Racing'e geçmiştir. Red Bull'da takım arkadaşı Pierre Gasly'dur."
-                          " Yarış numarası olarak 33'ü şeçmiştir.",
+                      "Hollandalı Formula 1 pilotudur."
+                      " Babası Jos Verstappen de eski bir Formula 1 pilotu olan Max Verstappen sezon içinde geçtiği Red Bull Racing "
+                      "kokpitinde katıldığı ilk yarış olan 2016 İspanya Grand Prix'ini kazanarak kariyerinin ilk yarış galibiyetini kazınırken "
+                      "Formula 1 tarihinin yarış kazanan en genç pilotu unvanını da ele geçirmiştir."
+                      "2014'te Verstappen Scuderia Toro Rosso takımıyla anlaşmıştır.Carlos Sainz Jr. ile beraber yarışmışlardır."
+                      "2016'da Red Bull Racing'e geçmiştir. Red Bull'da takım arkadaşı Pierre Gasly'dur."
+                      " Yarış numarası olarak 33'ü şeçmiştir.",
                       style: TextStyle(color: redBullBlue),
                       softWrap: true,
                     ),
@@ -460,10 +460,10 @@ class HeroAlb extends StatelessWidget {
                     padding: const EdgeInsets.all(32.0),
                     child: Text(
                       "2019 sezonunun ilk yarısında Toro Rosso için yarışmış, sonrasında ise Pierre Gasly yerine Red Bull Racing takımına geçmiştir. "
-                          "2019 Formula 1 sezonunu 92 puanla sekizinci sırada bitirmiştir."
-                          "2020 sezonunda da Red Bull Racing ile yarışacaktır. Aracının numarası 23'tür."
-                          "2018 yılı Formula 2 sürücü sıralamasında turnuvasında diğer Formula 1 pilotları George Russell ve Lando"
-                          "Norris'in arkasında üçüncü olmuştur.",
+                      "2019 Formula 1 sezonunu 92 puanla sekizinci sırada bitirmiştir."
+                      "2020 sezonunda da Red Bull Racing ile yarışacaktır. Aracının numarası 23'tür."
+                      "2018 yılı Formula 2 sürücü sıralamasında turnuvasında diğer Formula 1 pilotları George Russell ve Lando"
+                      "Norris'in arkasında üçüncü olmuştur.",
                       style: TextStyle(color: redBullBlue),
                       softWrap: true,
                     ),
@@ -567,25 +567,25 @@ class HeroHam extends StatelessWidget {
                     padding: const EdgeInsets.all(32.0),
                     child: Text(
                       "Lewis Carl Hamilton (d. 7 Ocak 1985 "
-                          "Hertfordshire, Birleşik Krallık) Formula 1'de"
-                          " yarışan ilk siyâhi pilottur. 2006 yılında GP2 "
-                          "serisinde büyük başarı göstererek şampiyon olup"
-                          " ardından McLaren takımı'na transfer olmuştur."
-                          " 2008, 2014, 2015, 2017, 2018 ve 2019 sezonlarında "
-                          "pilotlar şampiyonluğuna ulaştı. 1.74 m boyundadır."
-                          "Daha 9 yaşındayken Mercedes-Benz Genç pilot"
-                          " yetiştirme programını imzalayan pilot."
-                          " Formula Renault, Formula 3, GP2 serilerinde "
-                          "şampiyonluğa ulaşmıştır. Formula 1 kariyerinin ilk "
-                          "dokuz yarışında kürsüye çıkmayı başaran McLaren "
-                          "Mercedes takımının İngiliz pilotu Lewis Hamilton,"
-                          " Bahreyn Grand Prix'sinde elde ettiği ikincilik"
-                          " sonrası, ilk dokuz yarışında da podyuma çıkarak"
-                          " tarihe geçmiştir. Kanada ve Amerika Birleşik"
-                          " Devletleri Formula 1 kariyerinin ilk yılında "
-                          "birinci olarak büyük başarı göstermiştir 2007 yılında"
-                          " 1 puan farkla 109 puanla formula 1 sezonunun ilk "
-                          "yılında ikinci olmayı başarmıştır.",
+                      "Hertfordshire, Birleşik Krallık) Formula 1'de"
+                      " yarışan ilk siyâhi pilottur. 2006 yılında GP2 "
+                      "serisinde büyük başarı göstererek şampiyon olup"
+                      " ardından McLaren takımı'na transfer olmuştur."
+                      " 2008, 2014, 2015, 2017, 2018 ve 2019 sezonlarında "
+                      "pilotlar şampiyonluğuna ulaştı. 1.74 m boyundadır."
+                      "Daha 9 yaşındayken Mercedes-Benz Genç pilot"
+                      " yetiştirme programını imzalayan pilot."
+                      " Formula Renault, Formula 3, GP2 serilerinde "
+                      "şampiyonluğa ulaşmıştır. Formula 1 kariyerinin ilk "
+                      "dokuz yarışında kürsüye çıkmayı başaran McLaren "
+                      "Mercedes takımının İngiliz pilotu Lewis Hamilton,"
+                      " Bahreyn Grand Prix'sinde elde ettiği ikincilik"
+                      " sonrası, ilk dokuz yarışında da podyuma çıkarak"
+                      " tarihe geçmiştir. Kanada ve Amerika Birleşik"
+                      " Devletleri Formula 1 kariyerinin ilk yılında "
+                      "birinci olarak büyük başarı göstermiştir 2007 yılında"
+                      " 1 puan farkla 109 puanla formula 1 sezonunun ilk "
+                      "yılında ikinci olmayı başarmıştır.",
                       style: TextStyle(color: Colors.blueGrey),
                       softWrap: true,
                     ),
@@ -681,18 +681,18 @@ class HeroGas extends StatelessWidget {
                     padding: const EdgeInsets.all(32.0),
                     child: Text(
                       "If there’s one man who knows how big a rollercoaster ride an "
-                          "F1 driver’s career can be, it’s Pierre Gasly!"
-                          "The flying Frenchman was called up to make his 2017"
-                          " debut in Malaysia in place of Daniil Kvyat and, after "
-                          "proving his mettle, he was named a Toro Rosso driver the "
-                          "following year.  A further 21 races into his fledgling career,"
-                          " Gasly was moved up again – this time to replace Red Bull big gun"
-                          " Daniel Ricciardo."
-                          "Gasly seemed to have a knack of being in the right "
-                          "place at the right time – a quality that’s equally handy on "
-                          "track. A series of impressive 2018 performances for Toro Rosso"
-                          " – including a brilliant fourth place in Bahrain – showed "
-                          "exciting promise for what he might do with the ‘A’ team in 2019.",
+                      "F1 driver’s career can be, it’s Pierre Gasly!"
+                      "The flying Frenchman was called up to make his 2017"
+                      " debut in Malaysia in place of Daniil Kvyat and, after "
+                      "proving his mettle, he was named a Toro Rosso driver the "
+                      "following year.  A further 21 races into his fledgling career,"
+                      " Gasly was moved up again – this time to replace Red Bull big gun"
+                      " Daniel Ricciardo."
+                      "Gasly seemed to have a knack of being in the right "
+                      "place at the right time – a quality that’s equally handy on "
+                      "track. A series of impressive 2018 performances for Toro Rosso"
+                      " – including a brilliant fourth place in Bahrain – showed "
+                      "exciting promise for what he might do with the ‘A’ team in 2019.",
                       style: TextStyle(color: atBlue),
                       softWrap: true,
                     ),
@@ -788,13 +788,13 @@ class HeroKvy extends StatelessWidget {
                     padding: const EdgeInsets.all(32.0),
                     child: Text(
                       "Proving even ‘torpedoes’ can make U-turns, Daniil Kvyat made"
-                          " a surprise F1 return for a third spell with Toro Rosso in 2019."
-                          " His intrinsic speed and ability to adapt to circuit conditions"
-                          " make him a valuable asset - and he’s a proven podium contender."
-                          "The rangy Russia arrived in Formula 1 with an impervious poker "
-                          "face and set about his business as a cool and confident racer."
-                          "But after being dropped by Red Bull, Kvyat plunged into a "
-                          "downward spiral and lost confidence.",
+                      " a surprise F1 return for a third spell with Toro Rosso in 2019."
+                      " His intrinsic speed and ability to adapt to circuit conditions"
+                      " make him a valuable asset - and he’s a proven podium contender."
+                      "The rangy Russia arrived in Formula 1 with an impervious poker "
+                      "face and set about his business as a cool and confident racer."
+                      "But after being dropped by Red Bull, Kvyat plunged into a "
+                      "downward spiral and lost confidence.",
                       style: TextStyle(color: atBlue),
                       softWrap: true,
                     ),
@@ -898,15 +898,15 @@ class HeroBot extends StatelessWidget {
                     padding: const EdgeInsets.all(32.0),
                     child: Text(
                       "Valtteri Bottas (d. 28 Ağustos 1989) Fin F1 pilotu."
-                          " Günümüzde Mercedes için yarışmaktadır."
-                          " Monako'da yaşamaktadır."
-                          "Bottas 2013'te Williams ile yarışmaya başlamıştır."
-                          " 2013'teki takım arkadaşı Pastor Maldanado'dur."
-                          "2014'te takım arkadaşı Felipe Massa'dır. 2015 ve "
-                          "2016'da da böyle devam etti."
-                          "2018 sezonunu takviminde yer alan 21 yarıştada yer "
-                          "alan Bottas 8'inde podyumda yer aldı, 1 yarışta finişi göremedi."
-                          " Sezonu 247 puanla 5. sırada tamamladı.",
+                      " Günümüzde Mercedes için yarışmaktadır."
+                      " Monako'da yaşamaktadır."
+                      "Bottas 2013'te Williams ile yarışmaya başlamıştır."
+                      " 2013'teki takım arkadaşı Pastor Maldanado'dur."
+                      "2014'te takım arkadaşı Felipe Massa'dır. 2015 ve "
+                      "2016'da da böyle devam etti."
+                      "2018 sezonunu takviminde yer alan 21 yarıştada yer "
+                      "alan Bottas 8'inde podyumda yer aldı, 1 yarışta finişi göremedi."
+                      " Sezonu 247 puanla 5. sırada tamamladı.",
                       style: TextStyle(color: Colors.blueGrey),
                       softWrap: true,
                     ),
@@ -1010,15 +1010,15 @@ class HeroSai extends StatelessWidget {
                     padding: const EdgeInsets.all(32.0),
                     child: Text(
                       "Carlos Sainz Junior ya da kısaca Carlos Sainz, "
-                          "(1 Eylül 1994 Madrid, İspanya) İspanyol Formula 1 pilotudur."
-                          " McLaren-Renault için yarışmaktadır. 2021 ve sonrası için "
-                          "Scuderia Ferrari ile iki yıllık anlaşma sağlamıştır."
-                          "2015'te Sainz Scuderia Toro Rosso'yla anlaşmıştır. Takım arkadaşı "
-                          "Max Verstappen idi. 2016'da Verstappen'in Red Bull Racing'e geçmesiyle "
-                          "takım arkadaşı Daniil Kvyat olmuştur. 2017 ve 2018 sezonlarında Renault"
-                          " için yarıştı.[2] 2018 sezonunu takviminde yer alan 21 yarışın 13'ünde"
-                          " ilk 10'a girdi, 2 yarışta finişi göremedi. Sezonu 53 puanla 10. sırada "
-                          "tamamladı.",
+                      "(1 Eylül 1994 Madrid, İspanya) İspanyol Formula 1 pilotudur."
+                      " McLaren-Renault için yarışmaktadır. 2021 ve sonrası için "
+                      "Scuderia Ferrari ile iki yıllık anlaşma sağlamıştır."
+                      "2015'te Sainz Scuderia Toro Rosso'yla anlaşmıştır. Takım arkadaşı "
+                      "Max Verstappen idi. 2016'da Verstappen'in Red Bull Racing'e geçmesiyle "
+                      "takım arkadaşı Daniil Kvyat olmuştur. 2017 ve 2018 sezonlarında Renault"
+                      " için yarıştı.[2] 2018 sezonunu takviminde yer alan 21 yarışın 13'ünde"
+                      " ilk 10'a girdi, 2 yarışta finişi göremedi. Sezonu 53 puanla 10. sırada "
+                      "tamamladı.",
                       style: TextStyle(color: mcLarenOrange),
                       softWrap: true,
                     ),
@@ -1122,9 +1122,9 @@ class HeroNor extends StatelessWidget {
                     padding: const EdgeInsets.all(32.0),
                     child: Text(
                       "Lando Norris İngiliz-Belçika uyruklu Formula 1 sürücüsüdür. 2017 Formula "
-                          "3 Avrupa Şampiyonası şampiyonudur. 2019 Abdu Dhabi Grand Prix'inden beri"
-                          " McLaren sürücüsüdür."
-                          "",
+                      "3 Avrupa Şampiyonası şampiyonudur. 2019 Abdu Dhabi Grand Prix'inden beri"
+                      " McLaren sürücüsüdür."
+                      "",
                       style: TextStyle(color: mcLarenOrange),
                       softWrap: true,
                     ),
@@ -1228,17 +1228,17 @@ class HeroPer extends StatelessWidget {
                     padding: const EdgeInsets.all(32.0),
                     child: Text(
                       "He’s the fighter with a gentle touch from the land of the Lucha Libre."
-                          "Perez’s reputation in F1 has been built on opposite"
-                          " approaches to Grand Prix racing. On the one hand, "
-                          "he is a punchy combatant who wrestles his way through the"
-                          " pack and into the points. Never afraid to add a bit of "
-                          "spice to his on-track encounters, even his team mates"
-                          " don’t always escape the Mexican’s heat."
-                          "Then on the other hand, Perez is a smooth operator,"
-                          " a master at managing tyres to eke out extra performance "
-                          "and give him the upper hand on strategy. A firm favourite"
-                          " on the grid after his time with Sauber and Force India, "
-                          "Perez has matured into an analytical racer and team leader.",
+                      "Perez’s reputation in F1 has been built on opposite"
+                      " approaches to Grand Prix racing. On the one hand, "
+                      "he is a punchy combatant who wrestles his way through the"
+                      " pack and into the points. Never afraid to add a bit of "
+                      "spice to his on-track encounters, even his team mates"
+                      " don’t always escape the Mexican’s heat."
+                      "Then on the other hand, Perez is a smooth operator,"
+                      " a master at managing tyres to eke out extra performance "
+                      "and give him the upper hand on strategy. A firm favourite"
+                      " on the grid after his time with Sauber and Force India, "
+                      "Perez has matured into an analytical racer and team leader.",
                       style: TextStyle(color: Colors.pinkAccent),
                       softWrap: true,
                     ),
@@ -1342,18 +1342,18 @@ class HeroStr extends StatelessWidget {
                     padding: const EdgeInsets.all(32.0),
                     child: Text(
                       "There is no such thing as too much too soon for Stroll, "
-                          "a teenage sensation with a wet weather predilection."
-                          " One of the cool kids on the grid, Stroll was unveiled "
-                          "shortly after his 18th birthday by Williams – before he"
-                          " finished high school and got his road licence."
-                          "Stroll meant business in his debut 2017 season, setting "
-                          "records on the way. An opportunistic racer he bounded onto"
-                          " the podium in Baku, the youngest rookie to do so. As the "
-                          "son of a wealthy entrepreneur, Stroll is used to a"
-                          " champagne lifestyle but now he knows the fizz tastes"
-                          " all the sweeter on the rostrum. Then in Monza he mastered "
-                          "the downpours to become the youngest driver in history to "
-                          "line up on the front row.",
+                      "a teenage sensation with a wet weather predilection."
+                      " One of the cool kids on the grid, Stroll was unveiled "
+                      "shortly after his 18th birthday by Williams – before he"
+                      " finished high school and got his road licence."
+                      "Stroll meant business in his debut 2017 season, setting "
+                      "records on the way. An opportunistic racer he bounded onto"
+                      " the podium in Baku, the youngest rookie to do so. As the "
+                      "son of a wealthy entrepreneur, Stroll is used to a"
+                      " champagne lifestyle but now he knows the fizz tastes"
+                      " all the sweeter on the rostrum. Then in Monza he mastered "
+                      "the downpours to become the youngest driver in history to "
+                      "line up on the front row.",
                       style: TextStyle(color: Colors.pinkAccent),
                       softWrap: true,
                     ),
@@ -1380,7 +1380,10 @@ class HeroRic extends StatelessWidget {
             .push(MaterialPageRoute<void>(builder: (BuildContext context) {
           return Scaffold(
             appBar: AppBar(
-              title: const Text('Daniel Ricciardo', style: TextStyle(color: Colors.black),),
+              title: const Text(
+                'Daniel Ricciardo',
+                style: TextStyle(color: Colors.black),
+              ),
               backgroundColor: renaultYellow,
             ),
             body: Container(
@@ -1457,14 +1460,14 @@ class HeroRic extends StatelessWidget {
                     padding: const EdgeInsets.all(32.0),
                     child: Text(
                       "The self-styled “Honey Badger” is fuzzy on the outside and "
-                          "feisty on the inside. Drivers beware because behind "
-                          "Ricciardo’s laidback persona and big grin is a razor-sharp "
-                          "racer with a bite"
-                          "The Australian combines all-out speed with impressive race"
-                          " craft. Never afraid to push to the limits if it means pulling"
-                          " off a pass, Ricciardo is a proven race-winner for Red Bull,"
-                          " capable of consistently finishing at the business end of the "
-                          "championship table.",
+                      "feisty on the inside. Drivers beware because behind "
+                      "Ricciardo’s laidback persona and big grin is a razor-sharp "
+                      "racer with a bite"
+                      "The Australian combines all-out speed with impressive race"
+                      " craft. Never afraid to push to the limits if it means pulling"
+                      " off a pass, Ricciardo is a proven race-winner for Red Bull,"
+                      " capable of consistently finishing at the business end of the "
+                      "championship table.",
                       style: TextStyle(color: Colors.black),
                       softWrap: true,
                     ),
@@ -1491,7 +1494,10 @@ class HeroOco extends StatelessWidget {
             .push(MaterialPageRoute<void>(builder: (BuildContext context) {
           return Scaffold(
             appBar: AppBar(
-              title: const Text('Esteban Ocon', style: TextStyle(color: Colors.black),),
+              title: const Text(
+                'Esteban Ocon',
+                style: TextStyle(color: Colors.black),
+              ),
               backgroundColor: renaultYellow,
             ),
             body: Container(
@@ -1567,19 +1573,19 @@ class HeroOco extends StatelessWidget {
                   Container(
                     padding: const EdgeInsets.all(32.0),
                     child: Text(
-                          "If there’s one word that dominates Esteban Ocon’s career, it’s ‘sacrifice’."
-                              "Back when he was just a promising karter, Ocon’s "
-                              "parents sold their house, put their jobs on hold,"
-                              " and began a life on the road, living in a caravan and "
-                              "travelling from circuit to circuit to support their son’s"
-                              " burgeoning career."
-                              "Sacrifice, see – but it worked. 2014 saw Ocon break "
-                              "through in the world of single-seaters, as he beat a "
-                              "certain Max Verstappen to the European F3 title. Backed"
-                              " by Mercedes, he won the GP3 title the following year and"
-                              " was halfway through a season of DTM in 2016 when he was"
-                              " offered the chance to replace Rio Haryanto at the minnow "
-                              "Manor team from the Belgian Grand Prix onwards.",
+                      "If there’s one word that dominates Esteban Ocon’s career, it’s ‘sacrifice’."
+                      "Back when he was just a promising karter, Ocon’s "
+                      "parents sold their house, put their jobs on hold,"
+                      " and began a life on the road, living in a caravan and "
+                      "travelling from circuit to circuit to support their son’s"
+                      " burgeoning career."
+                      "Sacrifice, see – but it worked. 2014 saw Ocon break "
+                      "through in the world of single-seaters, as he beat a "
+                      "certain Max Verstappen to the European F3 title. Backed"
+                      " by Mercedes, he won the GP3 title the following year and"
+                      " was halfway through a season of DTM in 2016 when he was"
+                      " offered the chance to replace Rio Haryanto at the minnow "
+                      "Manor team from the Belgian Grand Prix onwards.",
                       style: TextStyle(color: Colors.black),
                       softWrap: true,
                     ),
@@ -1675,16 +1681,16 @@ class HeroRai extends StatelessWidget {
                     padding: const EdgeInsets.all(32.0),
                     child: Text(
                       "He’s the world-famous racing driver who just wants to be left alone. "
-                          "Raikkonen has a cult status in F1 like no other driver of his"
-                          " generation, but if you ask him why he just shrugs."
-                          "Maybe it’s because of the rugged, raw talent that inspired"
-                          " Sauber to give him his debut in 2001 – and re-sign him for 2019."
-                          " Or the fast and fearless racing that led to memorable McLaren "
-                          "wins. Or the never-say-die attitude that clinched the 2007 world"
-                          " title for Ferrari by a single point. Or maybe it’s because this "
-                          "is the ‘Iceman’ who jumped straight into a Jacuzzi on his yacht"
-                          " after retiring in Monaco and who enjoyed an ice cream when a "
-                          "soggy Malaysian GP was red-flagged but still live.",
+                      "Raikkonen has a cult status in F1 like no other driver of his"
+                      " generation, but if you ask him why he just shrugs."
+                      "Maybe it’s because of the rugged, raw talent that inspired"
+                      " Sauber to give him his debut in 2001 – and re-sign him for 2019."
+                      " Or the fast and fearless racing that led to memorable McLaren "
+                      "wins. Or the never-say-die attitude that clinched the 2007 world"
+                      " title for Ferrari by a single point. Or maybe it’s because this "
+                      "is the ‘Iceman’ who jumped straight into a Jacuzzi on his yacht"
+                      " after retiring in Monaco and who enjoyed an ice cream when a "
+                      "soggy Malaysian GP was red-flagged but still live.",
                       style: TextStyle(color: romeoRed),
                       softWrap: true,
                     ),
@@ -1780,13 +1786,13 @@ class HeroGio extends StatelessWidget {
                     padding: const EdgeInsets.all(32.0),
                     child: Text(
                       "He’s the Italian steed with speed from the stable of the"
-                          " Prancing Horse. Antonio Giovinazzi flies the flag for"
-                          " Italy as the motorsport mad nation champs at the bit for"
-                          " its next F1 star."
-                          "The pilota from Puglia can punch his way through the pack and"
-                          " pull off a plucky pass. He showcased this natural racing acumen"
-                          " during a blistering 2016 GP2 campaign where he finished a close"
-                          " runner-up to team mate Pierre Gasly.",
+                      " Prancing Horse. Antonio Giovinazzi flies the flag for"
+                      " Italy as the motorsport mad nation champs at the bit for"
+                      " its next F1 star."
+                      "The pilota from Puglia can punch his way through the pack and"
+                      " pull off a plucky pass. He showcased this natural racing acumen"
+                      " during a blistering 2016 GP2 campaign where he finished a close"
+                      " runner-up to team mate Pierre Gasly.",
                       style: TextStyle(color: romeoRed),
                       softWrap: true,
                     ),
@@ -1813,7 +1819,10 @@ class HeroGro extends StatelessWidget {
             .push(MaterialPageRoute<void>(builder: (BuildContext context) {
           return Scaffold(
             appBar: AppBar(
-              title: const Text('Romain Grosjean', style: TextStyle(color: Colors.black),),
+              title: const Text(
+                'Romain Grosjean',
+                style: TextStyle(color: Colors.black),
+              ),
               backgroundColor: Colors.red,
             ),
             body: Container(
@@ -1882,18 +1891,18 @@ class HeroGro extends StatelessWidget {
                     padding: const EdgeInsets.all(32.0),
                     child: Text(
                       "High-speed haute cuisine is on the menu in the Grosjean household, where head chef Romain is also"
-                          "a racing star."
-                          "Quick and with a natural feel for braking and balance,"
-                          " Grosjean has the right ingredients to cook up a storm on track."
-                          " Tussling and hustling at the front of the pack, the French racer"
-                          " claimed a series of impressive podiums for Renault before moving "
-                          "to spearhead the Haas team."
-                          "Like the best chefs, the Geneva-born driver occasionally breaks "
-                          "a few eggs.  Renault handed Grosjean his debut halfway through "
-                          "the 2009 season, but a mix of inexperience and enthusiasm saw "
-                          "him move back to the subs bench before making his F1 return in "
-                          "2012. A one-race ban after triggering a pile-up in Spa seemed to"
-                          " be the final arc of the learning curve for Grosjean. ",
+                      "a racing star."
+                      "Quick and with a natural feel for braking and balance,"
+                      " Grosjean has the right ingredients to cook up a storm on track."
+                      " Tussling and hustling at the front of the pack, the French racer"
+                      " claimed a series of impressive podiums for Renault before moving "
+                      "to spearhead the Haas team."
+                      "Like the best chefs, the Geneva-born driver occasionally breaks "
+                      "a few eggs.  Renault handed Grosjean his debut halfway through "
+                      "the 2009 season, but a mix of inexperience and enthusiasm saw "
+                      "him move back to the subs bench before making his F1 return in "
+                      "2012. A one-race ban after triggering a pile-up in Spa seemed to"
+                      " be the final arc of the learning curve for Grosjean. ",
                       style: TextStyle(color: Colors.black),
                       softWrap: true,
                     ),
@@ -1920,7 +1929,10 @@ class HeroMag extends StatelessWidget {
             .push(MaterialPageRoute<void>(builder: (BuildContext context) {
           return Scaffold(
             appBar: AppBar(
-              title: const Text('Kevin Magnussen', style: TextStyle(color: Colors.black),),
+              title: const Text(
+                'Kevin Magnussen',
+                style: TextStyle(color: Colors.black),
+              ),
               backgroundColor: Colors.red,
             ),
             body: Container(
@@ -1989,15 +2001,15 @@ class HeroMag extends StatelessWidget {
                     padding: const EdgeInsets.all(32.0),
                     child: Text(
                       "Call him a lone ranger or a maverick, but Magnussen is here for one reason only – to race. "
-                          "He may be a second-generation F1 driver – following his father"
-                          " Jan onto the grid – but Magnussen’s idols are from the "
-                          "‘golden era’ of Grand Prix racing when the likes of Juan "
-                          "Manuel Fangio and Stirling Moss risked it all for the love of the"
-                          " sport."
-                          "The Roskilde racer’s own prowess was proven on debut for"
-                          " McLaren, who guided him through the junior ranks, when he "
-                          "cruised into the top-three at the Australian Grand Prix, becoming"
-                          " the first Dane to claim a podium in F1.",
+                      "He may be a second-generation F1 driver – following his father"
+                      " Jan onto the grid – but Magnussen’s idols are from the "
+                      "‘golden era’ of Grand Prix racing when the likes of Juan "
+                      "Manuel Fangio and Stirling Moss risked it all for the love of the"
+                      " sport."
+                      "The Roskilde racer’s own prowess was proven on debut for"
+                      " McLaren, who guided him through the junior ranks, when he "
+                      "cruised into the top-three at the Australian Grand Prix, becoming"
+                      " the first Dane to claim a podium in F1.",
                       style: TextStyle(color: Colors.black),
                       softWrap: true,
                     ),
@@ -2093,14 +2105,14 @@ class HeroRus extends StatelessWidget {
                     padding: const EdgeInsets.all(32.0),
                     child: Text(
                       "He’s the driver with the motto: “If in doubt, go flat out”."
-                          "George Russell lived by it in his 2019 debut F1 campaign,"
-                          " out-qualifying seasoned team mate Robert Kubica at all 21 Grands "
-                          "Prix, and proving Williams right in identifying him as a hard "
-                          "worker and a tenacious talent"
-                          "That brilliant baseline speed had served Russell well as he"
-                          " totted up titles on his way to Formula 1. The Briton stormed to"
-                          " the 2017 GP3 championship and delivered the 2018 Formula 2 crown"
-                          " under immense pressure. ",
+                      "George Russell lived by it in his 2019 debut F1 campaign,"
+                      " out-qualifying seasoned team mate Robert Kubica at all 21 Grands "
+                      "Prix, and proving Williams right in identifying him as a hard "
+                      "worker and a tenacious talent"
+                      "That brilliant baseline speed had served Russell well as he"
+                      " totted up titles on his way to Formula 1. The Briton stormed to"
+                      " the 2017 GP3 championship and delivered the 2018 Formula 2 crown"
+                      " under immense pressure. ",
                       style: TextStyle(color: williamsBlue),
                       softWrap: true,
                     ),
@@ -2196,17 +2208,17 @@ class HeroLat extends StatelessWidget {
                     padding: const EdgeInsets.all(32.0),
                     child: Text(
                       "Thirteen is an advanced age to begin your karting career these days."
-                          " But that’s how old Toronto native Nicholas Latifi was when he "
-                          "took his first steps in motorsport. Just 11 years later, he became"
-                          " a fully-fledged Formula 1 driver."
-                          "That ascension into racing's top category was largely thanks to "
-                          "his most impressive season to date in Formula 2 in 2019, with "
-                          "Latifi – who’d finished a disappointing ninth in the series’ 2018"
-                          " standings – pulling up his bootstraps to claim second in the "
-                          "championship. That result, combined with the Williams/Robert "
-                          "Kubica union failing to mesh in 2019, meant Williams made the call"
-                          " to promote their affable Canadian reserve driver to a full-time"
-                          " drive alongside George Russell for 2020.",
+                      " But that’s how old Toronto native Nicholas Latifi was when he "
+                      "took his first steps in motorsport. Just 11 years later, he became"
+                      " a fully-fledged Formula 1 driver."
+                      "That ascension into racing's top category was largely thanks to "
+                      "his most impressive season to date in Formula 2 in 2019, with "
+                      "Latifi – who’d finished a disappointing ninth in the series’ 2018"
+                      " standings – pulling up his bootstraps to claim second in the "
+                      "championship. That result, combined with the Williams/Robert "
+                      "Kubica union failing to mesh in 2019, meant Williams made the call"
+                      " to promote their affable Canadian reserve driver to a full-time"
+                      " drive alongside George Russell for 2020.",
                       style: TextStyle(color: williamsBlue),
                       softWrap: true,
                     ),
@@ -2220,8 +2232,6 @@ class HeroLat extends StatelessWidget {
     );
   }
 }
-
-
 
 void main() {
   runApp(
@@ -2305,77 +2315,71 @@ class _defaultDrawerState extends State<defaultDrawer> {
             },
           ),
           ListTile(
-            title: Text("Racing Point"),
-            subtitle: Text("RP20"),
-            leading: rpLogo,
+              title: Text("Racing Point"),
+              subtitle: Text("RP20"),
+              leading: rpLogo,
               onTap: () {
                 Navigator.of(context).pop();
                 Navigator.push(
                   context,
                   MaterialPageRoute(builder: (context) => RacingPoint()),
                 );
-              }
-          ),
+              }),
           ListTile(
-            title: Text("Renault"),
-            subtitle: Text("R.S.20"),
-            leading: renaultLogo,
+              title: Text("Renault"),
+              subtitle: Text("R.S.20"),
+              leading: renaultLogo,
               onTap: () {
                 Navigator.of(context).pop();
                 Navigator.push(
                   context,
                   MaterialPageRoute(builder: (context) => Renault()),
                 );
-              }
-          ),
+              }),
           ListTile(
-            title: Text("AlphaTauri"),
-            subtitle: Text("AT01"),
-            leading: atLogo,
+              title: Text("AlphaTauri"),
+              subtitle: Text("AT01"),
+              leading: atLogo,
               onTap: () {
                 Navigator.of(context).pop();
                 Navigator.push(
                   context,
                   MaterialPageRoute(builder: (context) => AlphaTauri()),
                 );
-              }
-          ),
+              }),
           ListTile(
-            title: Text("Alfa Romeo Racing"),
-            subtitle: Text("C39"),
-            leading: romeoLogo,
+              title: Text("Alfa Romeo Racing"),
+              subtitle: Text("C39"),
+              leading: romeoLogo,
               onTap: () {
                 Navigator.of(context).pop();
                 Navigator.push(
                   context,
                   MaterialPageRoute(builder: (context) => AlphaRomeo()),
                 );
-              }
-          ),
+              }),
           ListTile(
-            title: Text("Haas F1 Team"),
-            subtitle: Text("VF-20"),
-            leading: haasLogo,
+              title: Text("Haas F1 Team"),
+              subtitle: Text("VF-20"),
+              leading: haasLogo,
               onTap: () {
                 Navigator.of(context).pop();
                 Navigator.push(
                   context,
                   MaterialPageRoute(builder: (context) => Haas()),
                 );
-              }
-          ),
+              }),
           ListTile(
-            title: Text("Williams"),
-            subtitle: Text("FW43"),
-            leading: williamsLogo,
+              title: Text("Williams"),
+              subtitle: Text("FW43"),
+              leading: williamsLogo,
               onTap: () {
                 Navigator.of(context).pop();
                 Navigator.push(
                   context,
                   MaterialPageRoute(builder: (context) => Williams()),
                 );
-              }
-          ),
+              }),
         ],
       ),
     );
@@ -2445,7 +2449,6 @@ Widget williamsLogo = Container(
   width: 84,
   child: Image.asset("images/logos/williams.jpg"),
 );
-
 
 // teams
 
@@ -2568,15 +2571,12 @@ class _FerrariState extends State<Ferrari> {
   }
 }
 
-
-
 class RedBullRacing extends StatefulWidget {
   @override
   _RedBullRacingState createState() => _RedBullRacingState();
 }
 
 class _RedBullRacingState extends State<RedBullRacing> {
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -2673,17 +2673,18 @@ class _RedBullRacingState extends State<RedBullRacing> {
             padding: const EdgeInsets.all(32),
             child: Text(
               "Red Bull Racing (Infiniti Red Bull Racing) Avusturyalı içecek firması Red Bull'un Scuderia Toro Rosso dışında sahibi olduğu ikinci Formula 1 takımıdır."
-                  " Red Bull takımı 2010 sezonunda, kuruluşunun henüz altıncı yılında,"
-                  " Formula 1 Markalar Şampiyonluğu'na ulaşmış ve bu unvanı kazanan ilk"
-                  " Avusturya takımı olmuştur. 2010 Sürücüler Şampiyonası lideri "
-                  "Sebastian Vettel de bu başarıya Red Bull Racing ile ulaşmıştır."
-                  " Takım Milton Keynes, Birleşik Krallık[4] merkezli olmasına rağmen"
-                  " Avusturya lisansı taşımaktadır.[5]Renault motorları kullanan "
-                  "Red Bull 2018 sezonunda sıklıkla yaşadıkları motor sorunları sonucunda "
-                  "2019 sezonu için Honda ile anlaşma imazalandı. GP2 takımlarından "
-                  "Arden International'in patronu olan Christian Horner tarafından"
-                  " yönetilmektedir.",
-              style: TextStyle(fontFamily: 'Formula1', color: Colors.indigo[500]),
+              " Red Bull takımı 2010 sezonunda, kuruluşunun henüz altıncı yılında,"
+              " Formula 1 Markalar Şampiyonluğu'na ulaşmış ve bu unvanı kazanan ilk"
+              " Avusturya takımı olmuştur. 2010 Sürücüler Şampiyonası lideri "
+              "Sebastian Vettel de bu başarıya Red Bull Racing ile ulaşmıştır."
+              " Takım Milton Keynes, Birleşik Krallık[4] merkezli olmasına rağmen"
+              " Avusturya lisansı taşımaktadır.[5]Renault motorları kullanan "
+              "Red Bull 2018 sezonunda sıklıkla yaşadıkları motor sorunları sonucunda "
+              "2019 sezonu için Honda ile anlaşma imazalandı. GP2 takımlarından "
+              "Arden International'in patronu olan Christian Horner tarafından"
+              " yönetilmektedir.",
+              style:
+                  TextStyle(fontFamily: 'Formula1', color: Colors.indigo[500]),
               softWrap: true,
             ),
           ), // takim bilgisi
@@ -2692,8 +2693,6 @@ class _RedBullRacingState extends State<RedBullRacing> {
     );
   }
 }
-
-
 
 class Mercedes extends StatefulWidget {
   @override
@@ -2716,8 +2715,7 @@ class _MercedesState extends State<Mercedes> {
         ),
         backgroundColor: Colors.white,
         leading: IconButton(
-          icon: const Icon(Icons.dehaze,
-              color: Colors.blueGrey),
+          icon: const Icon(Icons.dehaze, color: Colors.blueGrey),
           onPressed: () {
             _scaffoldKey.currentState.openDrawer();
           },
@@ -2798,12 +2796,12 @@ class _MercedesState extends State<Mercedes> {
             padding: const EdgeInsets.all(32),
             child: Text(
               "Mercedes AMG Petronas Formula One Team ya da ticarî adıyla "
-                  "Mercedes-Benz Grand Prix Limited, Mercedes-Benz'in sahibi olduğu Birleşik Krallık"
-                  " merkezli Formula 1 takımı."
-                  "16 Kasım 2009'da Mercedes'in Brawn GP takımının yönetimini alması kabul edilmiştir."
-                  " Takım, 2010 sezonunda 'Mercedes GP' adıyla mücadele etmeye başlamış ve"
-                  " takımın ilk pilotları Nico Rosberg ile Formula 1'e geri dönen Michael Schumacher "
-                  "olmuştur.",
+              "Mercedes-Benz Grand Prix Limited, Mercedes-Benz'in sahibi olduğu Birleşik Krallık"
+              " merkezli Formula 1 takımı."
+              "16 Kasım 2009'da Mercedes'in Brawn GP takımının yönetimini alması kabul edilmiştir."
+              " Takım, 2010 sezonunda 'Mercedes GP' adıyla mücadele etmeye başlamış ve"
+              " takımın ilk pilotları Nico Rosberg ile Formula 1'e geri dönen Michael Schumacher "
+              "olmuştur.",
               style: TextStyle(fontFamily: 'Formula1', color: Colors.blueGrey),
               softWrap: true,
             ),
@@ -2813,8 +2811,6 @@ class _MercedesState extends State<Mercedes> {
     );
   }
 }
-
-
 
 class McLaren extends StatefulWidget {
   @override
@@ -2837,8 +2833,7 @@ class _McLarenState extends State<McLaren> {
         ),
         backgroundColor: Colors.white,
         leading: IconButton(
-          icon: const Icon(Icons.dehaze,
-              color: Colors.orange),
+          icon: const Icon(Icons.dehaze, color: Colors.orange),
           onPressed: () {
             _scaffoldKey.currentState.openDrawer();
           },
@@ -2919,11 +2914,11 @@ class _McLarenState extends State<McLaren> {
             padding: const EdgeInsets.all(32),
             child: Text(
               "McLaren 1963'te Yeni Zelandalı Bruce McLaren (1937-1970) tarafından kurulan Formula 1"
-                  " takımıdır.McLaren F1 Takımı, Formula 1'in en eski ve başarılı takımlarından "
-                  "biridir. Takım 2019 sezonu itibarıyla Mclaren-Renault ile uzun yıllar sonrasında "
-                  "en iyi yılını geçirmiş ve sezonu 4. sırada tamamlamıştır. Ayrıca Mclaren Racing;"
-                  " Formula 1'in yanı sıra Indianapolis 500 Mil Yarışı, Kanada-Amerika Challenge "
-                  "Kupası ve Le Mans 24 Saat Yarışı gibi organizasyonlarda da yer almıştır.",
+              " takımıdır.McLaren F1 Takımı, Formula 1'in en eski ve başarılı takımlarından "
+              "biridir. Takım 2019 sezonu itibarıyla Mclaren-Renault ile uzun yıllar sonrasında "
+              "en iyi yılını geçirmiş ve sezonu 4. sırada tamamlamıştır. Ayrıca Mclaren Racing;"
+              " Formula 1'in yanı sıra Indianapolis 500 Mil Yarışı, Kanada-Amerika Challenge "
+              "Kupası ve Le Mans 24 Saat Yarışı gibi organizasyonlarda da yer almıştır.",
               style: TextStyle(fontFamily: 'Formula1', color: mcLarenOrange),
               softWrap: true,
             ),
@@ -2933,8 +2928,6 @@ class _McLarenState extends State<McLaren> {
     );
   }
 }
-
-
 
 class RacingPoint extends StatefulWidget {
   @override
@@ -2957,8 +2950,7 @@ class _RacingPointState extends State<RacingPoint> {
         ),
         backgroundColor: Colors.white,
         leading: IconButton(
-          icon: const Icon(Icons.dehaze,
-              color: Colors.pink),
+          icon: const Icon(Icons.dehaze, color: Colors.pink),
           onPressed: () {
             _scaffoldKey.currentState.openDrawer();
           },
@@ -3039,18 +3031,19 @@ class _RacingPointState extends State<RacingPoint> {
             padding: const EdgeInsets.all(32),
             child: Text(
               "Racing Point F1 Team, competing as BWT Racing Point F1 Team and "
-                  "commonly known as Racing Point is a British motor racing team and"
-                  " Constructor that Racing Point UK has entered into the Formula One"
-                  " World Championship. The team is based in Silverstone,"
-                  " United Kingdom and competes under a British licence."
-                  "The team was renamed in February 2019 from “Racing Point Force "
-                  "India F1 Team”, which used the constructor name of 'Force India'"
-                  " for the latter half of the 2018 season."
-                  " Racing Point made their racing debut at the 2019 Australian Grand "
-                  "Prix. The team's drivers for the 2020 season are Sergio Pérez and"
-                  " Lance Stroll. The team will be rebranded to Aston Martin for the"
-                  " 2021 Formula One season.",
-              style: TextStyle(fontFamily: 'Formula1', color: Colors.pinkAccent),
+              "commonly known as Racing Point is a British motor racing team and"
+              " Constructor that Racing Point UK has entered into the Formula One"
+              " World Championship. The team is based in Silverstone,"
+              " United Kingdom and competes under a British licence."
+              "The team was renamed in February 2019 from “Racing Point Force "
+              "India F1 Team”, which used the constructor name of 'Force India'"
+              " for the latter half of the 2018 season."
+              " Racing Point made their racing debut at the 2019 Australian Grand "
+              "Prix. The team's drivers for the 2020 season are Sergio Pérez and"
+              " Lance Stroll. The team will be rebranded to Aston Martin for the"
+              " 2021 Formula One season.",
+              style:
+                  TextStyle(fontFamily: 'Formula1', color: Colors.pinkAccent),
               softWrap: true,
             ),
           ), // takim bilgisi
@@ -3059,9 +3052,6 @@ class _RacingPointState extends State<RacingPoint> {
     );
   }
 }
-
-
-
 
 class Renault extends StatefulWidget {
   @override
@@ -3084,8 +3074,7 @@ class _RenaultState extends State<Renault> {
         ),
         backgroundColor: Colors.white,
         leading: IconButton(
-          icon: const Icon(Icons.dehaze,
-              color: Colors.black),
+          icon: const Icon(Icons.dehaze, color: Colors.black),
           onPressed: () {
             _scaffoldKey.currentState.openDrawer();
           },
@@ -3166,14 +3155,14 @@ class _RenaultState extends State<Renault> {
             padding: const EdgeInsets.all(32),
             child: Text(
               "Renault’s F1 works return – begun in 2016 following the French marque’s "
-                  "takeover of the Lotus team – is proving a real challenge. "
-                  "New management embarked on a long-term restructuring programme aimed at "
-                  "returning the famous name to race-winning glory, but thus far their battle"
-                  "has been one to top the midfield, rather than challenging the big three teams"
-                  " for podiums..."
-                  "Progress up the championship order is halted, ironically by new Renault "
-                  "customers McLaren, who demote them to fifth in the standings, despite Daniel"
-                  " Ricciardo securing their best result to date with P4 in Italy.",
+              "takeover of the Lotus team – is proving a real challenge. "
+              "New management embarked on a long-term restructuring programme aimed at "
+              "returning the famous name to race-winning glory, but thus far their battle"
+              "has been one to top the midfield, rather than challenging the big three teams"
+              " for podiums..."
+              "Progress up the championship order is halted, ironically by new Renault "
+              "customers McLaren, who demote them to fifth in the standings, despite Daniel"
+              " Ricciardo securing their best result to date with P4 in Italy.",
               style: TextStyle(fontFamily: 'Formula1', color: Colors.black),
               softWrap: true,
             ),
@@ -3183,9 +3172,6 @@ class _RenaultState extends State<Renault> {
     );
   }
 }
-
-
-
 
 class AlphaTauri extends StatefulWidget {
   @override
@@ -3208,8 +3194,7 @@ class _AlphaTauriState extends State<AlphaTauri> {
         ),
         backgroundColor: Colors.white,
         leading: IconButton(
-          icon: const Icon(Icons.dehaze,
-              color: Colors.blueGrey),
+          icon: const Icon(Icons.dehaze, color: Colors.blueGrey),
           onPressed: () {
             _scaffoldKey.currentState.openDrawer();
           },
@@ -3257,9 +3242,7 @@ class _AlphaTauriState extends State<AlphaTauri> {
                   Text(
                     "Pierre Gasly",
                     style: TextStyle(
-                        fontFamily: 'Formula1',
-                        color: atBlue,
-                        fontSize: 18),
+                        fontFamily: 'Formula1', color: atBlue, fontSize: 18),
                   ),
                 ],
               ), // Sebastian Vettel
@@ -3270,9 +3253,7 @@ class _AlphaTauriState extends State<AlphaTauri> {
                   Text(
                     "Daniil Kvyat",
                     style: TextStyle(
-                        fontFamily: 'Formula1',
-                        color: atBlue,
-                        fontSize: 18),
+                        fontFamily: 'Formula1', color: atBlue, fontSize: 18),
                   ),
                 ],
               ), // Charles Leclerc
@@ -3290,14 +3271,14 @@ class _AlphaTauriState extends State<AlphaTauri> {
             padding: const EdgeInsets.all(32),
             child: Text(
               "Established in 2006 as a squad in which young drivers from Red Bull’s "
-                  "prodigious talent pool could cut their F1 teeth, AlphaTauri – "
-                  "originally named Toro Rosso – were formed from the ashes of the"
-                  " plucky Minardi team. Sebastian Vettel gave validity to the approach "
-                  "almost immediately, delivering a fairy-tale win in 2008, before going "
-                  "on to enjoy world championship success with parent team Red Bull "
-                  "Racing. Today the ethos of nurturing talent still holds true, though "
-                  "the Italian squad are no longer simply a ‘B team’ but a constructor in "
-                  "their own right...",
+              "prodigious talent pool could cut their F1 teeth, AlphaTauri – "
+              "originally named Toro Rosso – were formed from the ashes of the"
+              " plucky Minardi team. Sebastian Vettel gave validity to the approach "
+              "almost immediately, delivering a fairy-tale win in 2008, before going "
+              "on to enjoy world championship success with parent team Red Bull "
+              "Racing. Today the ethos of nurturing talent still holds true, though "
+              "the Italian squad are no longer simply a ‘B team’ but a constructor in "
+              "their own right...",
               style: TextStyle(fontFamily: 'Formula1', color: atBlue),
               softWrap: true,
             ),
@@ -3307,9 +3288,6 @@ class _AlphaTauriState extends State<AlphaTauri> {
     );
   }
 }
-
-
-
 
 class AlphaRomeo extends StatefulWidget {
   @override
@@ -3332,8 +3310,7 @@ class _AlphaRomeoState extends State<AlphaRomeo> {
         ),
         backgroundColor: Colors.white,
         leading: IconButton(
-          icon: const Icon(Icons.dehaze,
-              color: Colors.red),
+          icon: const Icon(Icons.dehaze, color: Colors.red),
           onPressed: () {
             _scaffoldKey.currentState.openDrawer();
           },
@@ -3381,9 +3358,7 @@ class _AlphaRomeoState extends State<AlphaRomeo> {
                   Text(
                     "Kimi Räikkönen",
                     style: TextStyle(
-                        fontFamily: 'Formula1',
-                        color: romeoRed,
-                        fontSize: 18),
+                        fontFamily: 'Formula1', color: romeoRed, fontSize: 18),
                   ),
                 ],
               ), // Sebastian Vettel
@@ -3394,9 +3369,7 @@ class _AlphaRomeoState extends State<AlphaRomeo> {
                   Text(
                     "Antonio Giovinazzi",
                     style: TextStyle(
-                        fontFamily: 'Formula1',
-                        color: romeoRed,
-                        fontSize: 18),
+                        fontFamily: 'Formula1', color: romeoRed, fontSize: 18),
                   ),
                 ],
               ), // Charles Leclerc
@@ -3414,17 +3387,17 @@ class _AlphaRomeoState extends State<AlphaRomeo> {
             padding: const EdgeInsets.all(32),
             child: Text(
               "The name Alfa Romeo boasts Formula 1 connections dating back to the "
-                  "championship’s inception in 1950. Fast forward to the 21st century "
-                  "and Italian flare combines with Swiss sensibilities in a new era for the"
-                  " team formerly known as Sauber."
-                  "Having enjoyed considerable success in world sportscars, where he helped"
-                  " nurture the emerging talents of future F1 stars Michael Schumacher and"
-                  " Heinz-Harald Frentzen, Peter Sauber guided his eponymous squad into F1 "
-                  "in 1993."
-                  "The team has since established itself as a mainstay of the F1 grid,"
-                  " becoming race winners under BMW’s brief ownership, and developing a"
-                  " well-earned reputation not only for producing competitive cars, but "
-                  "also for developing young drivers.",
+              "championship’s inception in 1950. Fast forward to the 21st century "
+              "and Italian flare combines with Swiss sensibilities in a new era for the"
+              " team formerly known as Sauber."
+              "Having enjoyed considerable success in world sportscars, where he helped"
+              " nurture the emerging talents of future F1 stars Michael Schumacher and"
+              " Heinz-Harald Frentzen, Peter Sauber guided his eponymous squad into F1 "
+              "in 1993."
+              "The team has since established itself as a mainstay of the F1 grid,"
+              " becoming race winners under BMW’s brief ownership, and developing a"
+              " well-earned reputation not only for producing competitive cars, but "
+              "also for developing young drivers.",
               style: TextStyle(fontFamily: 'Formula1', color: romeoRed),
               softWrap: true,
             ),
@@ -3434,8 +3407,6 @@ class _AlphaRomeoState extends State<AlphaRomeo> {
     );
   }
 }
-
-
 
 class Haas extends StatefulWidget {
   @override
@@ -3458,8 +3429,7 @@ class _HaasState extends State<Haas> {
         ),
         backgroundColor: Colors.white,
         leading: IconButton(
-          icon: const Icon(Icons.dehaze,
-              color: Colors.black),
+          icon: const Icon(Icons.dehaze, color: Colors.black),
           onPressed: () {
             _scaffoldKey.currentState.openDrawer();
           },
@@ -3540,17 +3510,17 @@ class _HaasState extends State<Haas> {
             padding: const EdgeInsets.all(32),
             child: Text(
               "The youngest team on the grid, "
-                  "Haas made their highly impressive debut in 2016,"
-                  " and in the process became the first all-American-led F1 squad "
-                  "in three decades. Founded by industrialist Gene Haas, they are based in "
-                  "the United States on the same Kannapolis, North Carolina facility as his "
-                  "championship-winning NASCAR Sprint Cup Series team, Stewart-Haas Racing."
-                  " The Ferrari-powered team, led by the charismatic Guenther Steiner, also"
-                  " have a UK factory in Banbury…"
-                  "The Haas fairy tale finally hits a bump in the road, as they struggle"
-                  " to get a handle on their recalcitrant VF-19 machine. Fall to eighth in "
-                  "the table, with Romain Grosjean and Kevin Magnussen amassing a meagre 28"
-                  " points between them.",
+              "Haas made their highly impressive debut in 2016,"
+              " and in the process became the first all-American-led F1 squad "
+              "in three decades. Founded by industrialist Gene Haas, they are based in "
+              "the United States on the same Kannapolis, North Carolina facility as his "
+              "championship-winning NASCAR Sprint Cup Series team, Stewart-Haas Racing."
+              " The Ferrari-powered team, led by the charismatic Guenther Steiner, also"
+              " have a UK factory in Banbury…"
+              "The Haas fairy tale finally hits a bump in the road, as they struggle"
+              " to get a handle on their recalcitrant VF-19 machine. Fall to eighth in "
+              "the table, with Romain Grosjean and Kevin Magnussen amassing a meagre 28"
+              " points between them.",
               style: TextStyle(fontFamily: 'Formula1', color: Colors.black),
               softWrap: true,
             ),
@@ -3560,8 +3530,6 @@ class _HaasState extends State<Haas> {
     );
   }
 }
-
-
 
 class Williams extends StatefulWidget {
   @override
@@ -3584,8 +3552,7 @@ class _WilliamsState extends State<Williams> {
         ),
         backgroundColor: Colors.white,
         leading: IconButton(
-          icon: const Icon(Icons.dehaze,
-              color: Colors.blue),
+          icon: const Icon(Icons.dehaze, color: Colors.blue),
           onPressed: () {
             _scaffoldKey.currentState.openDrawer();
           },
@@ -3666,15 +3633,15 @@ class _WilliamsState extends State<Williams> {
             padding: const EdgeInsets.all(32),
             child: Text(
               "Driven on by the brilliance and passion of Sir Frank Williams, Williams "
-                  "grew from humble beginnings to become a Formula 1 behemoth, unrivalled "
-                  "by all except Ferrari and McLaren in terms of enduring success. Over the"
-                  " past four decades the team has racked up Grand Prix wins and championship"
-                  " glory, and in the process nurtured some of the greatest talents in the"
-                  " sport, both in and out the cockpit..."
-                  "A single point from 21 races heralds the worst campaign in the team’s"
-                  " history, despite the addition of former Grand Prix winner Robert Kubica"
-                  ". On the flip side, rookie George Russell marks himself out as a star of "
-                  "the future, out-qualifying his experienced team mate at every round.",
+              "grew from humble beginnings to become a Formula 1 behemoth, unrivalled "
+              "by all except Ferrari and McLaren in terms of enduring success. Over the"
+              " past four decades the team has racked up Grand Prix wins and championship"
+              " glory, and in the process nurtured some of the greatest talents in the"
+              " sport, both in and out the cockpit..."
+              "A single point from 21 races heralds the worst campaign in the team’s"
+              " history, despite the addition of former Grand Prix winner Robert Kubica"
+              ". On the flip side, rookie George Russell marks himself out as a star of "
+              "the future, out-qualifying his experienced team mate at every round.",
               style: TextStyle(fontFamily: 'Formula1', color: williamsBlue),
               softWrap: true,
             ),
@@ -3685,8 +3652,7 @@ class _WilliamsState extends State<Williams> {
   }
 }
 
-
-
+// main page
 
 class mainPage extends StatefulWidget {
   @override
@@ -3703,7 +3669,7 @@ class _mainPageState extends State<mainPage> {
         title: Text(
           "Formula 1",
           style: TextStyle(
-            fontFamily: 'Formula1', // formula1 fontu eklenecek
+            fontFamily: 'Formula1',
             color: Colors.red[500],
           ),
         ),
@@ -3722,7 +3688,184 @@ class _mainPageState extends State<mainPage> {
           ),
         ],
       ),
-      body: Container(),
+      body: Column(
+        children: <Widget>[
+          ClipRRect(
+            borderRadius: BorderRadius.circular(20.0),
+            child: Stack(
+              children: <Widget>[
+                Image(
+                  image: AssetImage('images/anaresim.jpg'),
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(20),
+                  child: Align(
+                    alignment: Alignment.centerLeft,
+                    child: Text(
+                      '''
+Hoşgeldin
+Formula 1
+Taraftarı!''',
+                      style: TextStyle(color: Colors.red[500], fontSize: 24.0),
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ),
+          SizedBox(height: 10),
+          Stack(
+            children: <Widget>[
+              ClipRRect(
+                borderRadius: BorderRadius.circular(10.0),
+                child: Container(
+                  padding: const EdgeInsets.all(20),
+                  color: Colors.red,
+                ),
+              ),
+              Padding(
+                  padding: const EdgeInsets.all(10),
+                  child: Text("Nereden başlamak istersin?",
+                      style: TextStyle(color: Colors.white, fontSize: 16),
+                  ),
+              ),
+            ],
+          ),
+          SizedBox(height: 10),
+          CarouselSlider(
+            items: <Widget>[
+              ClipRRect(
+                borderRadius: BorderRadius.circular(20),
+                child: Stack(
+                  children: <Widget>[
+                    Image(
+                      image: AssetImage('images/anadriver.jpg'),
+                      fit: BoxFit.fill,
+                    ),
+                    Padding(
+                      padding: EdgeInsets.all(20.0),
+                      child: Text('Pilotlar',
+                        style: TextStyle(color: Colors.white, fontSize: 24),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              ClipRRect(
+                borderRadius: BorderRadius.circular(20),
+                child: Stack(
+                  children: <Widget>[
+                    Image(
+                      image: AssetImage('images/takimlar.jpeg'),
+                      fit: BoxFit.fill,
+                    ),
+                    Padding(
+                      padding: EdgeInsets.all(20.0),
+                      child: Text('Takımlar',
+                        style: TextStyle(color: Colors.white, fontSize: 24),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              ClipRRect(
+                borderRadius: BorderRadius.circular(20),
+                child: Stack(
+                  children: <Widget>[
+                    Image(
+                      image: AssetImage('images/news.jpeg'),
+                      fit: BoxFit.fill,
+                    ),
+                    Padding(
+                      padding: EdgeInsets.all(20.0),
+                      child: Text('Haberler',
+                        style: TextStyle(color: Colors.white, fontSize: 24),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ],
+            options: CarouselOptions(
+              height: 180,
+              aspectRatio: 16/9,
+              viewportFraction: 0.8,
+              autoPlay: false,
+              autoPlayCurve: Curves.fastLinearToSlowEaseIn,
+              autoPlayInterval: Duration(seconds: 3),
+              enlargeCenterPage: true,
+            ),
+          ),
+          SizedBox(height: 10),
+          Expanded(
+            child: Container(
+              decoration: BoxDecoration(
+                color: Colors.red,
+                borderRadius: new BorderRadius.only(
+                  topLeft: const Radius.circular(20.0),
+                  topRight: const Radius.circular(20.0),
+                ),
+              ),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: <Widget>[
+                  Container(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: <Widget>[
+                        Container(
+                          padding: EdgeInsets.symmetric(vertical: 5),
+                          child: Text("Sıradaki Yarış",
+                            style: TextStyle(color: Colors.white,
+                              fontSize: 20,
+                            ),
+                          ),
+                        ),
+                        Container(
+                          child: Row(
+                            children: <Widget>[
+                              ClipRRect(
+                                borderRadius: BorderRadius.circular(15.0),
+                                child: Image(
+                                  height: 64,
+                                  width: 64,
+                                  image: AssetImage('images/ispanya.jpg'),
+                                ),
+                              ),
+                              Padding(
+                                 padding: EdgeInsets.all(20.0),
+                                  child: Text("İspanya",
+                                    style: TextStyle(color: Colors.white,
+                                      fontSize: 18,
+                                    ),
+                                  ),
+                              ),
+                            ],
+                          ),
+                        ),
+                        Container(
+                          child: Text('Formula 1 Barcelona GP',
+                            style: TextStyle(
+                              color: Colors.white,
+                            ),
+                          ),
+                        ),
+                        Container(
+                          child: Text('14 AUG 2020 - 16 AUG 2020',
+                            style: TextStyle(
+                              color: Colors.white,
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ), // race name, flag, date,
+                ],
+              ),
+            ),
+          ),
+        ],
+      ),
     );
   }
 }
