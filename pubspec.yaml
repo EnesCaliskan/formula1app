@@ -21,12 +21,68 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+
   fonts:
     - family: Formula1
       fonts:
         - asset: assets/Formula1-Regular.ttf
   assets:
-    - images/
+    - images/drivers.jpg
+    - images/f1.png
+    - images/cars/rb16.jpg
+    - images/cars/sf1000.jpg
+    - images/cars/w11.jpg
+    - images/drivers/aaa.png
+    - images/drivers/bot.png
+    - images/drivers/ham.png
+    - images/drivers/mmm.png
+    - images/drivers/sss.png
+    - images/drivers/ttt.png
+    - images/driversback/albonback.jpg
+    - images/driversback/botback.jpg
+    - images/driversback/hamback.jpg
+    - images/driversback/maxback.png
+    - images/driversback/sebhe.png
+    - images/logos/mclaren.jpg
+    - images/logos/mercedes.jpg
+    - images/logos/rb.jpg
+    - images/logos/sf.jpg
+    - images/driversback/charles.jpg
+    - images/logos/at.jpg
+    - images/logos/haas.jpg
+    - images/logos/williams.jpg
+    - images/logos/romeo.jpg
+    - images/logos/renault.jpg
+    - images/logos/rp.jpg
+    - images/cars/mcl35.jpg
+    - images/drivers/sai.png
+    - images/drivers/nor.png
+    - images/driversback/sainzback.png
+    - images/driversback/norrisback.jpg
+    - images/cars/rp20.jpg
+    - images/drivers/str.png
+    - images/drivers/per.png
+    - images/driversback/strollback.jpg
+    - images/driversback/perezback.jpg
+    - images/cars/rs20.jpg
+    - images/drivers/ric.png
+    - images/drivers/oco.png
+    - images/driversback/ocoback.jpg
+    - images/driversback/ricback.jpg
+    - images/cars/at01.jpg
+    - images/drivers/gas.png
+    - images/drivers/kvy.png
+    - images/drivers/rai.png
+    - images/drivers/gio.png
+    - images/drivers/gro.png
+    - images/drivers/mag.png
+    - images/drivers/rus.png
+    - images/drivers/lat.png
+    - images/cars/c39.jpg
+    - images/cars/vf20.jpg
+    - images/cars/fw43.jpg
+
+
 
 
 
