@@ -53,102 +53,8 @@ class HeroSeb extends StatelessWidget {
       height: 110.0,
       onTap: () {
         Navigator.of(context)
-            .push(MaterialPageRoute<void>(builder: (BuildContext context) {
-          return Scaffold(
-            appBar: AppBar(
-              title: const Text('Sebastian Vettel'),
-              backgroundColor: Colors.red[500],
-            ),
-            body: Container(
-              decoration: BoxDecoration(
-                image: DecorationImage(
-                  image: AssetImage("images/driversback/sebhe.png"),
-                  colorFilter: new ColorFilter.mode(
-                      Colors.black.withOpacity(0.2), BlendMode.dstATop),
-                  fit: BoxFit.cover,
-                ),
-              ),
-              child: ListView(
-                children: <Widget>[
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    children: <Widget>[
-                      Container(
-                        padding: const EdgeInsets.all(16.0),
-                        alignment: Alignment.topLeft,
-                        child: PhotoHero(
-                          photo: 'images/drivers/sss.png',
-                          width: 140.0,
-                          onTap: () {
-                            Navigator.of(context).pop();
-                          },
-                        ),
-                      ),
-                      Expanded(
-                        child: Container(
-                          padding: const EdgeInsets.all(20.0),
-                          child: Column(
-                            mainAxisSize: MainAxisSize.max,
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: <Widget>[
-                              Text(
-                                "Takım : Ferrari",
-                                style: TextStyle(color: Colors.red),
-                              ),
-                              Text(
-                                "Ülke : Almanya 🇩🇪",
-                                style: TextStyle(color: Colors.red),
-                              ),
-                              Text(
-                                "Podyumlar : 120",
-                                style: TextStyle(color: Colors.red),
-                              ),
-                              Text(
-                                "Puan : 2995",
-                                style: TextStyle(color: Colors.red),
-                              ),
-                              Text(
-                                "Yarış : 245",
-                                style: TextStyle(color: Colors.red),
-                              ),
-                              Text(
-                                "Şampiyonluk : 4",
-                                style: TextStyle(color: Colors.red),
-                              ),
-                              Text(
-                                "Doğum Tarihi : 03/07/1987",
-                                style: TextStyle(color: Colors.red),
-                              ),
-                              Text(
-                                "Doğum Yeri : Heppenheim, Almanya",
-                                style: TextStyle(color: Colors.red),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                  Container(
-                    padding: const EdgeInsets.all(32.0),
-                    child: Text(
-                      "2006 Türkiye Grand Prix haftasonunda, Cuma günkü antrenman seansında, 19 yaş 53 günlükken, piste Sauber takımının üçüncü pilotu olarak piste çıkan Vettel,"
-                      " Formula 1 tarihinin en genç pilotu unvanını kazanmıştır."
-                      "17 Haziran 2007 tarihinde koşulan Birleşik Devletler Grand Prix'inde, 'Bir Formula 1 yarışında start alan en genç 6. pilot' unvanını kazanmakla kalmamış, aynı yarışta "
-                      "'bir Formula 1 yarışında puan alan en genç pilot' rekorunu da kırmıştır. "
-                      "30 Eylül 2007 tarihindeki Çin Grand Prix'ine bir ara liderlik eden Vettel, bu yarışta da 'Bir Formula 1 yarışına liderlik eden en genç pilot' rekorunu kırmıştır."
-                      " 2008 İtalya Grand Prix'inde 'Bir Formula 1 yarışında pol pozisyonunu kazanan en genç pilot' ve 'Bir Formula 1 yarışını kazanan en genç pilot' rekorlarını kıran Vettel, 'Farklı iki takımda yarış kazanan en genç pilot' rekoruna da sahiptir."
-                      " Vettel Abu Dabi Grand Prix'i sonunda 2010 yılında pilotlar şampiyonluğuna ulaşarak 'F1 şampiyonu olan en genç pilot' unvanını Lewis Hamilton'ın elinden almış ve yeni bir rekorun sahibi olmuştur. "
-                      "Bir anlamda rekorların adamı olan Michael Schumacher'in izinden gittiğini göstermiştir. 2011 sezonunda 2011 Formula 1 sezonu'nu domine ederek bitime beş yarış kala şampiyonluğunu ilan etmiştir.",
-                      style: TextStyle(color: Colors.red),
-                      softWrap: true,
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          );
-        }));
+            .push(MaterialPageRoute(builder: (context) => sebastianInfo),
+        );
       },
     );
   }
@@ -163,99 +69,8 @@ class HeroLec extends StatelessWidget {
       height: 110.0,
       onTap: () {
         Navigator.of(context)
-            .push(MaterialPageRoute<void>(builder: (BuildContext context) {
-          return Scaffold(
-            appBar: AppBar(
-              title: const Text('Charles Leclerc'),
-              backgroundColor: Colors.red[500],
-            ),
-            body: Container(
-              decoration: BoxDecoration(
-                image: DecorationImage(
-                  image: AssetImage("images/driversback/charles.jpg"),
-                  colorFilter: new ColorFilter.mode(
-                      Colors.black.withOpacity(0.2), BlendMode.dstATop),
-                  fit: BoxFit.cover,
-                ),
-              ),
-              child: ListView(
-                children: <Widget>[
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    children: <Widget>[
-                      Container(
-                        padding: const EdgeInsets.all(16.0),
-                        alignment: Alignment.topLeft,
-                        child: PhotoHero(
-                          photo: 'images/drivers/ttt.png',
-                          width: 140.0,
-                          onTap: () {
-                            Navigator.of(context).pop();
-                          },
-                        ),
-                      ),
-                      Expanded(
-                        child: Container(
-                          padding: const EdgeInsets.all(20.0),
-                          child: Column(
-                            mainAxisSize: MainAxisSize.max,
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: <Widget>[
-                              Text(
-                                "Takım : Ferrari",
-                                style: TextStyle(color: Colors.red),
-                              ),
-                              Text(
-                                "Ülke : Monaco 🇲🇨",
-                                style: TextStyle(color: Colors.red),
-                              ),
-                              Text(
-                                "Podyumlar : 12",
-                                style: TextStyle(color: Colors.red),
-                              ),
-                              Text(
-                                "Puan : 336",
-                                style: TextStyle(color: Colors.red),
-                              ),
-                              Text(
-                                "Yarış : 46",
-                                style: TextStyle(color: Colors.red),
-                              ),
-                              Text(
-                                "Şampiyonluk : 0",
-                                style: TextStyle(color: Colors.red),
-                              ),
-                              Text(
-                                "Doğum Tarihi : 16/10/1997",
-                                style: TextStyle(color: Colors.red),
-                              ),
-                              Text(
-                                "Doğum Yeri : Monte Carlo, Monaco",
-                                style: TextStyle(color: Colors.red),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                  Container(
-                    padding: const EdgeInsets.all(32.0),
-                    child: Text(
-                      "Leclerc 2005 yılında karting yarışları ile kariyerine başladı. 2005, 2006 ve 2008 yıllarında Fransa PACA şampiyonasını kazandı. 2018 sezonunda Sauber-Ferrari takımında yer aldı."
-                      " Takvimde yer alan 21 yarışa katılan Leclerc 10 yarışta ilk 10'da yer aldı,"
-                      " 5 yarışta finişi göremedi. Sezonu 39 puanla 13. sırada tamamladı. "
-                      "2019 yılı için Ferrari ile anlaştı.21 yarış sonucunda sezonu 264 puanla 4. olarak Sebastian Vettel'in bir sıra önünde tamamladı."
-                      " Ayrıca 4 kez dünya şampiyonu Alman pilottan daha fazla yarış kazanarak (Leclerc 2, Vettel 1 yarış kazandı.) Formula 1'in ilerleyen yıllarında söz sahibi olacağının sinyallerini verdi.",
-                      style: TextStyle(color: Colors.red),
-                      softWrap: true,
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          );
-        }));
+            .push(MaterialPageRoute(builder: (context) => charlesInfo),
+        );
       },
     );
   }
@@ -270,102 +85,8 @@ class HeroVers extends StatelessWidget {
       height: 110.0,
       onTap: () {
         Navigator.of(context)
-            .push(MaterialPageRoute<void>(builder: (BuildContext context) {
-          return Scaffold(
-            appBar: AppBar(
-              title: const Text('Max Verstappen'),
-              backgroundColor: redBullBlue,
-            ),
-            body: Container(
-              decoration: BoxDecoration(
-                image: DecorationImage(
-                  image: AssetImage("images/driversback/maxback.png"),
-                  colorFilter: new ColorFilter.mode(
-                      Colors.black.withOpacity(0.2), BlendMode.dstATop),
-                  fit: BoxFit.cover,
-                ),
-              ),
-              child: ListView(
-                children: <Widget>[
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    children: <Widget>[
-                      Container(
-                        padding: const EdgeInsets.all(16.0),
-                        alignment: Alignment.topLeft,
-                        child: PhotoHero(
-                          photo: 'images/drivers/mmm.png',
-                          width: 150.0,
-                          onTap: () {
-                            Navigator.of(context).pop();
-                          },
-                        ),
-                      ),
-                      Expanded(
-                        child: Container(
-                          padding: const EdgeInsets.all(20.0),
-                          child: Column(
-                            mainAxisSize: MainAxisSize.max,
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: <Widget>[
-                              Text(
-                                "Takım : Red Bull Racing",
-                                style: TextStyle(color: redBullBlue),
-                              ),
-                              Text(
-                                "Ülke : Hollanda 🇳🇱",
-                                style: TextStyle(color: redBullBlue),
-                              ),
-                              Text(
-                                "Podyumlar : 34",
-                                style: TextStyle(color: redBullBlue),
-                              ),
-                              Text(
-                                "Puan : 1000",
-                                style: TextStyle(color: redBullBlue),
-                              ),
-                              Text(
-                                "Yarış : 106",
-                                style: TextStyle(color: redBullBlue),
-                              ),
-                              Text(
-                                "Şampiyonluk : 0",
-                                style: TextStyle(color: redBullBlue),
-                              ),
-                              Text(
-                                "Doğum Tarihi : 30/09/1997",
-                                style: TextStyle(color: redBullBlue),
-                              ),
-                              Text(
-                                "Doğum Yeri : Hasselt, Belçika",
-                                style: TextStyle(color: redBullBlue),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                  Container(
-                    padding: const EdgeInsets.all(32.0),
-                    child: Text(
-                      "Max Emilian Verstappen (d. 30 Eylül 1997, Hasselt, Belçika),"
-                      "Hollandalı Formula 1 pilotudur."
-                      " Babası Jos Verstappen de eski bir Formula 1 pilotu olan Max Verstappen sezon içinde geçtiği Red Bull Racing "
-                      "kokpitinde katıldığı ilk yarış olan 2016 İspanya Grand Prix'ini kazanarak kariyerinin ilk yarış galibiyetini kazınırken "
-                      "Formula 1 tarihinin yarış kazanan en genç pilotu unvanını da ele geçirmiştir."
-                      "2014'te Verstappen Scuderia Toro Rosso takımıyla anlaşmıştır.Carlos Sainz Jr. ile beraber yarışmışlardır."
-                      "2016'da Red Bull Racing'e geçmiştir. Red Bull'da takım arkadaşı Pierre Gasly'dur."
-                      " Yarış numarası olarak 33'ü şeçmiştir.",
-                      style: TextStyle(color: redBullBlue),
-                      softWrap: true,
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          );
-        }));
+            .push(MaterialPageRoute(builder: (context) => maxInfo),
+        );
       },
     );
   }
@@ -380,99 +101,8 @@ class HeroAlb extends StatelessWidget {
       height: 110.0,
       onTap: () {
         Navigator.of(context)
-            .push(MaterialPageRoute<void>(builder: (BuildContext context) {
-          return Scaffold(
-            appBar: AppBar(
-              title: const Text('Alex Albon'),
-              backgroundColor: redBullBlue,
-            ),
-            body: Container(
-              decoration: BoxDecoration(
-                image: DecorationImage(
-                  image: AssetImage("images/driversback/albonback.jpg"),
-                  colorFilter: new ColorFilter.mode(
-                      Colors.black.withOpacity(0.2), BlendMode.dstATop),
-                  fit: BoxFit.cover,
-                ),
-              ),
-              child: ListView(
-                children: <Widget>[
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    children: <Widget>[
-                      Container(
-                        padding: const EdgeInsets.all(16.0),
-                        alignment: Alignment.topLeft,
-                        child: PhotoHero(
-                          photo: 'images/drivers/aaa.png',
-                          width: 150.0,
-                          onTap: () {
-                            Navigator.of(context).pop();
-                          },
-                        ),
-                      ),
-                      Expanded(
-                        child: Container(
-                          padding: const EdgeInsets.all(20.0),
-                          child: Column(
-                            mainAxisSize: MainAxisSize.max,
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: <Widget>[
-                              Text(
-                                "Takım : Red Bull Racing",
-                                style: TextStyle(color: redBullBlue),
-                              ),
-                              Text(
-                                "Ülke : Tayland 🇹🇭",
-                                style: TextStyle(color: redBullBlue),
-                              ),
-                              Text(
-                                "Podyumlar : 0",
-                                style: TextStyle(color: redBullBlue),
-                              ),
-                              Text(
-                                "Puan : 118",
-                                style: TextStyle(color: redBullBlue),
-                              ),
-                              Text(
-                                "Yarış : 25",
-                                style: TextStyle(color: redBullBlue),
-                              ),
-                              Text(
-                                "Şampiyonluk : 0",
-                                style: TextStyle(color: redBullBlue),
-                              ),
-                              Text(
-                                "Doğum Tarihi : 23/03/1996",
-                                style: TextStyle(color: redBullBlue),
-                              ),
-                              Text(
-                                "Doğum Yeri : Londra, İngiltere",
-                                style: TextStyle(color: redBullBlue),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                  Container(
-                    padding: const EdgeInsets.all(32.0),
-                    child: Text(
-                      "2019 sezonunun ilk yarısında Toro Rosso için yarışmış, sonrasında ise Pierre Gasly yerine Red Bull Racing takımına geçmiştir. "
-                      "2019 Formula 1 sezonunu 92 puanla sekizinci sırada bitirmiştir."
-                      "2020 sezonunda da Red Bull Racing ile yarışacaktır. Aracının numarası 23'tür."
-                      "2018 yılı Formula 2 sürücü sıralamasında turnuvasında diğer Formula 1 pilotları George Russell ve Lando"
-                      "Norris'in arkasında üçüncü olmuştur.",
-                      style: TextStyle(color: redBullBlue),
-                      softWrap: true,
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          );
-        }));
+            .push(MaterialPageRoute(builder: (context) => alexInfo),
+        );
       },
     );
   }
@@ -487,114 +117,8 @@ class HeroHam extends StatelessWidget {
       height: 110.0,
       onTap: () {
         Navigator.of(context)
-            .push(MaterialPageRoute<void>(builder: (BuildContext context) {
-          return Scaffold(
-            appBar: AppBar(
-              title: const Text('Lewis Hamilton'),
-              backgroundColor: Colors.blueGrey,
-            ),
-            body: Container(
-              decoration: BoxDecoration(
-                image: DecorationImage(
-                  image: AssetImage("images/driversback/hamback.jpg"),
-                  colorFilter: new ColorFilter.mode(
-                      Colors.black.withOpacity(0.2), BlendMode.dstATop),
-                  fit: BoxFit.cover,
-                ),
-              ),
-              child: ListView(
-                children: <Widget>[
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    children: <Widget>[
-                      Container(
-                        padding: const EdgeInsets.all(16.0),
-                        alignment: Alignment.topLeft,
-                        child: PhotoHero(
-                          photo: 'images/drivers/ham.png',
-                          width: 150.0,
-                          onTap: () {
-                            Navigator.of(context).pop();
-                          },
-                        ),
-                      ),
-                      Expanded(
-                        child: Container(
-                          padding: const EdgeInsets.all(20.0),
-                          child: Column(
-                            mainAxisSize: MainAxisSize.max,
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: <Widget>[
-                              Text(
-                                "Takım : Mercedes",
-                                style: TextStyle(color: Colors.blueGrey),
-                              ),
-                              Text(
-                                "Ülke : Birleşik Krallık 🇬🇧",
-                                style: TextStyle(color: Colors.blueGrey),
-                              ),
-                              Text(
-                                "Podyumlar : 154",
-                                style: TextStyle(color: Colors.blueGrey),
-                              ),
-                              Text(
-                                "Puan : 3519",
-                                style: TextStyle(color: Colors.blueGrey),
-                              ),
-                              Text(
-                                "Yarış : 254",
-                                style: TextStyle(color: Colors.blueGrey),
-                              ),
-                              Text(
-                                "Şampiyonluk : 6",
-                                style: TextStyle(color: Colors.blueGrey),
-                              ),
-                              Text(
-                                "Doğum Tarihi : 07/01/1985",
-                                style: TextStyle(color: Colors.blueGrey),
-                              ),
-                              Text(
-                                "Doğum Yeri : Stevenage, İngiltere",
-                                style: TextStyle(color: Colors.blueGrey),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                  Container(
-                    padding: const EdgeInsets.all(32.0),
-                    child: Text(
-                      "Lewis Carl Hamilton (d. 7 Ocak 1985 "
-                      "Hertfordshire, Birleşik Krallık) Formula 1'de"
-                      " yarışan ilk siyâhi pilottur. 2006 yılında GP2 "
-                      "serisinde büyük başarı göstererek şampiyon olup"
-                      " ardından McLaren takımı'na transfer olmuştur."
-                      " 2008, 2014, 2015, 2017, 2018 ve 2019 sezonlarında "
-                      "pilotlar şampiyonluğuna ulaştı. 1.74 m boyundadır."
-                      "Daha 9 yaşındayken Mercedes-Benz Genç pilot"
-                      " yetiştirme programını imzalayan pilot."
-                      " Formula Renault, Formula 3, GP2 serilerinde "
-                      "şampiyonluğa ulaşmıştır. Formula 1 kariyerinin ilk "
-                      "dokuz yarışında kürsüye çıkmayı başaran McLaren "
-                      "Mercedes takımının İngiliz pilotu Lewis Hamilton,"
-                      " Bahreyn Grand Prix'sinde elde ettiği ikincilik"
-                      " sonrası, ilk dokuz yarışında da podyuma çıkarak"
-                      " tarihe geçmiştir. Kanada ve Amerika Birleşik"
-                      " Devletleri Formula 1 kariyerinin ilk yılında "
-                      "birinci olarak büyük başarı göstermiştir 2007 yılında"
-                      " 1 puan farkla 109 puanla formula 1 sezonunun ilk "
-                      "yılında ikinci olmayı başarmıştır.",
-                      style: TextStyle(color: Colors.blueGrey),
-                      softWrap: true,
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          );
-        }));
+            .push(MaterialPageRoute(builder: (context) => lewisInfo)
+        );
       },
     );
   }
@@ -609,99 +133,8 @@ class HeroGas extends StatelessWidget {
       height: 110.0,
       onTap: () {
         Navigator.of(context)
-            .push(MaterialPageRoute<void>(builder: (BuildContext context) {
-          return Scaffold(
-            appBar: AppBar(
-              title: const Text('Pierre Gasly'),
-              backgroundColor: atBlue,
-            ),
-            body: Container(
-              child: ListView(
-                children: <Widget>[
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    children: <Widget>[
-                      Container(
-                        padding: const EdgeInsets.all(16.0),
-                        alignment: Alignment.topLeft,
-                        child: PhotoHero(
-                          photo: 'images/drivers/gas.png',
-                          width: 150.0,
-                          onTap: () {
-                            Navigator.of(context).pop();
-                          },
-                        ),
-                      ),
-                      Expanded(
-                        child: Container(
-                          padding: const EdgeInsets.all(20.0),
-                          child: Column(
-                            mainAxisSize: MainAxisSize.max,
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: <Widget>[
-                              Text(
-                                "Takım : AlphaTauri",
-                                style: TextStyle(color: atBlue),
-                              ),
-                              Text(
-                                "Ülke : Fransa 🇫🇷",
-                                style: TextStyle(color: atBlue),
-                              ),
-                              Text(
-                                "Podyumlar : 1",
-                                style: TextStyle(color: atBlue),
-                              ),
-                              Text(
-                                "Puan : 136",
-                                style: TextStyle(color: atBlue),
-                              ),
-                              Text(
-                                "Yarış : 51",
-                                style: TextStyle(color: atBlue),
-                              ),
-                              Text(
-                                "Şampiyonluk : 0",
-                                style: TextStyle(color: atBlue),
-                              ),
-                              Text(
-                                "Doğum Tarihi : 07/02/1996",
-                                style: TextStyle(color: atBlue),
-                              ),
-                              Text(
-                                "Doğum Yeri : Rouen, Fransa",
-                                style: TextStyle(color: atBlue),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                  Container(
-                    padding: const EdgeInsets.all(32.0),
-                    child: Text(
-                      "If there’s one man who knows how big a rollercoaster ride an "
-                      "F1 driver’s career can be, it’s Pierre Gasly!"
-                      "The flying Frenchman was called up to make his 2017"
-                      " debut in Malaysia in place of Daniil Kvyat and, after "
-                      "proving his mettle, he was named a Toro Rosso driver the "
-                      "following year.  A further 21 races into his fledgling career,"
-                      " Gasly was moved up again – this time to replace Red Bull big gun"
-                      " Daniel Ricciardo."
-                      "Gasly seemed to have a knack of being in the right "
-                      "place at the right time – a quality that’s equally handy on "
-                      "track. A series of impressive 2018 performances for Toro Rosso"
-                      " – including a brilliant fourth place in Bahrain – showed "
-                      "exciting promise for what he might do with the ‘A’ team in 2019.",
-                      style: TextStyle(color: atBlue),
-                      softWrap: true,
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          );
-        }));
+            .push(MaterialPageRoute(builder: (context) => pierreInfo),
+        );
       },
     );
   }
@@ -716,94 +149,8 @@ class HeroKvy extends StatelessWidget {
       height: 110.0,
       onTap: () {
         Navigator.of(context)
-            .push(MaterialPageRoute<void>(builder: (BuildContext context) {
-          return Scaffold(
-            appBar: AppBar(
-              title: const Text('Daniil Kvyat'),
-              backgroundColor: atBlue,
-            ),
-            body: Container(
-              child: ListView(
-                children: <Widget>[
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    children: <Widget>[
-                      Container(
-                        padding: const EdgeInsets.all(16.0),
-                        alignment: Alignment.topLeft,
-                        child: PhotoHero(
-                          photo: 'images/drivers/kvy.png',
-                          width: 150.0,
-                          onTap: () {
-                            Navigator.of(context).pop();
-                          },
-                        ),
-                      ),
-                      Expanded(
-                        child: Container(
-                          padding: const EdgeInsets.all(20.0),
-                          child: Column(
-                            mainAxisSize: MainAxisSize.max,
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: <Widget>[
-                              Text(
-                                "Takım : AlphaTauri",
-                                style: TextStyle(color: atBlue),
-                              ),
-                              Text(
-                                "Ülke : Rusya 🇷🇺",
-                                style: TextStyle(color: atBlue),
-                              ),
-                              Text(
-                                "Podyumlar : 3",
-                                style: TextStyle(color: atBlue),
-                              ),
-                              Text(
-                                "Puan : 171",
-                                style: TextStyle(color: atBlue),
-                              ),
-                              Text(
-                                "Yarış : 99",
-                                style: TextStyle(color: atBlue),
-                              ),
-                              Text(
-                                "Şampiyonluk : 0",
-                                style: TextStyle(color: atBlue),
-                              ),
-                              Text(
-                                "Doğum Tarihi : 26/04/1994",
-                                style: TextStyle(color: atBlue),
-                              ),
-                              Text(
-                                "Doğum Yeri : Ufa, Rusya",
-                                style: TextStyle(color: atBlue),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                  Container(
-                    padding: const EdgeInsets.all(32.0),
-                    child: Text(
-                      "Proving even ‘torpedoes’ can make U-turns, Daniil Kvyat made"
-                      " a surprise F1 return for a third spell with Toro Rosso in 2019."
-                      " His intrinsic speed and ability to adapt to circuit conditions"
-                      " make him a valuable asset - and he’s a proven podium contender."
-                      "The rangy Russia arrived in Formula 1 with an impervious poker "
-                      "face and set about his business as a cool and confident racer."
-                      "But after being dropped by Red Bull, Kvyat plunged into a "
-                      "downward spiral and lost confidence.",
-                      style: TextStyle(color: atBlue),
-                      softWrap: true,
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          );
-        }));
+            .push(MaterialPageRoute(builder: (context) => danillInfo),
+        );
       },
     );
   }
@@ -930,104 +277,8 @@ class HeroSai extends StatelessWidget {
       height: 110.0,
       onTap: () {
         Navigator.of(context)
-            .push(MaterialPageRoute<void>(builder: (BuildContext context) {
-          return Scaffold(
-            appBar: AppBar(
-              title: const Text('Carlos Sainz'),
-              backgroundColor: mcLarenOrange,
-            ),
-            body: Container(
-              decoration: BoxDecoration(
-                image: DecorationImage(
-                  image: AssetImage("images/driversback/sainzback.png"),
-                  colorFilter: new ColorFilter.mode(
-                      Colors.black.withOpacity(0.2), BlendMode.dstATop),
-                  fit: BoxFit.cover,
-                ),
-              ),
-              child: ListView(
-                children: <Widget>[
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    children: <Widget>[
-                      Container(
-                        padding: const EdgeInsets.all(16.0),
-                        alignment: Alignment.topLeft,
-                        child: PhotoHero(
-                          photo: 'images/drivers/sai.png',
-                          width: 150.0,
-                          onTap: () {
-                            Navigator.of(context).pop();
-                          },
-                        ),
-                      ),
-                      Expanded(
-                        child: Container(
-                          padding: const EdgeInsets.all(20.0),
-                          child: Column(
-                            mainAxisSize: MainAxisSize.max,
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: <Widget>[
-                              Text(
-                                "Takım : McLaren",
-                                style: TextStyle(color: mcLarenOrange),
-                              ),
-                              Text(
-                                "Ülke : İspanya 🇪🇸",
-                                style: TextStyle(color: mcLarenOrange),
-                              ),
-                              Text(
-                                "Podyumlar : 1",
-                                style: TextStyle(color: mcLarenOrange),
-                              ),
-                              Text(
-                                "Puan : 282",
-                                style: TextStyle(color: mcLarenOrange),
-                              ),
-                              Text(
-                                "Yarış : 106",
-                                style: TextStyle(color: mcLarenOrange),
-                              ),
-                              Text(
-                                "Şampiyonluk : 0",
-                                style: TextStyle(color: mcLarenOrange),
-                              ),
-                              Text(
-                                "Doğum Tarihi : 01/09/1994",
-                                style: TextStyle(color: mcLarenOrange),
-                              ),
-                              Text(
-                                "Doğum Yeri : Madrid , İspanya",
-                                style: TextStyle(color: mcLarenOrange),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                  Container(
-                    padding: const EdgeInsets.all(32.0),
-                    child: Text(
-                      "Carlos Sainz Junior ya da kısaca Carlos Sainz, "
-                      "(1 Eylül 1994 Madrid, İspanya) İspanyol Formula 1 pilotudur."
-                      " McLaren-Renault için yarışmaktadır. 2021 ve sonrası için "
-                      "Scuderia Ferrari ile iki yıllık anlaşma sağlamıştır."
-                      "2015'te Sainz Scuderia Toro Rosso'yla anlaşmıştır. Takım arkadaşı "
-                      "Max Verstappen idi. 2016'da Verstappen'in Red Bull Racing'e geçmesiyle "
-                      "takım arkadaşı Daniil Kvyat olmuştur. 2017 ve 2018 sezonlarında Renault"
-                      " için yarıştı.[2] 2018 sezonunu takviminde yer alan 21 yarışın 13'ünde"
-                      " ilk 10'a girdi, 2 yarışta finişi göremedi. Sezonu 53 puanla 10. sırada "
-                      "tamamladı.",
-                      style: TextStyle(color: mcLarenOrange),
-                      softWrap: true,
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          );
-        }));
+            .push(MaterialPageRoute(builder: (context) => sainzInfo),
+        );
       },
     );
   }
@@ -1042,98 +293,8 @@ class HeroNor extends StatelessWidget {
       height: 110.0,
       onTap: () {
         Navigator.of(context)
-            .push(MaterialPageRoute<void>(builder: (BuildContext context) {
-          return Scaffold(
-            appBar: AppBar(
-              title: const Text('Lando Norris'),
-              backgroundColor: mcLarenOrange,
-            ),
-            body: Container(
-              decoration: BoxDecoration(
-                image: DecorationImage(
-                  image: AssetImage("images/driversback/norrisback.jpg"),
-                  colorFilter: new ColorFilter.mode(
-                      Colors.black.withOpacity(0.2), BlendMode.dstATop),
-                  fit: BoxFit.cover,
-                ),
-              ),
-              child: ListView(
-                children: <Widget>[
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    children: <Widget>[
-                      Container(
-                        padding: const EdgeInsets.all(16.0),
-                        alignment: Alignment.topLeft,
-                        child: PhotoHero(
-                          photo: 'images/drivers/nor.png',
-                          width: 150.0,
-                          onTap: () {
-                            Navigator.of(context).pop();
-                          },
-                        ),
-                      ),
-                      Expanded(
-                        child: Container(
-                          padding: const EdgeInsets.all(20.0),
-                          child: Column(
-                            mainAxisSize: MainAxisSize.max,
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: <Widget>[
-                              Text(
-                                "Takım : McLaren",
-                                style: TextStyle(color: mcLarenOrange),
-                              ),
-                              Text(
-                                "Ülke : Birleşik Krallık 🇬🇧",
-                                style: TextStyle(color: mcLarenOrange),
-                              ),
-                              Text(
-                                "Podyumlar : 1",
-                                style: TextStyle(color: mcLarenOrange),
-                              ),
-                              Text(
-                                "Puan : 85",
-                                style: TextStyle(color: mcLarenOrange),
-                              ),
-                              Text(
-                                "Yarış : 25",
-                                style: TextStyle(color: mcLarenOrange),
-                              ),
-                              Text(
-                                "Şampiyonluk : 0",
-                                style: TextStyle(color: mcLarenOrange),
-                              ),
-                              Text(
-                                "Doğum Tarihi : 13/11/1999",
-                                style: TextStyle(color: mcLarenOrange),
-                              ),
-                              Text(
-                                "Doğum Yeri : Bristol, Birleşik Krallık",
-                                style: TextStyle(color: mcLarenOrange),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                  Container(
-                    padding: const EdgeInsets.all(32.0),
-                    child: Text(
-                      "Lando Norris İngiliz-Belçika uyruklu Formula 1 sürücüsüdür. 2017 Formula "
-                      "3 Avrupa Şampiyonası şampiyonudur. 2019 Abdu Dhabi Grand Prix'inden beri"
-                      " McLaren sürücüsüdür."
-                      "",
-                      style: TextStyle(color: mcLarenOrange),
-                      softWrap: true,
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          );
-        }));
+            .push(MaterialPageRoute(builder: (context) => landoInfo),
+        );
       },
     );
   }
@@ -1148,106 +309,8 @@ class HeroPer extends StatelessWidget {
       height: 110.0,
       onTap: () {
         Navigator.of(context)
-            .push(MaterialPageRoute<void>(builder: (BuildContext context) {
-          return Scaffold(
-            appBar: AppBar(
-              title: const Text('Sergio Perez'),
-              backgroundColor: racingPointPink,
-            ),
-            body: Container(
-              decoration: BoxDecoration(
-                image: DecorationImage(
-                  image: AssetImage("images/driversback/perezback.jpg"),
-                  colorFilter: new ColorFilter.mode(
-                      Colors.black.withOpacity(0.2), BlendMode.dstATop),
-                  fit: BoxFit.cover,
-                ),
-              ),
-              child: ListView(
-                children: <Widget>[
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    children: <Widget>[
-                      Container(
-                        padding: const EdgeInsets.all(16.0),
-                        alignment: Alignment.topLeft,
-                        child: PhotoHero(
-                          photo: 'images/drivers/per.png',
-                          width: 150.0,
-                          onTap: () {
-                            Navigator.of(context).pop();
-                          },
-                        ),
-                      ),
-                      Expanded(
-                        child: Container(
-                          padding: const EdgeInsets.all(20.0),
-                          child: Column(
-                            mainAxisSize: MainAxisSize.max,
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: <Widget>[
-                              Text(
-                                "Takım : Racing Point",
-                                style: TextStyle(color: Colors.pinkAccent),
-                              ),
-                              Text(
-                                "Ülke : Meksika 🇲🇽",
-                                style: TextStyle(color: Colors.pinkAccent),
-                              ),
-                              Text(
-                                "Podyumlar : 8",
-                                style: TextStyle(color: Colors.pinkAccent),
-                              ),
-                              Text(
-                                "Puan : 603",
-                                style: TextStyle(color: Colors.pinkAccent),
-                              ),
-                              Text(
-                                "Yarış : 181",
-                                style: TextStyle(color: Colors.pinkAccent),
-                              ),
-                              Text(
-                                "Şampiyonluk : 0",
-                                style: TextStyle(color: Colors.pinkAccent),
-                              ),
-                              Text(
-                                "Doğum Tarihi : 26/01/1990",
-                                style: TextStyle(color: Colors.pinkAccent),
-                              ),
-                              Text(
-                                "Doğum Yeri : Guadalajara, Meksika",
-                                style: TextStyle(color: Colors.pinkAccent),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                  Container(
-                    padding: const EdgeInsets.all(32.0),
-                    child: Text(
-                      "He’s the fighter with a gentle touch from the land of the Lucha Libre."
-                      "Perez’s reputation in F1 has been built on opposite"
-                      " approaches to Grand Prix racing. On the one hand, "
-                      "he is a punchy combatant who wrestles his way through the"
-                      " pack and into the points. Never afraid to add a bit of "
-                      "spice to his on-track encounters, even his team mates"
-                      " don’t always escape the Mexican’s heat."
-                      "Then on the other hand, Perez is a smooth operator,"
-                      " a master at managing tyres to eke out extra performance "
-                      "and give him the upper hand on strategy. A firm favourite"
-                      " on the grid after his time with Sauber and Force India, "
-                      "Perez has matured into an analytical racer and team leader.",
-                      style: TextStyle(color: Colors.pinkAccent),
-                      softWrap: true,
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          );
-        }));
+            .push(MaterialPageRoute(builder: (context) => sergioInfo),
+        );
       },
     );
   }
@@ -1262,107 +325,8 @@ class HeroStr extends StatelessWidget {
       height: 110.0,
       onTap: () {
         Navigator.of(context)
-            .push(MaterialPageRoute<void>(builder: (BuildContext context) {
-          return Scaffold(
-            appBar: AppBar(
-              title: const Text('Lance Stroll'),
-              backgroundColor: racingPointPink,
-            ),
-            body: Container(
-              decoration: BoxDecoration(
-                image: DecorationImage(
-                  image: AssetImage("images/driversback/strollback.jpg"),
-                  colorFilter: new ColorFilter.mode(
-                      Colors.black.withOpacity(0.2), BlendMode.dstATop),
-                  fit: BoxFit.cover,
-                ),
-              ),
-              child: ListView(
-                children: <Widget>[
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    children: <Widget>[
-                      Container(
-                        padding: const EdgeInsets.all(16.0),
-                        alignment: Alignment.topLeft,
-                        child: PhotoHero(
-                          photo: 'images/drivers/str.png',
-                          width: 150.0,
-                          onTap: () {
-                            Navigator.of(context).pop();
-                          },
-                        ),
-                      ),
-                      Expanded(
-                        child: Container(
-                          padding: const EdgeInsets.all(20.0),
-                          child: Column(
-                            mainAxisSize: MainAxisSize.max,
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: <Widget>[
-                              Text(
-                                "Takım : Racing Point",
-                                style: TextStyle(color: Colors.pinkAccent),
-                              ),
-                              Text(
-                                "Ülke : Kanada 🇨🇦",
-                                style: TextStyle(color: Colors.pinkAccent),
-                              ),
-                              Text(
-                                "Podyumlar : 1",
-                                style: TextStyle(color: Colors.pinkAccent),
-                              ),
-                              Text(
-                                "Puan : 87",
-                                style: TextStyle(color: Colors.pinkAccent),
-                              ),
-                              Text(
-                                "Yarış : 66",
-                                style: TextStyle(color: Colors.pinkAccent),
-                              ),
-                              Text(
-                                "Şampiyonluk : 0",
-                                style: TextStyle(color: Colors.pinkAccent),
-                              ),
-                              Text(
-                                "Doğum Tarihi : 29/10/1998",
-                                style: TextStyle(color: Colors.pinkAccent),
-                              ),
-                              Text(
-                                "Doğum Yeri : Montreal, Kanada",
-                                style: TextStyle(color: Colors.pinkAccent),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                  Container(
-                    padding: const EdgeInsets.all(32.0),
-                    child: Text(
-                      "There is no such thing as too much too soon for Stroll, "
-                      "a teenage sensation with a wet weather predilection."
-                      " One of the cool kids on the grid, Stroll was unveiled "
-                      "shortly after his 18th birthday by Williams – before he"
-                      " finished high school and got his road licence."
-                      "Stroll meant business in his debut 2017 season, setting "
-                      "records on the way. An opportunistic racer he bounded onto"
-                      " the podium in Baku, the youngest rookie to do so. As the "
-                      "son of a wealthy entrepreneur, Stroll is used to a"
-                      " champagne lifestyle but now he knows the fizz tastes"
-                      " all the sweeter on the rostrum. Then in Monza he mastered "
-                      "the downpours to become the youngest driver in history to "
-                      "line up on the front row.",
-                      style: TextStyle(color: Colors.pinkAccent),
-                      softWrap: true,
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          );
-        }));
+            .push(MaterialPageRoute(builder: (context) => lanceInfo),
+        );
       },
     );
   }
@@ -1377,106 +341,8 @@ class HeroRic extends StatelessWidget {
       height: 110.0,
       onTap: () {
         Navigator.of(context)
-            .push(MaterialPageRoute<void>(builder: (BuildContext context) {
-          return Scaffold(
-            appBar: AppBar(
-              title: const Text(
-                'Daniel Ricciardo',
-                style: TextStyle(color: Colors.black),
-              ),
-              backgroundColor: renaultYellow,
-            ),
-            body: Container(
-              decoration: BoxDecoration(
-                image: DecorationImage(
-                  image: AssetImage("images/driversback/ricback.jpg"),
-                  colorFilter: new ColorFilter.mode(
-                      Colors.black.withOpacity(0.2), BlendMode.dstATop),
-                  fit: BoxFit.cover,
-                ),
-              ),
-              child: ListView(
-                children: <Widget>[
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    children: <Widget>[
-                      Container(
-                        padding: const EdgeInsets.all(16.0),
-                        alignment: Alignment.topLeft,
-                        child: PhotoHero(
-                          photo: 'images/drivers/ric.png',
-                          width: 150.0,
-                          onTap: () {
-                            Navigator.of(context).pop();
-                          },
-                        ),
-                      ),
-                      Expanded(
-                        child: Container(
-                          padding: const EdgeInsets.all(20.0),
-                          child: Column(
-                            mainAxisSize: MainAxisSize.max,
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: <Widget>[
-                              Text(
-                                "Takım : Renault",
-                                style: TextStyle(color: Colors.black),
-                              ),
-                              Text(
-                                "Ülke : Avustralya 🇦🇺",
-                                style: TextStyle(color: Colors.black),
-                              ),
-                              Text(
-                                "Podyumlar : 29",
-                                style: TextStyle(color: Colors.black),
-                              ),
-                              Text(
-                                "Puan : 1060",
-                                style: TextStyle(color: Colors.black),
-                              ),
-                              Text(
-                                "Yarış : 175",
-                                style: TextStyle(color: Colors.black),
-                              ),
-                              Text(
-                                "Şampiyonluk : 0",
-                                style: TextStyle(color: Colors.black),
-                              ),
-                              Text(
-                                "Doğum Tarihi : 01/07/1989",
-                                style: TextStyle(color: Colors.black),
-                              ),
-                              Text(
-                                "Doğum Yeri : Perth , Avustralya",
-                                style: TextStyle(color: Colors.black),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                  Container(
-                    padding: const EdgeInsets.all(32.0),
-                    child: Text(
-                      "The self-styled “Honey Badger” is fuzzy on the outside and "
-                      "feisty on the inside. Drivers beware because behind "
-                      "Ricciardo’s laidback persona and big grin is a razor-sharp "
-                      "racer with a bite"
-                      "The Australian combines all-out speed with impressive race"
-                      " craft. Never afraid to push to the limits if it means pulling"
-                      " off a pass, Ricciardo is a proven race-winner for Red Bull,"
-                      " capable of consistently finishing at the business end of the "
-                      "championship table.",
-                      style: TextStyle(color: Colors.black),
-                      softWrap: true,
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          );
-        }));
+            .push(MaterialPageRoute(builder: (context) => danielInfo),
+        );
       },
     );
   }
@@ -1491,110 +357,8 @@ class HeroOco extends StatelessWidget {
       height: 110.0,
       onTap: () {
         Navigator.of(context)
-            .push(MaterialPageRoute<void>(builder: (BuildContext context) {
-          return Scaffold(
-            appBar: AppBar(
-              title: const Text(
-                'Esteban Ocon',
-                style: TextStyle(color: Colors.black),
-              ),
-              backgroundColor: renaultYellow,
-            ),
-            body: Container(
-              decoration: BoxDecoration(
-                image: DecorationImage(
-                  image: AssetImage("images/driversback/ocoback.jpg"),
-                  colorFilter: new ColorFilter.mode(
-                      Colors.black.withOpacity(0.2), BlendMode.dstATop),
-                  fit: BoxFit.cover,
-                ),
-              ),
-              child: ListView(
-                children: <Widget>[
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    children: <Widget>[
-                      Container(
-                        padding: const EdgeInsets.all(16.0),
-                        alignment: Alignment.topLeft,
-                        child: PhotoHero(
-                          photo: 'images/drivers/oco.png',
-                          width: 150.0,
-                          onTap: () {
-                            Navigator.of(context).pop();
-                          },
-                        ),
-                      ),
-                      Expanded(
-                        child: Container(
-                          padding: const EdgeInsets.all(20.0),
-                          child: Column(
-                            mainAxisSize: MainAxisSize.max,
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: <Widget>[
-                              Text(
-                                "Takım : Renault",
-                                style: TextStyle(color: Colors.black),
-                              ),
-                              Text(
-                                "Ülke : Fransa 🇫🇷",
-                                style: TextStyle(color: Colors.black),
-                              ),
-                              Text(
-                                "Podyumlar : 0",
-                                style: TextStyle(color: Colors.black),
-                              ),
-                              Text(
-                                "Puan : 148",
-                                style: TextStyle(color: Colors.black),
-                              ),
-                              Text(
-                                "Yarış : 54",
-                                style: TextStyle(color: Colors.black),
-                              ),
-                              Text(
-                                "Şampiyonluk : 0",
-                                style: TextStyle(color: Colors.black),
-                              ),
-                              Text(
-                                "Doğum Tarihi : 17/09/1996",
-                                style: TextStyle(color: Colors.black),
-                              ),
-                              Text(
-                                "Doğum Yeri : Evreux, Normandiya",
-                                style: TextStyle(color: Colors.black),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                  Container(
-                    padding: const EdgeInsets.all(32.0),
-                    child: Text(
-                      "If there’s one word that dominates Esteban Ocon’s career, it’s ‘sacrifice’."
-                      "Back when he was just a promising karter, Ocon’s "
-                      "parents sold their house, put their jobs on hold,"
-                      " and began a life on the road, living in a caravan and "
-                      "travelling from circuit to circuit to support their son’s"
-                      " burgeoning career."
-                      "Sacrifice, see – but it worked. 2014 saw Ocon break "
-                      "through in the world of single-seaters, as he beat a "
-                      "certain Max Verstappen to the European F3 title. Backed"
-                      " by Mercedes, he won the GP3 title the following year and"
-                      " was halfway through a season of DTM in 2016 when he was"
-                      " offered the chance to replace Rio Haryanto at the minnow "
-                      "Manor team from the Belgian Grand Prix onwards.",
-                      style: TextStyle(color: Colors.black),
-                      softWrap: true,
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          );
-        }));
+            .push(MaterialPageRoute(builder: (context) => estebanInfo),
+        );
       },
     );
   }
@@ -1609,97 +373,8 @@ class HeroRai extends StatelessWidget {
       height: 110.0,
       onTap: () {
         Navigator.of(context)
-            .push(MaterialPageRoute<void>(builder: (BuildContext context) {
-          return Scaffold(
-            appBar: AppBar(
-              title: const Text('Kimi Räikkönen'),
-              backgroundColor: romeoRed,
-            ),
-            body: Container(
-              child: ListView(
-                children: <Widget>[
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    children: <Widget>[
-                      Container(
-                        padding: const EdgeInsets.all(16.0),
-                        alignment: Alignment.topLeft,
-                        child: PhotoHero(
-                          photo: 'images/drivers/rai.png',
-                          width: 150.0,
-                          onTap: () {
-                            Navigator.of(context).pop();
-                          },
-                        ),
-                      ),
-                      Expanded(
-                        child: Container(
-                          padding: const EdgeInsets.all(20.0),
-                          child: Column(
-                            mainAxisSize: MainAxisSize.max,
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: <Widget>[
-                              Text(
-                                "Takım : Alfa Romeo",
-                                style: TextStyle(color: romeoRed),
-                              ),
-                              Text(
-                                "Ülke : Finlandiya 🇫🇮",
-                                style: TextStyle(color: romeoRed),
-                              ),
-                              Text(
-                                "Podyumlar : 103",
-                                style: TextStyle(color: romeoRed),
-                              ),
-                              Text(
-                                "Puan : 1859",
-                                style: TextStyle(color: romeoRed),
-                              ),
-                              Text(
-                                "Yarış : 319",
-                                style: TextStyle(color: romeoRed),
-                              ),
-                              Text(
-                                "Şampiyonluk : 1",
-                                style: TextStyle(color: romeoRed),
-                              ),
-                              Text(
-                                "Doğum Tarihi : 17/10/1979",
-                                style: TextStyle(color: romeoRed),
-                              ),
-                              Text(
-                                "Doğum Yeri : Espoo, Finlandiya",
-                                style: TextStyle(color: romeoRed),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                  Container(
-                    padding: const EdgeInsets.all(32.0),
-                    child: Text(
-                      "He’s the world-famous racing driver who just wants to be left alone. "
-                      "Raikkonen has a cult status in F1 like no other driver of his"
-                      " generation, but if you ask him why he just shrugs."
-                      "Maybe it’s because of the rugged, raw talent that inspired"
-                      " Sauber to give him his debut in 2001 – and re-sign him for 2019."
-                      " Or the fast and fearless racing that led to memorable McLaren "
-                      "wins. Or the never-say-die attitude that clinched the 2007 world"
-                      " title for Ferrari by a single point. Or maybe it’s because this "
-                      "is the ‘Iceman’ who jumped straight into a Jacuzzi on his yacht"
-                      " after retiring in Monaco and who enjoyed an ice cream when a "
-                      "soggy Malaysian GP was red-flagged but still live.",
-                      style: TextStyle(color: romeoRed),
-                      softWrap: true,
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          );
-        }));
+            .push(MaterialPageRoute(builder: (context) => kimiInfo),
+        );
       },
     );
   }
@@ -1714,94 +389,8 @@ class HeroGio extends StatelessWidget {
       height: 110.0,
       onTap: () {
         Navigator.of(context)
-            .push(MaterialPageRoute<void>(builder: (BuildContext context) {
-          return Scaffold(
-            appBar: AppBar(
-              title: const Text('Antonio Giovinazzi'),
-              backgroundColor: romeoRed,
-            ),
-            body: Container(
-              child: ListView(
-                children: <Widget>[
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    children: <Widget>[
-                      Container(
-                        padding: const EdgeInsets.all(16.0),
-                        alignment: Alignment.topLeft,
-                        child: PhotoHero(
-                          photo: 'images/drivers/gio.png',
-                          width: 150.0,
-                          onTap: () {
-                            Navigator.of(context).pop();
-                          },
-                        ),
-                      ),
-                      Expanded(
-                        child: Container(
-                          padding: const EdgeInsets.all(20.0),
-                          child: Column(
-                            mainAxisSize: MainAxisSize.max,
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: <Widget>[
-                              Text(
-                                "Takım : Alfa Romeo",
-                                style: TextStyle(color: romeoRed),
-                              ),
-                              Text(
-                                "Ülke : İtalya 🇫🇮",
-                                style: TextStyle(color: romeoRed),
-                              ),
-                              Text(
-                                "Podyumlar : 0",
-                                style: TextStyle(color: romeoRed),
-                              ),
-                              Text(
-                                "Puan : 16",
-                                style: TextStyle(color: romeoRed),
-                              ),
-                              Text(
-                                "Yarış : 27",
-                                style: TextStyle(color: romeoRed),
-                              ),
-                              Text(
-                                "Şampiyonluk : 0",
-                                style: TextStyle(color: romeoRed),
-                              ),
-                              Text(
-                                "Doğum Tarihi : 14/12/1993",
-                                style: TextStyle(color: romeoRed),
-                              ),
-                              Text(
-                                "Doğum Yeri : Martina Franca , İtalya",
-                                style: TextStyle(color: romeoRed),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                  Container(
-                    padding: const EdgeInsets.all(32.0),
-                    child: Text(
-                      "He’s the Italian steed with speed from the stable of the"
-                      " Prancing Horse. Antonio Giovinazzi flies the flag for"
-                      " Italy as the motorsport mad nation champs at the bit for"
-                      " its next F1 star."
-                      "The pilota from Puglia can punch his way through the pack and"
-                      " pull off a plucky pass. He showcased this natural racing acumen"
-                      " during a blistering 2016 GP2 campaign where he finished a close"
-                      " runner-up to team mate Pierre Gasly.",
-                      style: TextStyle(color: romeoRed),
-                      softWrap: true,
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          );
-        }));
+            .push(MaterialPageRoute(builder: (context) => antonioInfo),
+        );
       },
     );
   }
@@ -1816,102 +405,8 @@ class HeroGro extends StatelessWidget {
       height: 110.0,
       onTap: () {
         Navigator.of(context)
-            .push(MaterialPageRoute<void>(builder: (BuildContext context) {
-          return Scaffold(
-            appBar: AppBar(
-              title: const Text(
-                'Romain Grosjean',
-                style: TextStyle(color: Colors.black),
-              ),
-              backgroundColor: Colors.red,
-            ),
-            body: Container(
-              child: ListView(
-                children: <Widget>[
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    children: <Widget>[
-                      Container(
-                        padding: const EdgeInsets.all(16.0),
-                        alignment: Alignment.topLeft,
-                        child: PhotoHero(
-                          photo: 'images/drivers/gro.png',
-                          width: 150.0,
-                          onTap: () {
-                            Navigator.of(context).pop();
-                          },
-                        ),
-                      ),
-                      Expanded(
-                        child: Container(
-                          padding: const EdgeInsets.all(20.0),
-                          child: Column(
-                            mainAxisSize: MainAxisSize.max,
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: <Widget>[
-                              Text(
-                                "Takım : Haas",
-                                style: TextStyle(color: Colors.black),
-                              ),
-                              Text(
-                                "Ülke : Fransa 🇫🇷",
-                                style: TextStyle(color: Colors.black),
-                              ),
-                              Text(
-                                "Podyumlar : 10",
-                                style: TextStyle(color: Colors.black),
-                              ),
-                              Text(
-                                "Puan : 389",
-                                style: TextStyle(color: Colors.black),
-                              ),
-                              Text(
-                                "Yarış : 170",
-                                style: TextStyle(color: Colors.black),
-                              ),
-                              Text(
-                                "Şampiyonluk : 0",
-                                style: TextStyle(color: Colors.black),
-                              ),
-                              Text(
-                                "Doğum Tarihi : 17/04/1986",
-                                style: TextStyle(color: Colors.black),
-                              ),
-                              Text(
-                                "Doğum Yeri : Geneva , İsviçre",
-                                style: TextStyle(color: Colors.black),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                  Container(
-                    padding: const EdgeInsets.all(32.0),
-                    child: Text(
-                      "High-speed haute cuisine is on the menu in the Grosjean household, where head chef Romain is also"
-                      "a racing star."
-                      "Quick and with a natural feel for braking and balance,"
-                      " Grosjean has the right ingredients to cook up a storm on track."
-                      " Tussling and hustling at the front of the pack, the French racer"
-                      " claimed a series of impressive podiums for Renault before moving "
-                      "to spearhead the Haas team."
-                      "Like the best chefs, the Geneva-born driver occasionally breaks "
-                      "a few eggs.  Renault handed Grosjean his debut halfway through "
-                      "the 2009 season, but a mix of inexperience and enthusiasm saw "
-                      "him move back to the subs bench before making his F1 return in "
-                      "2012. A one-race ban after triggering a pile-up in Spa seemed to"
-                      " be the final arc of the learning curve for Grosjean. ",
-                      style: TextStyle(color: Colors.black),
-                      softWrap: true,
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          );
-        }));
+            .push(MaterialPageRoute(builder: (context) => romainInfo),
+        );
       },
     );
   }
@@ -1926,99 +421,8 @@ class HeroMag extends StatelessWidget {
       height: 110.0,
       onTap: () {
         Navigator.of(context)
-            .push(MaterialPageRoute<void>(builder: (BuildContext context) {
-          return Scaffold(
-            appBar: AppBar(
-              title: const Text(
-                'Kevin Magnussen',
-                style: TextStyle(color: Colors.black),
-              ),
-              backgroundColor: Colors.red,
-            ),
-            body: Container(
-              child: ListView(
-                children: <Widget>[
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    children: <Widget>[
-                      Container(
-                        padding: const EdgeInsets.all(16.0),
-                        alignment: Alignment.topLeft,
-                        child: PhotoHero(
-                          photo: 'images/drivers/mag.png',
-                          width: 150.0,
-                          onTap: () {
-                            Navigator.of(context).pop();
-                          },
-                        ),
-                      ),
-                      Expanded(
-                        child: Container(
-                          padding: const EdgeInsets.all(20.0),
-                          child: Column(
-                            mainAxisSize: MainAxisSize.max,
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: <Widget>[
-                              Text(
-                                "Takım : Haas",
-                                style: TextStyle(color: Colors.black),
-                              ),
-                              Text(
-                                "Ülke : Danimarka 🇩🇰",
-                                style: TextStyle(color: Colors.black),
-                              ),
-                              Text(
-                                "Podyumlar : 1",
-                                style: TextStyle(color: Colors.black),
-                              ),
-                              Text(
-                                "Puan : 158",
-                                style: TextStyle(color: Colors.black),
-                              ),
-                              Text(
-                                "Yarış : 107",
-                                style: TextStyle(color: Colors.black),
-                              ),
-                              Text(
-                                "Şampiyonluk : 0",
-                                style: TextStyle(color: Colors.black),
-                              ),
-                              Text(
-                                "Doğum Tarihi : 05/10/1992",
-                                style: TextStyle(color: Colors.black),
-                              ),
-                              Text(
-                                "Doğum Yeri : Roskilde , Danimarka",
-                                style: TextStyle(color: Colors.black),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                  Container(
-                    padding: const EdgeInsets.all(32.0),
-                    child: Text(
-                      "Call him a lone ranger or a maverick, but Magnussen is here for one reason only – to race. "
-                      "He may be a second-generation F1 driver – following his father"
-                      " Jan onto the grid – but Magnussen’s idols are from the "
-                      "‘golden era’ of Grand Prix racing when the likes of Juan "
-                      "Manuel Fangio and Stirling Moss risked it all for the love of the"
-                      " sport."
-                      "The Roskilde racer’s own prowess was proven on debut for"
-                      " McLaren, who guided him through the junior ranks, when he "
-                      "cruised into the top-three at the Australian Grand Prix, becoming"
-                      " the first Dane to claim a podium in F1.",
-                      style: TextStyle(color: Colors.black),
-                      softWrap: true,
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          );
-        }));
+            .push(MaterialPageRoute(builder: (context) => kevinInfo),
+        );
       },
     );
   }
@@ -2033,95 +437,8 @@ class HeroRus extends StatelessWidget {
       height: 110.0,
       onTap: () {
         Navigator.of(context)
-            .push(MaterialPageRoute<void>(builder: (BuildContext context) {
-          return Scaffold(
-            appBar: AppBar(
-              title: const Text('George Rusell'),
-              backgroundColor: williamsBlue,
-            ),
-            body: Container(
-              child: ListView(
-                children: <Widget>[
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    children: <Widget>[
-                      Container(
-                        padding: const EdgeInsets.all(16.0),
-                        alignment: Alignment.topLeft,
-                        child: PhotoHero(
-                          photo: 'images/drivers/rus.png',
-                          width: 150.0,
-                          onTap: () {
-                            Navigator.of(context).pop();
-                          },
-                        ),
-                      ),
-                      Expanded(
-                        child: Container(
-                          padding: const EdgeInsets.all(20.0),
-                          child: Column(
-                            mainAxisSize: MainAxisSize.max,
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: <Widget>[
-                              Text(
-                                "Takım : Williams",
-                                style: TextStyle(color: williamsBlue),
-                              ),
-                              Text(
-                                "Ülke : Birleşik Krallık 🇬🇧",
-                                style: TextStyle(color: williamsBlue),
-                              ),
-                              Text(
-                                "Podyumlar : 0",
-                                style: TextStyle(color: williamsBlue),
-                              ),
-                              Text(
-                                "Puan : 0",
-                                style: TextStyle(color: williamsBlue),
-                              ),
-                              Text(
-                                "Yarış : 25",
-                                style: TextStyle(color: williamsBlue),
-                              ),
-                              Text(
-                                "Şampiyonluk : 0",
-                                style: TextStyle(color: williamsBlue),
-                              ),
-                              Text(
-                                "Doğum Tarihi : 15/02/1998",
-                                style: TextStyle(color: williamsBlue),
-                              ),
-                              Text(
-                                "Doğum Yeri : King's Lynn, İngiltere",
-                                style: TextStyle(color: williamsBlue),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                  Container(
-                    padding: const EdgeInsets.all(32.0),
-                    child: Text(
-                      "He’s the driver with the motto: “If in doubt, go flat out”."
-                      "George Russell lived by it in his 2019 debut F1 campaign,"
-                      " out-qualifying seasoned team mate Robert Kubica at all 21 Grands "
-                      "Prix, and proving Williams right in identifying him as a hard "
-                      "worker and a tenacious talent"
-                      "That brilliant baseline speed had served Russell well as he"
-                      " totted up titles on his way to Formula 1. The Briton stormed to"
-                      " the 2017 GP3 championship and delivered the 2018 Formula 2 crown"
-                      " under immense pressure. ",
-                      style: TextStyle(color: williamsBlue),
-                      softWrap: true,
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          );
-        }));
+            .push(MaterialPageRoute(builder: (context) => georgeInfo),
+        );
       },
     );
   }
@@ -2136,98 +453,8 @@ class HeroLat extends StatelessWidget {
       height: 110.0,
       onTap: () {
         Navigator.of(context)
-            .push(MaterialPageRoute<void>(builder: (BuildContext context) {
-          return Scaffold(
-            appBar: AppBar(
-              title: const Text('Nicolas Latifi'),
-              backgroundColor: williamsBlue,
-            ),
-            body: Container(
-              child: ListView(
-                children: <Widget>[
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    children: <Widget>[
-                      Container(
-                        padding: const EdgeInsets.all(16.0),
-                        alignment: Alignment.topLeft,
-                        child: PhotoHero(
-                          photo: 'images/drivers/lat.png',
-                          width: 150.0,
-                          onTap: () {
-                            Navigator.of(context).pop();
-                          },
-                        ),
-                      ),
-                      Expanded(
-                        child: Container(
-                          padding: const EdgeInsets.all(20.0),
-                          child: Column(
-                            mainAxisSize: MainAxisSize.max,
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: <Widget>[
-                              Text(
-                                "Takım : Williams",
-                                style: TextStyle(color: williamsBlue),
-                              ),
-                              Text(
-                                "Ülke : Kanada 🇨🇦",
-                                style: TextStyle(color: williamsBlue),
-                              ),
-                              Text(
-                                "Podyumlar : 0",
-                                style: TextStyle(color: williamsBlue),
-                              ),
-                              Text(
-                                "Puan : 0",
-                                style: TextStyle(color: williamsBlue),
-                              ),
-                              Text(
-                                "Yarış : 4",
-                                style: TextStyle(color: williamsBlue),
-                              ),
-                              Text(
-                                "Şampiyonluk : 0",
-                                style: TextStyle(color: williamsBlue),
-                              ),
-                              Text(
-                                "Doğum Tarihi : 29/02/1995",
-                                style: TextStyle(color: williamsBlue),
-                              ),
-                              Text(
-                                "Doğum Yeri : Montreal, Kanada",
-                                style: TextStyle(color: williamsBlue),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                  Container(
-                    padding: const EdgeInsets.all(32.0),
-                    child: Text(
-                      "Thirteen is an advanced age to begin your karting career these days."
-                      " But that’s how old Toronto native Nicholas Latifi was when he "
-                      "took his first steps in motorsport. Just 11 years later, he became"
-                      " a fully-fledged Formula 1 driver."
-                      "That ascension into racing's top category was largely thanks to "
-                      "his most impressive season to date in Formula 2 in 2019, with "
-                      "Latifi – who’d finished a disappointing ninth in the series’ 2018"
-                      " standings – pulling up his bootstraps to claim second in the "
-                      "championship. That result, combined with the Williams/Robert "
-                      "Kubica union failing to mesh in 2019, meant Williams made the call"
-                      " to promote their affable Canadian reserve driver to a full-time"
-                      " drive alongside George Russell for 2020.",
-                      style: TextStyle(color: williamsBlue),
-                      softWrap: true,
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          );
-        }));
+            .push(MaterialPageRoute(builder: (context) => nicholasInfo),
+        );
       },
     );
   }
@@ -2265,6 +492,28 @@ class _defaultDrawerState extends State<defaultDrawer> {
                 image: AssetImage("images/drivers.jpg"),
               ),
             ),
+          ),
+          ListTile(
+            title: Text('Ana Menü'),
+            leading: f1Logo,
+            onTap: () {
+              Navigator.of(context).pop();
+              Navigator.push(context, MaterialPageRoute(builder: (context) => mainPage()),
+              );
+            },
+          ),
+          ListTile(
+            title: Text('Pilotlar'),
+            leading: Image(
+              height: 85,
+              width: 85,
+              image: AssetImage('images/drivers/sss.png'),
+            ),
+            onTap: () {
+              Navigator.of(context).pop();
+              Navigator.push(context, MaterialPageRoute(builder: (context) => Drivers()),
+              );
+            },
           ),
           ListTile(
             title: Text("Mercedes-AMG Petronas"),
@@ -2450,6 +699,12 @@ Widget williamsLogo = Container(
   child: Image.asset("images/logos/williams.jpg"),
 );
 
+Widget f1Logo = Container(
+  height: 84,
+  width: 84,
+  child: Image.asset('images/f1.png'),
+);
+
 // teams
 
 class Ferrari extends StatefulWidget {
@@ -2458,7 +713,7 @@ class Ferrari extends StatefulWidget {
 }
 
 class _FerrariState extends State<Ferrari> {
-  //final GlobalKey<ScaffoldState> _scaffoldKey = new GlobalKey<ScaffoldState>();
+  final GlobalKey<ScaffoldState> _scaffoldKey = new GlobalKey<ScaffoldState>();
 
   @override
   Widget build(BuildContext context) {
@@ -2577,6 +832,7 @@ class RedBullRacing extends StatefulWidget {
 }
 
 class _RedBullRacingState extends State<RedBullRacing> {
+  final GlobalKey<ScaffoldState> _scaffoldKey = new GlobalKey<ScaffoldState>();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -2700,6 +956,7 @@ class Mercedes extends StatefulWidget {
 }
 
 class _MercedesState extends State<Mercedes> {
+  final GlobalKey<ScaffoldState> _scaffoldKey = new GlobalKey<ScaffoldState>();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -2818,6 +1075,7 @@ class McLaren extends StatefulWidget {
 }
 
 class _McLarenState extends State<McLaren> {
+  final GlobalKey<ScaffoldState> _scaffoldKey = new GlobalKey<ScaffoldState>();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -2935,6 +1193,7 @@ class RacingPoint extends StatefulWidget {
 }
 
 class _RacingPointState extends State<RacingPoint> {
+  final GlobalKey<ScaffoldState> _scaffoldKey = new GlobalKey<ScaffoldState>();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -3059,6 +1318,7 @@ class Renault extends StatefulWidget {
 }
 
 class _RenaultState extends State<Renault> {
+  final GlobalKey<ScaffoldState> _scaffoldKey = new GlobalKey<ScaffoldState>();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -3179,6 +1439,7 @@ class AlphaTauri extends StatefulWidget {
 }
 
 class _AlphaTauriState extends State<AlphaTauri> {
+  final GlobalKey<ScaffoldState> _scaffoldKey = new GlobalKey<ScaffoldState>();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -3295,6 +1556,7 @@ class AlphaRomeo extends StatefulWidget {
 }
 
 class _AlphaRomeoState extends State<AlphaRomeo> {
+  final GlobalKey<ScaffoldState> _scaffoldKey = new GlobalKey<ScaffoldState>();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -3414,6 +1676,7 @@ class Haas extends StatefulWidget {
 }
 
 class _HaasState extends State<Haas> {
+  final GlobalKey<ScaffoldState> _scaffoldKey = new GlobalKey<ScaffoldState>();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -3537,6 +1800,7 @@ class Williams extends StatefulWidget {
 }
 
 class _WilliamsState extends State<Williams> {
+  final GlobalKey<ScaffoldState> _scaffoldKey = new GlobalKey<ScaffoldState>();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -3660,6 +1924,7 @@ class mainPage extends StatefulWidget {
 }
 
 class _mainPageState extends State<mainPage> {
+  final GlobalKey<ScaffoldState> _scaffoldKey = new GlobalKey<ScaffoldState>();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -3713,6 +1978,8 @@ Taraftarı!''',
               ],
             ),
           ),
+
+          /*
           SizedBox(height: 10),
           Stack(
             children: <Widget>[
@@ -3731,61 +1998,114 @@ Taraftarı!''',
               ),
             ],
           ),
+
+           */
+
           SizedBox(height: 10),
+
           CarouselSlider(
             items: <Widget>[
-              ClipRRect(
-                borderRadius: BorderRadius.circular(20),
-                child: Stack(
-                  children: <Widget>[
-                    Image(
-                      image: AssetImage('images/anadriver.jpg'),
-                      fit: BoxFit.fill,
-                    ),
-                    Padding(
-                      padding: EdgeInsets.all(20.0),
-                      child: Text('Pilotlar',
-                        style: TextStyle(color: Colors.white, fontSize: 24),
+              GestureDetector(
+                onTap: () {
+                  Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => Drivers()),
+                  );
+                },
+                child: Card(
+                  semanticContainer: true,
+                  clipBehavior: Clip.antiAliasWithSaveLayer,
+                  child: Stack(
+                    children: <Widget>[
+                      Image(
+                        image: AssetImage('images/anadriver.jpg'),
+                        width: 700,
+                        fit: BoxFit.cover,
                       ),
-                    ),
-                  ],
-                ),
-              ),
-              ClipRRect(
-                borderRadius: BorderRadius.circular(20),
-                child: Stack(
-                  children: <Widget>[
-                    Image(
-                      image: AssetImage('images/takimlar.jpeg'),
-                      fit: BoxFit.fill,
-                    ),
-                    Padding(
-                      padding: EdgeInsets.all(20.0),
-                      child: Text('Takımlar',
-                        style: TextStyle(color: Colors.white, fontSize: 24),
+                      Padding(
+                        padding: const EdgeInsets.all(15.0),
+                        child: Text('Pilotlar',
+                          style: TextStyle(color: Colors.white,
+                            fontSize: 24.0,
+                          ),
+                        ),
                       ),
-                    ),
-                  ],
+                    ],
+                  ),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(10.0),
+                  ),
+                  elevation: 5,
+                  margin: EdgeInsets.all(10),
                 ),
-              ),
-              ClipRRect(
-                borderRadius: BorderRadius.circular(20),
-                child: Stack(
-                  children: <Widget>[
-                    Image(
-                      image: AssetImage('images/news.jpeg'),
-                      fit: BoxFit.fill,
-                    ),
-                    Padding(
-                      padding: EdgeInsets.all(20.0),
-                      child: Text('Haberler',
-                        style: TextStyle(color: Colors.white, fontSize: 24),
+              ), // lewis
+              GestureDetector(
+                onTap: () {
+                  Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => Teams()),
+                  );
+                },
+                child: Card(
+                  semanticContainer: true,
+                  clipBehavior: Clip.antiAliasWithSaveLayer,
+                  child: Stack(
+                    children: <Widget>[
+                      Image(
+                        image: AssetImage('images/takimlar.jpeg'),
+                        width: 700,
+                        fit: BoxFit.cover,
                       ),
-                    ),
-                  ],
+                      Padding(
+                        padding: const EdgeInsets.all(15.0),
+                        child: Text('Takımlar',
+                          style: TextStyle(color: Colors.white,
+                            fontSize: 24.0,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(10.0),
+                  ),
+                  elevation: 5,
+                  margin: EdgeInsets.all(10),
                 ),
-              ),
+              ), // lewis
+              GestureDetector(
+                onTap: () {
+                  Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => mainPage()),
+                  );
+                },
+                child: Card(
+                  semanticContainer: true,
+                  clipBehavior: Clip.antiAliasWithSaveLayer,
+                  child: Stack(
+                    children: <Widget>[
+                      Image(
+                        image: AssetImage('images/news.jpeg'),
+                        width: 700,
+                        fit: BoxFit.cover,
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(15.0),
+                        child: Text('Haberler',
+                          style: TextStyle(color: Colors.white,
+                            fontSize: 24.0,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(10.0),
+                  ),
+                  elevation: 5,
+                  margin: EdgeInsets.all(10),
+                ),
+              ), // lewis
             ],
+
             options: CarouselOptions(
               height: 180,
               aspectRatio: 16/9,
@@ -3806,62 +2126,32 @@ Taraftarı!''',
                   topRight: const Radius.circular(20.0),
                 ),
               ),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              child: Column(
                 children: <Widget>[
-                  Container(
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: <Widget>[
-                        Container(
-                          padding: EdgeInsets.symmetric(vertical: 5),
-                          child: Text("Sıradaki Yarış",
-                            style: TextStyle(color: Colors.white,
-                              fontSize: 20,
-                            ),
-                          ),
-                        ),
-                        Container(
-                          child: Row(
-                            children: <Widget>[
-                              ClipRRect(
-                                borderRadius: BorderRadius.circular(15.0),
-                                child: Image(
-                                  height: 64,
-                                  width: 64,
-                                  image: AssetImage('images/ispanya.jpg'),
-                                ),
-                              ),
-                              Padding(
-                                 padding: EdgeInsets.all(20.0),
-                                  child: Text("İspanya",
-                                    style: TextStyle(color: Colors.white,
-                                      fontSize: 18,
-                                    ),
-                                  ),
-                              ),
-                            ],
-                          ),
-                        ),
-                        Container(
-                          child: Text('Formula 1 Barcelona GP',
-                            style: TextStyle(
-                              color: Colors.white,
-                            ),
-                          ),
-                        ),
-                        Container(
-                          child: Text('14 AUG 2020 - 16 AUG 2020',
-                            style: TextStyle(
-                              color: Colors.white,
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
-                  ), // race name, flag, date,
+                  Row(
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: <Widget>[
+                      Image(
+                        height: 75,
+                        width: 75,
+                        image: AssetImage('images/ispanya.jpg'),
+                      ),
+                      Text("İspanya", style: TextStyle(color: Colors.white, fontSize: 24),
+                      ),
+                    ],
+                  ),
+                  Text("Formula 1 Aramco Gran Premio De Espana",
+                    style: TextStyle(color: Colors.white, fontSize: 16),
+                  ),
+                  Text("16-16 Ağustos 2020",
+                    style: TextStyle(color: Colors.white, fontSize: 16),
+                  ),
                 ],
               ),
+
+
+
             ),
           ),
         ],
@@ -3869,3 +2159,2738 @@ Taraftarı!''',
     );
   }
 }
+
+class Drivers extends StatefulWidget {
+  @override
+  _DriversState createState() => _DriversState();
+}
+class _DriversState extends State<Drivers> {
+  final GlobalKey<ScaffoldState> _scaffoldKey = new GlobalKey<ScaffoldState>();
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      key: _scaffoldKey,
+      drawer: defaultDrawer(),
+
+      appBar: AppBar(
+        title: Text(
+          "Pilotlar",
+          style: TextStyle(
+            color: Colors.red[500],
+          ),
+        ),
+        backgroundColor: Colors.white,
+        leading: IconButton(
+          icon: const Icon(Icons.dehaze, color: Colors.red),
+          onPressed: () {
+            _scaffoldKey.currentState.openDrawer();
+          },
+        ),
+        actions: <Widget>[
+          Container(
+            width: 72,
+            height: 72,
+            child: Image.asset('images/f1.png'),
+          ),
+        ],
+      ),
+
+      body: ListView(
+        children: <Widget>[
+          GestureDetector(
+            onTap: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => lewisInfo),
+              );
+            },
+            child: Card(
+              semanticContainer: true,
+              clipBehavior: Clip.antiAliasWithSaveLayer,
+              child: Stack(
+                children: <Widget>[
+                  Image(
+                    image: AssetImage('images/cards/lewis.jpg'),
+                    height: 120,
+                    width: 400,
+                    fit: BoxFit.cover,
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.all(15.0),
+                    child: Text('Lewis Hamilton',
+                      style: TextStyle(color: Colors.white),
+                    ),
+                  ),
+                ],
+              ),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10.0),
+              ),
+              elevation: 5,
+              margin: EdgeInsets.all(10),
+            ),
+          ), // lewis
+
+          GestureDetector(
+            onTap: () {
+              Navigator.push(context,
+                MaterialPageRoute(builder: (context) => valtteriInfo),
+              );
+            },
+            child: Card(
+              semanticContainer: true,
+              clipBehavior: Clip.antiAliasWithSaveLayer,
+              child: Stack(
+                children: <Widget>[
+                  Image(
+                    image: AssetImage('images/cards/valtteri.jpg'),
+                    height: 120,
+                    width: 400,
+                    fit: BoxFit.cover,
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.all(15.0),
+                    child: Text('Valtteri Bottas',
+                      style: TextStyle(color: Colors.white),
+                    ),
+                  ),
+                ],
+              ),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10.0),
+              ),
+              elevation: 5,
+              margin: EdgeInsets.all(10),
+            ),
+          ), // bottas
+
+          GestureDetector(
+            onTap: () {
+              Navigator.push(context,
+                MaterialPageRoute(builder: (context) => sebastianInfo),
+              );
+            },
+            child: Card(
+              semanticContainer: true,
+              clipBehavior: Clip.antiAliasWithSaveLayer,
+              child: Stack(
+                children: <Widget>[
+                  Image(
+                    image: AssetImage('images/cards/sebastian.jpg'),
+                    height: 120,
+                    width: 400,
+                    fit: BoxFit.cover,
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.all(15.0),
+                    child: Text('Sebastian Vettel',
+                      style: TextStyle(color: Colors.white),
+                    ),
+                  ),
+                ],
+              ),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10.0),
+              ),
+              elevation: 5,
+              margin: EdgeInsets.all(10),
+            ),
+          ), // sebastian
+
+          GestureDetector(
+            onTap: () {
+              Navigator.push(context,
+                MaterialPageRoute(builder: (context) => charlesInfo),
+              );
+            },
+            child: Card(
+              semanticContainer: true,
+              clipBehavior: Clip.antiAliasWithSaveLayer,
+              child: Stack(
+                children: <Widget>[
+                  Image(
+                    image: AssetImage('images/cards/charles.jpg'),
+                    height: 120,
+                    width: 400,
+                    fit: BoxFit.cover,
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.all(15.0),
+                    child: Text('Charles Leclerc',
+                      style: TextStyle(color: Colors.white),
+                    ),
+                  ),
+                ],
+              ),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10.0),
+              ),
+              elevation: 5,
+              margin: EdgeInsets.all(10),
+            ),
+          ), // charles
+
+          GestureDetector(
+            onTap: () {
+              Navigator.push(context,
+                MaterialPageRoute(builder: (context) => maxInfo),
+              );
+            },
+            child: Card(
+              semanticContainer: true,
+              clipBehavior: Clip.antiAliasWithSaveLayer,
+              child: Stack(
+                children: <Widget>[
+                  Image(
+                    image: AssetImage('images/cards/max.jpg'),
+                    height: 120,
+                    width: 400,
+                    fit: BoxFit.cover,
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.all(15.0),
+                    child: Text('Max Verstappen',
+                      style: TextStyle(color: Colors.white),
+                    ),
+                  ),
+                ],
+              ),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10.0),
+              ),
+              elevation: 5,
+              margin: EdgeInsets.all(10),
+            ),
+          ), // max
+
+          GestureDetector(
+            onTap: () {
+              Navigator.push(context,
+                MaterialPageRoute(builder: (context) => alexInfo),
+              );
+            },
+            child: Card(
+              semanticContainer: true,
+              clipBehavior: Clip.antiAliasWithSaveLayer,
+              child: Stack(
+                children: <Widget>[
+                  Image(
+                    image: AssetImage('images/cards/alex.jpg'),
+                    height: 120,
+                    width: 400,
+                    fit: BoxFit.cover,
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.all(15.0),
+                    child: Text('Alexander Albon',
+                      style: TextStyle(color: Colors.white),
+                    ),
+                  ),
+                ],
+              ),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10.0),
+              ),
+              elevation: 5,
+              margin: EdgeInsets.all(10),
+            ),
+          ), // alex
+
+          GestureDetector(
+            onTap: () {
+              Navigator.push(context,
+                MaterialPageRoute(builder: (context) => sainzInfo),
+              );
+            },
+            child: Card(
+              semanticContainer: true,
+              clipBehavior: Clip.antiAliasWithSaveLayer,
+              child: Stack(
+                children: <Widget>[
+                  Image(
+                    image: AssetImage('images/cards/carlos.jpg'),
+                    height: 120,
+                    width: 400,
+                    fit: BoxFit.cover,
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.all(15.0),
+                    child: Text('Carlos Sainz',
+                      style: TextStyle(color: Colors.white),
+                    ),
+                  ),
+                ],
+              ),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10.0),
+              ),
+              elevation: 5,
+              margin: EdgeInsets.all(10),
+            ),
+          ), // carlos
+
+          GestureDetector(
+            onTap: () {
+              Navigator.push(context,
+                MaterialPageRoute(builder: (context) => landoInfo),
+              );
+            },
+            child: Card(
+              semanticContainer: true,
+              clipBehavior: Clip.antiAliasWithSaveLayer,
+              child: Stack(
+                children: <Widget>[
+                  Image(
+                    image: AssetImage('images/cards/lando.jpg'),
+                    height: 120,
+                    width: 400,
+                    fit: BoxFit.cover,
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.all(15.0),
+                    child: Text('Lando Norris',
+                      style: TextStyle(color: Colors.white),
+                    ),
+                  ),
+                ],
+              ),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10.0),
+              ),
+              elevation: 5,
+              margin: EdgeInsets.all(10),
+            ),
+          ), // lando
+
+          GestureDetector(
+            onTap: () {
+              Navigator.push(context,
+                MaterialPageRoute(builder: (context) => danielInfo),
+              );
+            },
+            child: Card(
+              semanticContainer: true,
+              clipBehavior: Clip.antiAliasWithSaveLayer,
+              child: Stack(
+                children: <Widget>[
+                  Image(
+                    image: AssetImage('images/cards/daniel.jpg'),
+                    height: 120,
+                    width: 400,
+                    fit: BoxFit.cover,
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.all(15.0),
+                    child: Text('Daniel Ricciardo',
+                      style: TextStyle(color: Colors.white),
+                    ),
+                  ),
+                ],
+              ),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10.0),
+              ),
+              elevation: 5,
+              margin: EdgeInsets.all(10),
+            ),
+          ), // daniel
+
+          GestureDetector(
+            onTap: () {
+              Navigator.push(context,
+                MaterialPageRoute(builder: (context) => estebanInfo),
+              );
+            },
+            child: Card(
+              semanticContainer: true,
+              clipBehavior: Clip.antiAliasWithSaveLayer,
+              child: Stack(
+                children: <Widget>[
+                  Image(
+                    image: AssetImage('images/cards/esteban.jpg'),
+                    height: 120,
+                    width: 400,
+                    fit: BoxFit.cover,
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.all(15.0),
+                    child: Text('Esteban Ocon',
+                      style: TextStyle(color: Colors.white),
+                    ),
+                  ),
+                ],
+              ),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10.0),
+              ),
+              elevation: 5,
+              margin: EdgeInsets.all(10),
+            ),
+          ), // esteban
+
+          GestureDetector(
+            onTap: () {
+              Navigator.push(context,
+                MaterialPageRoute(builder: (context) => sergioInfo),
+              );
+            },
+            child: Card(
+              semanticContainer: true,
+              clipBehavior: Clip.antiAliasWithSaveLayer,
+              child: Stack(
+                children: <Widget>[
+                  Image(
+                    image: AssetImage('images/cards/sergio.jpg'),
+                    height: 120,
+                    width: 400,
+                    fit: BoxFit.cover,
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.all(15.0),
+                    child: Text('Sergio Perez',
+                      style: TextStyle(color: Colors.white),
+                    ),
+                  ),
+                ],
+              ),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10.0),
+              ),
+              elevation: 5,
+              margin: EdgeInsets.all(10),
+            ),
+          ), // sergio
+
+          GestureDetector(
+            onTap: () {
+              Navigator.push(context,
+                MaterialPageRoute(builder: (context) => lanceInfo),
+              );
+            },
+            child: Card(
+              semanticContainer: true,
+              clipBehavior: Clip.antiAliasWithSaveLayer,
+              child: Stack(
+                children: <Widget>[
+                  Image(
+                    image: AssetImage('images/cards/lance.jpg'),
+                    height: 120,
+                    width: 400,
+                    fit: BoxFit.cover,
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.all(15.0),
+                    child: Text('Lance Stroll',
+                      style: TextStyle(color: Colors.white),
+                    ),
+                  ),
+                ],
+              ),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10.0),
+              ),
+              elevation: 5,
+              margin: EdgeInsets.all(10),
+            ),
+          ), // lance
+
+          GestureDetector(
+            onTap: () {
+              Navigator.push(context,
+                MaterialPageRoute(builder: (context) => danillInfo),
+              );
+            },
+            child: Card(
+              semanticContainer: true,
+              clipBehavior: Clip.antiAliasWithSaveLayer,
+              child: Stack(
+                children: <Widget>[
+                  Image(
+                    image: AssetImage('images/cards/daniil.jpg'),
+                    height: 120,
+                    width: 400,
+                    fit: BoxFit.cover,
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.all(15.0),
+                    child: Text('Daniil Kvyat',
+                      style: TextStyle(color: Colors.white),
+                    ),
+                  ),
+                ],
+              ),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10.0),
+              ),
+              elevation: 5,
+              margin: EdgeInsets.all(10),
+            ),
+          ), // daniil
+
+          GestureDetector(
+            onTap: () {
+              Navigator.push(context,
+                MaterialPageRoute(builder: (context) => pierreInfo),
+              );
+            },
+            child: Card(
+              semanticContainer: true,
+              clipBehavior: Clip.antiAliasWithSaveLayer,
+              child: Stack(
+                children: <Widget>[
+                  Image(
+                    image: AssetImage('images/cards/pierre.jpg'),
+                    height: 120,
+                    width: 400,
+                    fit: BoxFit.cover,
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.all(15.0),
+                    child: Text('Pierre Gasly',
+                      style: TextStyle(color: Colors.white),
+                    ),
+                  ),
+                ],
+              ),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10.0),
+              ),
+              elevation: 5,
+              margin: EdgeInsets.all(10),
+            ),
+          ), // pierre
+
+          GestureDetector(
+            onTap: () {
+              Navigator.push(context,
+                MaterialPageRoute(builder: (context) => kevinInfo),
+              );
+            },
+            child: Card(
+              semanticContainer: true,
+              clipBehavior: Clip.antiAliasWithSaveLayer,
+              child: Stack(
+                children: <Widget>[
+                  Image(
+                    image: AssetImage('images/cards/kevin.jpg'),
+                    height: 120,
+                    width: 400,
+                    fit: BoxFit.cover,
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.all(15.0),
+                    child: Text('Kevin Magnussen',
+                      style: TextStyle(color: Colors.white),
+                    ),
+                  ),
+                ],
+              ),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10.0),
+              ),
+              elevation: 5,
+              margin: EdgeInsets.all(10),
+            ),
+          ), // kevin
+
+          GestureDetector(
+            onTap: () {
+              Navigator.push(context,
+                MaterialPageRoute(builder: (context) => romainInfo),
+              );
+            },
+            child: Card(
+              semanticContainer: true,
+              clipBehavior: Clip.antiAliasWithSaveLayer,
+              child: Stack(
+                children: <Widget>[
+                  Image(
+                    image: AssetImage('images/cards/romain.jpg'),
+                    height: 120,
+                    width: 400,
+                    fit: BoxFit.cover,
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.all(15.0),
+                    child: Text('Romain Grosjean',
+                      style: TextStyle(color: Colors.white),
+                    ),
+                  ),
+                ],
+              ),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10.0),
+              ),
+              elevation: 5,
+              margin: EdgeInsets.all(10),
+            ),
+          ), // romain
+
+          GestureDetector(
+            onTap: () {
+              Navigator.push(context,
+                MaterialPageRoute(builder: (context) => kimiInfo),
+              );
+            },
+            child: Card(
+              semanticContainer: true,
+              clipBehavior: Clip.antiAliasWithSaveLayer,
+              child: Stack(
+                children: <Widget>[
+                  Image(
+                    image: AssetImage('images/cards/kimi.jpg'),
+                    height: 120,
+                    width: 400,
+                    fit: BoxFit.cover,
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.all(15.0),
+                    child: Text('Kimi Raikkonen',
+                      style: TextStyle(color: Colors.white),
+                    ),
+                  ),
+                ],
+              ),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10.0),
+              ),
+              elevation: 5,
+              margin: EdgeInsets.all(10),
+            ),
+          ), // kimi
+
+          GestureDetector(
+            onTap: () {
+              Navigator.push(context,
+                MaterialPageRoute(builder: (context) => antonioInfo),
+              );
+            },
+            child: Card(
+              semanticContainer: true,
+              clipBehavior: Clip.antiAliasWithSaveLayer,
+              child: Stack(
+                children: <Widget>[
+                  Image(
+                    image: AssetImage('images/cards/antonio.jpg'),
+                    height: 120,
+                    width: 400,
+                    fit: BoxFit.cover,
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.all(15.0),
+                    child: Text('Antonio Giovinazzi',
+                      style: TextStyle(color: Colors.white),
+                    ),
+                  ),
+                ],
+              ),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10.0),
+              ),
+              elevation: 5,
+              margin: EdgeInsets.all(10),
+            ),
+          ), // antonio
+
+          GestureDetector(
+            onTap: () {
+              Navigator.push(context,
+                MaterialPageRoute(builder: (context) => georgeInfo),
+              );
+            },
+            child: Card(
+              semanticContainer: true,
+              clipBehavior: Clip.antiAliasWithSaveLayer,
+              child: Stack(
+                children: <Widget>[
+                  Image(
+                    image: AssetImage('images/cards/george.jpg'),
+                    height: 120,
+                    width: 400,
+                    fit: BoxFit.cover,
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.all(15.0),
+                    child: Text('George Russell',
+                      style: TextStyle(color: Colors.white),
+                    ),
+                  ),
+                ],
+              ),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10.0),
+              ),
+              elevation: 5,
+              margin: EdgeInsets.all(10),
+            ),
+          ), // george
+
+          GestureDetector(
+            onTap: () {
+              Navigator.push(context,
+                MaterialPageRoute(builder: (context) => nicholasInfo),
+              );
+            },
+            child: Card(
+              semanticContainer: true,
+              clipBehavior: Clip.antiAliasWithSaveLayer,
+              child: Stack(
+                children: <Widget>[
+                  Image(
+                    image: AssetImage('images/cards/nicholas.jpg'),
+                    height: 120,
+                    width: 400,
+                    fit: BoxFit.cover,
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.all(15.0),
+                    child: Text('Nicholas Latifi',
+                      style: TextStyle(color: Colors.white),
+                    ),
+                  ),
+                ],
+              ),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10.0),
+              ),
+              elevation: 5,
+              margin: EdgeInsets.all(10),
+            ),
+          ), // nicholas
+
+
+
+        ],
+
+
+
+      ),
+
+
+    );
+  }
+}
+
+class Teams extends StatefulWidget {
+  @override
+  _TeamsState createState() => _TeamsState();
+}
+class _TeamsState extends State<Teams> {
+  final GlobalKey<ScaffoldState> _scaffoldKey = new GlobalKey<ScaffoldState>();
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      key: _scaffoldKey,
+      drawer: defaultDrawer(),
+
+      appBar: AppBar(
+        title: Text(
+          "Takımlar",
+          style: TextStyle(
+            color: Colors.red[500],
+          ),
+        ),
+        backgroundColor: Colors.white,
+        leading: IconButton(
+          icon: const Icon(Icons.dehaze, color: Colors.red),
+          onPressed: () {
+            _scaffoldKey.currentState.openDrawer();
+          },
+        ),
+        actions: <Widget>[
+          Container(
+            width: 72,
+            height: 72,
+            child: Image.asset('images/f1.png'),
+          ),
+        ],
+      ),
+
+      body: ListView(
+        children: <Widget>[
+
+          GestureDetector(
+            onTap: () {
+              Navigator.push(context,
+                MaterialPageRoute(builder: (context) => Mercedes()),
+              );
+            },
+            child: Card(
+              semanticContainer: true,
+              clipBehavior: Clip.antiAliasWithSaveLayer,
+              child: mercedesLogo,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10.0),
+              ),
+              elevation: 5,
+              margin: EdgeInsets.all(10),
+            ),
+          ), // mercedes
+          GestureDetector(
+            onTap: () {
+              Navigator.push(context,
+                MaterialPageRoute(builder: (context) => Ferrari()),
+              );
+            },
+            child: Card(
+              semanticContainer: true,
+              clipBehavior: Clip.antiAliasWithSaveLayer,
+              child: sfLogo,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10.0),
+              ),
+              elevation: 5,
+              margin: EdgeInsets.all(10),
+            ),
+          ), // ferrari
+          GestureDetector(
+            onTap: () {
+              Navigator.push(context,
+                MaterialPageRoute(builder: (context) => RedBullRacing()),
+              );
+            },
+            child: Card(
+              semanticContainer: true,
+              clipBehavior: Clip.antiAliasWithSaveLayer,
+              child: rbLogo,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10.0),
+              ),
+              elevation: 5,
+              margin: EdgeInsets.all(10),
+            ),
+          ), // red bull racing
+          GestureDetector(
+            onTap: () {
+              Navigator.push(context,
+                MaterialPageRoute(builder: (context) => RacingPoint()),
+              );
+            },
+            child: Card(
+              semanticContainer: true,
+              clipBehavior: Clip.antiAliasWithSaveLayer,
+              child: rpLogo,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10.0),
+              ),
+              elevation: 5,
+              margin: EdgeInsets.all(10),
+            ),
+          ), // racing point
+          GestureDetector(
+            onTap: () {
+              Navigator.push(context,
+                MaterialPageRoute(builder: (context) => McLaren()),
+              );
+            },
+            child: Card(
+              semanticContainer: true,
+              clipBehavior: Clip.antiAliasWithSaveLayer,
+              child: mclarenLogo,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10.0),
+              ),
+              elevation: 5,
+              margin: EdgeInsets.all(10),
+            ),
+          ), // mclaren
+          GestureDetector(
+            onTap: () {
+              Navigator.push(context,
+                MaterialPageRoute(builder: (context) => Renault()),
+              );
+            },
+            child: Card(
+              semanticContainer: true,
+              clipBehavior: Clip.antiAliasWithSaveLayer,
+              child: renaultLogo,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10.0),
+              ),
+              elevation: 5,
+              margin: EdgeInsets.all(10),
+            ),
+          ), // renault
+          GestureDetector(
+            onTap: () {
+              Navigator.push(context,
+                MaterialPageRoute(builder: (context) => AlphaTauri()),
+              );
+            },
+            child: Card(
+              semanticContainer: true,
+              clipBehavior: Clip.antiAliasWithSaveLayer,
+              child: atLogo,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10.0),
+              ),
+              elevation: 5,
+              margin: EdgeInsets.all(10),
+            ),
+          ), // alpha tauri
+          GestureDetector(
+            onTap: () {
+              Navigator.push(context,
+                MaterialPageRoute(builder: (context) => Haas()),
+              );
+            },
+            child: Card(
+              semanticContainer: true,
+              clipBehavior: Clip.antiAliasWithSaveLayer,
+              child: haasLogo,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10.0),
+              ),
+              elevation: 5,
+              margin: EdgeInsets.all(10),
+            ),
+          ), // haas
+          GestureDetector(
+            onTap: () {
+              Navigator.push(context,
+                MaterialPageRoute(builder: (context) => AlphaRomeo()),
+              );
+            },
+            child: Card(
+              semanticContainer: true,
+              clipBehavior: Clip.antiAliasWithSaveLayer,
+              child: romeoLogo,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10.0),
+              ),
+              elevation: 5,
+              margin: EdgeInsets.all(10),
+            ),
+          ), // alpha romeo
+          GestureDetector(
+            onTap: () {
+              Navigator.push(context,
+                MaterialPageRoute(builder: (context) => Williams()),
+              );
+            },
+            child: Card(
+              semanticContainer: true,
+              clipBehavior: Clip.antiAliasWithSaveLayer,
+              child: williamsLogo,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10.0),
+              ),
+              elevation: 5,
+              margin: EdgeInsets.all(10),
+            ),
+          ), // williams
+        ],
+      ),
+    );
+  }
+}
+
+
+Widget lewisInfo = Scaffold(
+  appBar: AppBar(
+    title: const Text('Lewis Hamilton'),
+    backgroundColor: Colors.blueGrey,
+  ),
+  body: Container(
+    decoration: BoxDecoration(
+      image: DecorationImage(
+        image: AssetImage("images/driversback/hamback.jpg"),
+        colorFilter: new ColorFilter.mode(
+            Colors.black.withOpacity(0.2), BlendMode.dstATop),
+        fit: BoxFit.cover,
+      ),
+    ),
+    child: ListView(
+      children: <Widget>[
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: <Widget>[
+            Container(
+              padding: const EdgeInsets.all(16.0),
+              alignment: Alignment.topLeft,
+              child: PhotoHero(
+                photo: 'images/drivers/ham.png',
+                width: 150.0,
+              ),
+            ),
+            Expanded(
+              child: Container(
+                padding: const EdgeInsets.all(20.0),
+                child: Column(
+                  mainAxisSize: MainAxisSize.max,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: <Widget>[
+                    Text(
+                      "Takım : Mercedes",
+                      style: TextStyle(color: Colors.blueGrey),
+                    ),
+                    Text(
+                      "Ülke : Birleşik Krallık 🇬🇧",
+                      style: TextStyle(color: Colors.blueGrey),
+                    ),
+                    Text(
+                      "Podyumlar : 154",
+                      style: TextStyle(color: Colors.blueGrey),
+                    ),
+                    Text(
+                      "Puan : 3519",
+                      style: TextStyle(color: Colors.blueGrey),
+                    ),
+                    Text(
+                      "Yarış : 254",
+                      style: TextStyle(color: Colors.blueGrey),
+                    ),
+                    Text(
+                      "Şampiyonluk : 6",
+                      style: TextStyle(color: Colors.blueGrey),
+                    ),
+                    Text(
+                      "Doğum Tarihi : 07/01/1985",
+                      style: TextStyle(color: Colors.blueGrey),
+                    ),
+                    Text(
+                      "Doğum Yeri : Stevenage, İngiltere",
+                      style: TextStyle(color: Colors.blueGrey),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ],
+        ),
+        Container(
+          padding: const EdgeInsets.all(32.0),
+          child: Text(
+            "Lewis Carl Hamilton (d. 7 Ocak 1985 "
+                "Hertfordshire, Birleşik Krallık) Formula 1'de"
+                " yarışan ilk siyâhi pilottur. 2006 yılında GP2 "
+                "serisinde büyük başarı göstererek şampiyon olup"
+                " ardından McLaren takımı'na transfer olmuştur."
+                " 2008, 2014, 2015, 2017, 2018 ve 2019 sezonlarında "
+                "pilotlar şampiyonluğuna ulaştı. 1.74 m boyundadır."
+                "Daha 9 yaşındayken Mercedes-Benz Genç pilot"
+                " yetiştirme programını imzalayan pilot."
+                " Formula Renault, Formula 3, GP2 serilerinde "
+                "şampiyonluğa ulaşmıştır. Formula 1 kariyerinin ilk "
+                "dokuz yarışında kürsüye çıkmayı başaran McLaren "
+                "Mercedes takımının İngiliz pilotu Lewis Hamilton,"
+                " Bahreyn Grand Prix'sinde elde ettiği ikincilik"
+                " sonrası, ilk dokuz yarışında da podyuma çıkarak"
+                " tarihe geçmiştir. Kanada ve Amerika Birleşik"
+                " Devletleri Formula 1 kariyerinin ilk yılında "
+                "birinci olarak büyük başarı göstermiştir 2007 yılında"
+                " 1 puan farkla 109 puanla formula 1 sezonunun ilk "
+                "yılında ikinci olmayı başarmıştır.",
+            style: TextStyle(color: Colors.blueGrey),
+            softWrap: true,
+          ),
+        ),
+      ],
+    ),
+  ),
+);
+Widget valtteriInfo = Scaffold(
+  appBar: AppBar(
+    title: const Text('Valtteri Bottas'),
+    backgroundColor: Colors.blueGrey,
+  ),
+  body: Container(
+    decoration: BoxDecoration(
+      image: DecorationImage(
+        image: AssetImage("images/driversback/botback.jpg"),
+        colorFilter: new ColorFilter.mode(
+            Colors.black.withOpacity(0.2), BlendMode.dstATop),
+        fit: BoxFit.cover,
+      ),
+    ),
+    child: ListView(
+      children: <Widget>[
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: <Widget>[
+            Container(
+              padding: const EdgeInsets.all(16.0),
+              alignment: Alignment.topLeft,
+              child: PhotoHero(
+                photo: 'images/drivers/bot.png',
+                width: 150.0,
+              ),
+            ),
+            Expanded(
+              child: Container(
+                padding: const EdgeInsets.all(20.0),
+                child: Column(
+                  mainAxisSize: MainAxisSize.max,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: <Widget>[
+                    Text(
+                      "Takım : Mercedes",
+                      style: TextStyle(color: Colors.blueGrey),
+                    ),
+                    Text(
+                      "Ülke : Finlandiya 🇫🇮",
+                      style: TextStyle(color: Colors.blueGrey),
+                    ),
+                    Text(
+                      "Podyumlar : 48",
+                      style: TextStyle(color: Colors.blueGrey),
+                    ),
+                    Text(
+                      "Puan : 1347",
+                      style: TextStyle(color: Colors.blueGrey),
+                    ),
+                    Text(
+                      "Yarış : 144",
+                      style: TextStyle(color: Colors.blueGrey),
+                    ),
+                    Text(
+                      "Şampiyonluk : 0",
+                      style: TextStyle(color: Colors.blueGrey),
+                    ),
+                    Text(
+                      "Doğum Tarihi : 28/08/1989",
+                      style: TextStyle(color: Colors.blueGrey),
+                    ),
+                    Text(
+                      "Doğum Yeri : Nastola, Finlandiya",
+                      style: TextStyle(color: Colors.blueGrey),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ],
+        ),
+        Container(
+          padding: const EdgeInsets.all(32.0),
+          child: Text(
+            "Valtteri Bottas (d. 28 Ağustos 1989) Fin F1 pilotu."
+                " Günümüzde Mercedes için yarışmaktadır."
+                " Monako'da yaşamaktadır."
+                "Bottas 2013'te Williams ile yarışmaya başlamıştır."
+                " 2013'teki takım arkadaşı Pastor Maldanado'dur."
+                "2014'te takım arkadaşı Felipe Massa'dır. 2015 ve "
+                "2016'da da böyle devam etti."
+                "2018 sezonunu takviminde yer alan 21 yarıştada yer "
+                "alan Bottas 8'inde podyumda yer aldı, 1 yarışta finişi göremedi."
+                " Sezonu 247 puanla 5. sırada tamamladı.",
+            style: TextStyle(color: Colors.blueGrey),
+            softWrap: true,
+          ),
+        ),
+      ],
+    ),
+  ),
+);
+Widget sebastianInfo = Scaffold(
+  appBar: AppBar(
+    title: const Text('Sebastian Vettel'),
+    backgroundColor: Colors.red[500],
+  ),
+  body: Container(
+    decoration: BoxDecoration(
+      image: DecorationImage(
+        image: AssetImage("images/driversback/sebhe.png"),
+        colorFilter: new ColorFilter.mode(
+            Colors.black.withOpacity(0.2), BlendMode.dstATop),
+        fit: BoxFit.cover,
+      ),
+    ),
+    child: ListView(
+      children: <Widget>[
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: <Widget>[
+            Container(
+              padding: const EdgeInsets.all(16.0),
+              alignment: Alignment.topLeft,
+              child: PhotoHero(
+                photo: 'images/drivers/sss.png',
+                width: 140.0,
+              ),
+            ),
+            Expanded(
+              child: Container(
+                padding: const EdgeInsets.all(20.0),
+                child: Column(
+                  mainAxisSize: MainAxisSize.max,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: <Widget>[
+                    Text(
+                      "Takım : Ferrari",
+                      style: TextStyle(color: Colors.red),
+                    ),
+                    Text(
+                      "Ülke : Almanya 🇩🇪",
+                      style: TextStyle(color: Colors.red),
+                    ),
+                    Text(
+                      "Podyumlar : 120",
+                      style: TextStyle(color: Colors.red),
+                    ),
+                    Text(
+                      "Puan : 2995",
+                      style: TextStyle(color: Colors.red),
+                    ),
+                    Text(
+                      "Yarış : 245",
+                      style: TextStyle(color: Colors.red),
+                    ),
+                    Text(
+                      "Şampiyonluk : 4",
+                      style: TextStyle(color: Colors.red),
+                    ),
+                    Text(
+                      "Doğum Tarihi : 03/07/1987",
+                      style: TextStyle(color: Colors.red),
+                    ),
+                    Text(
+                      "Doğum Yeri : Heppenheim, Almanya",
+                      style: TextStyle(color: Colors.red),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ],
+        ),
+        Container(
+          padding: const EdgeInsets.all(32.0),
+          child: Text(
+            "2006 Türkiye Grand Prix haftasonunda, Cuma günkü antrenman seansında, 19 yaş 53 günlükken, piste Sauber takımının üçüncü pilotu olarak piste çıkan Vettel,"
+                " Formula 1 tarihinin en genç pilotu unvanını kazanmıştır."
+                "17 Haziran 2007 tarihinde koşulan Birleşik Devletler Grand Prix'inde, 'Bir Formula 1 yarışında start alan en genç 6. pilot' unvanını kazanmakla kalmamış, aynı yarışta "
+                "'bir Formula 1 yarışında puan alan en genç pilot' rekorunu da kırmıştır. "
+                "30 Eylül 2007 tarihindeki Çin Grand Prix'ine bir ara liderlik eden Vettel, bu yarışta da 'Bir Formula 1 yarışına liderlik eden en genç pilot' rekorunu kırmıştır."
+                " 2008 İtalya Grand Prix'inde 'Bir Formula 1 yarışında pol pozisyonunu kazanan en genç pilot' ve 'Bir Formula 1 yarışını kazanan en genç pilot' rekorlarını kıran Vettel, 'Farklı iki takımda yarış kazanan en genç pilot' rekoruna da sahiptir."
+                " Vettel Abu Dabi Grand Prix'i sonunda 2010 yılında pilotlar şampiyonluğuna ulaşarak 'F1 şampiyonu olan en genç pilot' unvanını Lewis Hamilton'ın elinden almış ve yeni bir rekorun sahibi olmuştur. "
+                "Bir anlamda rekorların adamı olan Michael Schumacher'in izinden gittiğini göstermiştir. 2011 sezonunda 2011 Formula 1 sezonu'nu domine ederek bitime beş yarış kala şampiyonluğunu ilan etmiştir.",
+            style: TextStyle(color: Colors.red),
+            softWrap: true,
+          ),
+        ),
+      ],
+    ),
+  ),
+);
+Widget charlesInfo = Scaffold(
+  appBar: AppBar(
+    title: const Text('Charles Leclerc'),
+    backgroundColor: Colors.red[500],
+  ),
+  body: Container(
+    decoration: BoxDecoration(
+      image: DecorationImage(
+        image: AssetImage("images/driversback/charles.jpg"),
+        colorFilter: new ColorFilter.mode(
+            Colors.black.withOpacity(0.2), BlendMode.dstATop),
+        fit: BoxFit.cover,
+      ),
+    ),
+    child: ListView(
+      children: <Widget>[
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: <Widget>[
+            Container(
+              padding: const EdgeInsets.all(16.0),
+              alignment: Alignment.topLeft,
+              child: PhotoHero(
+                photo: 'images/drivers/ttt.png',
+                width: 140.0,
+              ),
+            ),
+            Expanded(
+              child: Container(
+                padding: const EdgeInsets.all(20.0),
+                child: Column(
+                  mainAxisSize: MainAxisSize.max,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: <Widget>[
+                    Text(
+                      "Takım : Ferrari",
+                      style: TextStyle(color: Colors.red),
+                    ),
+                    Text(
+                      "Ülke : Monaco 🇲🇨",
+                      style: TextStyle(color: Colors.red),
+                    ),
+                    Text(
+                      "Podyumlar : 12",
+                      style: TextStyle(color: Colors.red),
+                    ),
+                    Text(
+                      "Puan : 336",
+                      style: TextStyle(color: Colors.red),
+                    ),
+                    Text(
+                      "Yarış : 46",
+                      style: TextStyle(color: Colors.red),
+                    ),
+                    Text(
+                      "Şampiyonluk : 0",
+                      style: TextStyle(color: Colors.red),
+                    ),
+                    Text(
+                      "Doğum Tarihi : 16/10/1997",
+                      style: TextStyle(color: Colors.red),
+                    ),
+                    Text(
+                      "Doğum Yeri : Monte Carlo, Monaco",
+                      style: TextStyle(color: Colors.red),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ],
+        ),
+        Container(
+          padding: const EdgeInsets.all(32.0),
+          child: Text(
+            "Leclerc 2005 yılında karting yarışları ile kariyerine başladı. 2005, 2006 ve 2008 yıllarında Fransa PACA şampiyonasını kazandı. 2018 sezonunda Sauber-Ferrari takımında yer aldı."
+                " Takvimde yer alan 21 yarışa katılan Leclerc 10 yarışta ilk 10'da yer aldı,"
+                " 5 yarışta finişi göremedi. Sezonu 39 puanla 13. sırada tamamladı. "
+                "2019 yılı için Ferrari ile anlaştı.21 yarış sonucunda sezonu 264 puanla 4. olarak Sebastian Vettel'in bir sıra önünde tamamladı."
+                " Ayrıca 4 kez dünya şampiyonu Alman pilottan daha fazla yarış kazanarak (Leclerc 2, Vettel 1 yarış kazandı.) Formula 1'in ilerleyen yıllarında söz sahibi olacağının sinyallerini verdi.",
+            style: TextStyle(color: Colors.red),
+            softWrap: true,
+          ),
+        ),
+      ],
+    ),
+  ),
+);
+Widget maxInfo = Scaffold(
+  appBar: AppBar(
+    title: const Text('Max Verstappen'),
+    backgroundColor: redBullBlue,
+  ),
+  body: Container(
+    decoration: BoxDecoration(
+      image: DecorationImage(
+        image: AssetImage("images/driversback/maxback.png"),
+        colorFilter: new ColorFilter.mode(
+            Colors.black.withOpacity(0.2), BlendMode.dstATop),
+        fit: BoxFit.cover,
+      ),
+    ),
+    child: ListView(
+      children: <Widget>[
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: <Widget>[
+            Container(
+              padding: const EdgeInsets.all(16.0),
+              alignment: Alignment.topLeft,
+              child: PhotoHero(
+                photo: 'images/drivers/mmm.png',
+                width: 150.0,
+              ),
+            ),
+            Expanded(
+              child: Container(
+                padding: const EdgeInsets.all(20.0),
+                child: Column(
+                  mainAxisSize: MainAxisSize.max,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: <Widget>[
+                    Text(
+                      "Takım : Red Bull Racing",
+                      style: TextStyle(color: redBullBlue),
+                    ),
+                    Text(
+                      "Ülke : Hollanda 🇳🇱",
+                      style: TextStyle(color: redBullBlue),
+                    ),
+                    Text(
+                      "Podyumlar : 34",
+                      style: TextStyle(color: redBullBlue),
+                    ),
+                    Text(
+                      "Puan : 1000",
+                      style: TextStyle(color: redBullBlue),
+                    ),
+                    Text(
+                      "Yarış : 106",
+                      style: TextStyle(color: redBullBlue),
+                    ),
+                    Text(
+                      "Şampiyonluk : 0",
+                      style: TextStyle(color: redBullBlue),
+                    ),
+                    Text(
+                      "Doğum Tarihi : 30/09/1997",
+                      style: TextStyle(color: redBullBlue),
+                    ),
+                    Text(
+                      "Doğum Yeri : Hasselt, Belçika",
+                      style: TextStyle(color: redBullBlue),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ],
+        ),
+        Container(
+          padding: const EdgeInsets.all(32.0),
+          child: Text(
+            "Max Emilian Verstappen (d. 30 Eylül 1997, Hasselt, Belçika),"
+                "Hollandalı Formula 1 pilotudur."
+                " Babası Jos Verstappen de eski bir Formula 1 pilotu olan Max Verstappen sezon içinde geçtiği Red Bull Racing "
+                "kokpitinde katıldığı ilk yarış olan 2016 İspanya Grand Prix'ini kazanarak kariyerinin ilk yarış galibiyetini kazınırken "
+                "Formula 1 tarihinin yarış kazanan en genç pilotu unvanını da ele geçirmiştir."
+                "2014'te Verstappen Scuderia Toro Rosso takımıyla anlaşmıştır.Carlos Sainz Jr. ile beraber yarışmışlardır."
+                "2016'da Red Bull Racing'e geçmiştir. Red Bull'da takım arkadaşı Pierre Gasly'dur."
+                " Yarış numarası olarak 33'ü şeçmiştir.",
+            style: TextStyle(color: redBullBlue),
+            softWrap: true,
+          ),
+        ),
+      ],
+    ),
+  ),
+);
+Widget alexInfo = Scaffold(
+  appBar: AppBar(
+    title: const Text('Alex Albon'),
+    backgroundColor: redBullBlue,
+  ),
+  body: Container(
+    decoration: BoxDecoration(
+      image: DecorationImage(
+        image: AssetImage("images/driversback/albonback.jpg"),
+        colorFilter: new ColorFilter.mode(
+            Colors.black.withOpacity(0.2), BlendMode.dstATop),
+        fit: BoxFit.cover,
+      ),
+    ),
+    child: ListView(
+      children: <Widget>[
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: <Widget>[
+            Container(
+              padding: const EdgeInsets.all(16.0),
+              alignment: Alignment.topLeft,
+              child: PhotoHero(
+                photo: 'images/drivers/aaa.png',
+                width: 150.0,
+              ),
+            ),
+            Expanded(
+              child: Container(
+                padding: const EdgeInsets.all(20.0),
+                child: Column(
+                  mainAxisSize: MainAxisSize.max,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: <Widget>[
+                    Text(
+                      "Takım : Red Bull Racing",
+                      style: TextStyle(color: redBullBlue),
+                    ),
+                    Text(
+                      "Ülke : Tayland 🇹🇭",
+                      style: TextStyle(color: redBullBlue),
+                    ),
+                    Text(
+                      "Podyumlar : 0",
+                      style: TextStyle(color: redBullBlue),
+                    ),
+                    Text(
+                      "Puan : 118",
+                      style: TextStyle(color: redBullBlue),
+                    ),
+                    Text(
+                      "Yarış : 25",
+                      style: TextStyle(color: redBullBlue),
+                    ),
+                    Text(
+                      "Şampiyonluk : 0",
+                      style: TextStyle(color: redBullBlue),
+                    ),
+                    Text(
+                      "Doğum Tarihi : 23/03/1996",
+                      style: TextStyle(color: redBullBlue),
+                    ),
+                    Text(
+                      "Doğum Yeri : Londra, İngiltere",
+                      style: TextStyle(color: redBullBlue),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ],
+        ),
+        Container(
+          padding: const EdgeInsets.all(32.0),
+          child: Text(
+            "2019 sezonunun ilk yarısında Toro Rosso için yarışmış, sonrasında ise Pierre Gasly yerine Red Bull Racing takımına geçmiştir. "
+                "2019 Formula 1 sezonunu 92 puanla sekizinci sırada bitirmiştir."
+                "2020 sezonunda da Red Bull Racing ile yarışacaktır. Aracının numarası 23'tür."
+                "2018 yılı Formula 2 sürücü sıralamasında turnuvasında diğer Formula 1 pilotları George Russell ve Lando"
+                "Norris'in arkasında üçüncü olmuştur.",
+            style: TextStyle(color: redBullBlue),
+            softWrap: true,
+          ),
+        ),
+      ],
+    ),
+  ),
+);
+Widget pierreInfo = Scaffold(
+  appBar: AppBar(
+    title: const Text('Pierre Gasly'),
+    backgroundColor: atBlue,
+  ),
+  body: Container(
+    child: ListView(
+      children: <Widget>[
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: <Widget>[
+            Container(
+              padding: const EdgeInsets.all(16.0),
+              alignment: Alignment.topLeft,
+              child: PhotoHero(
+                photo: 'images/drivers/gas.png',
+                width: 150.0,
+              ),
+            ),
+            Expanded(
+              child: Container(
+                padding: const EdgeInsets.all(20.0),
+                child: Column(
+                  mainAxisSize: MainAxisSize.max,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: <Widget>[
+                    Text(
+                      "Takım : AlphaTauri",
+                      style: TextStyle(color: atBlue),
+                    ),
+                    Text(
+                      "Ülke : Fransa 🇫🇷",
+                      style: TextStyle(color: atBlue),
+                    ),
+                    Text(
+                      "Podyumlar : 1",
+                      style: TextStyle(color: atBlue),
+                    ),
+                    Text(
+                      "Puan : 136",
+                      style: TextStyle(color: atBlue),
+                    ),
+                    Text(
+                      "Yarış : 51",
+                      style: TextStyle(color: atBlue),
+                    ),
+                    Text(
+                      "Şampiyonluk : 0",
+                      style: TextStyle(color: atBlue),
+                    ),
+                    Text(
+                      "Doğum Tarihi : 07/02/1996",
+                      style: TextStyle(color: atBlue),
+                    ),
+                    Text(
+                      "Doğum Yeri : Rouen, Fransa",
+                      style: TextStyle(color: atBlue),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ],
+        ),
+        Container(
+          padding: const EdgeInsets.all(32.0),
+          child: Text(
+            "If there’s one man who knows how big a rollercoaster ride an "
+                "F1 driver’s career can be, it’s Pierre Gasly!"
+                "The flying Frenchman was called up to make his 2017"
+                " debut in Malaysia in place of Daniil Kvyat and, after "
+                "proving his mettle, he was named a Toro Rosso driver the "
+                "following year.  A further 21 races into his fledgling career,"
+                " Gasly was moved up again – this time to replace Red Bull big gun"
+                " Daniel Ricciardo."
+                "Gasly seemed to have a knack of being in the right "
+                "place at the right time – a quality that’s equally handy on "
+                "track. A series of impressive 2018 performances for Toro Rosso"
+                " – including a brilliant fourth place in Bahrain – showed "
+                "exciting promise for what he might do with the ‘A’ team in 2019.",
+            style: TextStyle(color: atBlue),
+            softWrap: true,
+          ),
+        ),
+      ],
+    ),
+  ),
+);
+Widget danillInfo = Scaffold(
+  appBar: AppBar(
+    title: const Text('Daniil Kvyat'),
+    backgroundColor: atBlue,
+  ),
+  body: Container(
+    child: ListView(
+      children: <Widget>[
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: <Widget>[
+            Container(
+              padding: const EdgeInsets.all(16.0),
+              alignment: Alignment.topLeft,
+              child: PhotoHero(
+                photo: 'images/drivers/kvy.png',
+                width: 150.0,
+              ),
+            ),
+            Expanded(
+              child: Container(
+                padding: const EdgeInsets.all(20.0),
+                child: Column(
+                  mainAxisSize: MainAxisSize.max,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: <Widget>[
+                    Text(
+                      "Takım : AlphaTauri",
+                      style: TextStyle(color: atBlue),
+                    ),
+                    Text(
+                      "Ülke : Rusya 🇷🇺",
+                      style: TextStyle(color: atBlue),
+                    ),
+                    Text(
+                      "Podyumlar : 3",
+                      style: TextStyle(color: atBlue),
+                    ),
+                    Text(
+                      "Puan : 171",
+                      style: TextStyle(color: atBlue),
+                    ),
+                    Text(
+                      "Yarış : 99",
+                      style: TextStyle(color: atBlue),
+                    ),
+                    Text(
+                      "Şampiyonluk : 0",
+                      style: TextStyle(color: atBlue),
+                    ),
+                    Text(
+                      "Doğum Tarihi : 26/04/1994",
+                      style: TextStyle(color: atBlue),
+                    ),
+                    Text(
+                      "Doğum Yeri : Ufa, Rusya",
+                      style: TextStyle(color: atBlue),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ],
+        ),
+        Container(
+          padding: const EdgeInsets.all(32.0),
+          child: Text(
+            "Proving even ‘torpedoes’ can make U-turns, Daniil Kvyat made"
+                " a surprise F1 return for a third spell with Toro Rosso in 2019."
+                " His intrinsic speed and ability to adapt to circuit conditions"
+                " make him a valuable asset - and he’s a proven podium contender."
+                "The rangy Russia arrived in Formula 1 with an impervious poker "
+                "face and set about his business as a cool and confident racer."
+                "But after being dropped by Red Bull, Kvyat plunged into a "
+                "downward spiral and lost confidence.",
+            style: TextStyle(color: atBlue),
+            softWrap: true,
+          ),
+        ),
+      ],
+    ),
+  ),
+);
+Widget sainzInfo = Scaffold(
+  appBar: AppBar(
+    title: const Text('Carlos Sainz'),
+    backgroundColor: mcLarenOrange,
+  ),
+  body: Container(
+    decoration: BoxDecoration(
+      image: DecorationImage(
+        image: AssetImage("images/driversback/sainzback.png"),
+        colorFilter: new ColorFilter.mode(
+            Colors.black.withOpacity(0.2), BlendMode.dstATop),
+        fit: BoxFit.cover,
+      ),
+    ),
+    child: ListView(
+      children: <Widget>[
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: <Widget>[
+            Container(
+              padding: const EdgeInsets.all(16.0),
+              alignment: Alignment.topLeft,
+              child: PhotoHero(
+                photo: 'images/drivers/sai.png',
+                width: 150.0,
+              ),
+            ),
+            Expanded(
+              child: Container(
+                padding: const EdgeInsets.all(20.0),
+                child: Column(
+                  mainAxisSize: MainAxisSize.max,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: <Widget>[
+                    Text(
+                      "Takım : McLaren",
+                      style: TextStyle(color: mcLarenOrange),
+                    ),
+                    Text(
+                      "Ülke : İspanya 🇪🇸",
+                      style: TextStyle(color: mcLarenOrange),
+                    ),
+                    Text(
+                      "Podyumlar : 1",
+                      style: TextStyle(color: mcLarenOrange),
+                    ),
+                    Text(
+                      "Puan : 282",
+                      style: TextStyle(color: mcLarenOrange),
+                    ),
+                    Text(
+                      "Yarış : 106",
+                      style: TextStyle(color: mcLarenOrange),
+                    ),
+                    Text(
+                      "Şampiyonluk : 0",
+                      style: TextStyle(color: mcLarenOrange),
+                    ),
+                    Text(
+                      "Doğum Tarihi : 01/09/1994",
+                      style: TextStyle(color: mcLarenOrange),
+                    ),
+                    Text(
+                      "Doğum Yeri : Madrid , İspanya",
+                      style: TextStyle(color: mcLarenOrange),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ],
+        ),
+        Container(
+          padding: const EdgeInsets.all(32.0),
+          child: Text(
+            "Carlos Sainz Junior ya da kısaca Carlos Sainz, "
+                "(1 Eylül 1994 Madrid, İspanya) İspanyol Formula 1 pilotudur."
+                " McLaren-Renault için yarışmaktadır. 2021 ve sonrası için "
+                "Scuderia Ferrari ile iki yıllık anlaşma sağlamıştır."
+                "2015'te Sainz Scuderia Toro Rosso'yla anlaşmıştır. Takım arkadaşı "
+                "Max Verstappen idi. 2016'da Verstappen'in Red Bull Racing'e geçmesiyle "
+                "takım arkadaşı Daniil Kvyat olmuştur. 2017 ve 2018 sezonlarında Renault"
+                " için yarıştı.[2] 2018 sezonunu takviminde yer alan 21 yarışın 13'ünde"
+                " ilk 10'a girdi, 2 yarışta finişi göremedi. Sezonu 53 puanla 10. sırada "
+                "tamamladı.",
+            style: TextStyle(color: mcLarenOrange),
+            softWrap: true,
+          ),
+        ),
+      ],
+    ),
+  ),
+);
+Widget landoInfo = Scaffold(
+  appBar: AppBar(
+    title: const Text('Lando Norris'),
+    backgroundColor: mcLarenOrange,
+  ),
+  body: Container(
+    decoration: BoxDecoration(
+      image: DecorationImage(
+        image: AssetImage("images/driversback/norrisback.jpg"),
+        colorFilter: new ColorFilter.mode(
+            Colors.black.withOpacity(0.2), BlendMode.dstATop),
+        fit: BoxFit.cover,
+      ),
+    ),
+    child: ListView(
+      children: <Widget>[
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: <Widget>[
+            Container(
+              padding: const EdgeInsets.all(16.0),
+              alignment: Alignment.topLeft,
+              child: PhotoHero(
+                photo: 'images/drivers/nor.png',
+                width: 150.0,
+              ),
+            ),
+            Expanded(
+              child: Container(
+                padding: const EdgeInsets.all(20.0),
+                child: Column(
+                  mainAxisSize: MainAxisSize.max,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: <Widget>[
+                    Text(
+                      "Takım : McLaren",
+                      style: TextStyle(color: mcLarenOrange),
+                    ),
+                    Text(
+                      "Ülke : Birleşik Krallık 🇬🇧",
+                      style: TextStyle(color: mcLarenOrange),
+                    ),
+                    Text(
+                      "Podyumlar : 1",
+                      style: TextStyle(color: mcLarenOrange),
+                    ),
+                    Text(
+                      "Puan : 85",
+                      style: TextStyle(color: mcLarenOrange),
+                    ),
+                    Text(
+                      "Yarış : 25",
+                      style: TextStyle(color: mcLarenOrange),
+                    ),
+                    Text(
+                      "Şampiyonluk : 0",
+                      style: TextStyle(color: mcLarenOrange),
+                    ),
+                    Text(
+                      "Doğum Tarihi : 13/11/1999",
+                      style: TextStyle(color: mcLarenOrange),
+                    ),
+                    Text(
+                      "Doğum Yeri : Bristol, Birleşik Krallık",
+                      style: TextStyle(color: mcLarenOrange),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ],
+        ),
+        Container(
+          padding: const EdgeInsets.all(32.0),
+          child: Text(
+            "Lando Norris İngiliz-Belçika uyruklu Formula 1 sürücüsüdür. 2017 Formula "
+                "3 Avrupa Şampiyonası şampiyonudur. 2019 Abdu Dhabi Grand Prix'inden beri"
+                " McLaren sürücüsüdür."
+                "",
+            style: TextStyle(color: mcLarenOrange),
+            softWrap: true,
+          ),
+        ),
+      ],
+    ),
+  ),
+);
+Widget sergioInfo = Scaffold(
+  appBar: AppBar(
+    title: const Text('Sergio Perez'),
+    backgroundColor: racingPointPink,
+  ),
+  body: Container(
+    decoration: BoxDecoration(
+      image: DecorationImage(
+        image: AssetImage("images/driversback/perezback.jpg"),
+        colorFilter: new ColorFilter.mode(
+            Colors.black.withOpacity(0.2), BlendMode.dstATop),
+        fit: BoxFit.cover,
+      ),
+    ),
+    child: ListView(
+      children: <Widget>[
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: <Widget>[
+            Container(
+              padding: const EdgeInsets.all(16.0),
+              alignment: Alignment.topLeft,
+              child: PhotoHero(
+                photo: 'images/drivers/per.png',
+                width: 150.0,
+              ),
+            ),
+            Expanded(
+              child: Container(
+                padding: const EdgeInsets.all(20.0),
+                child: Column(
+                  mainAxisSize: MainAxisSize.max,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: <Widget>[
+                    Text(
+                      "Takım : Racing Point",
+                      style: TextStyle(color: Colors.pinkAccent),
+                    ),
+                    Text(
+                      "Ülke : Meksika 🇲🇽",
+                      style: TextStyle(color: Colors.pinkAccent),
+                    ),
+                    Text(
+                      "Podyumlar : 8",
+                      style: TextStyle(color: Colors.pinkAccent),
+                    ),
+                    Text(
+                      "Puan : 603",
+                      style: TextStyle(color: Colors.pinkAccent),
+                    ),
+                    Text(
+                      "Yarış : 181",
+                      style: TextStyle(color: Colors.pinkAccent),
+                    ),
+                    Text(
+                      "Şampiyonluk : 0",
+                      style: TextStyle(color: Colors.pinkAccent),
+                    ),
+                    Text(
+                      "Doğum Tarihi : 26/01/1990",
+                      style: TextStyle(color: Colors.pinkAccent),
+                    ),
+                    Text(
+                      "Doğum Yeri : Guadalajara, Meksika",
+                      style: TextStyle(color: Colors.pinkAccent),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ],
+        ),
+        Container(
+          padding: const EdgeInsets.all(32.0),
+          child: Text(
+            "He’s the fighter with a gentle touch from the land of the Lucha Libre."
+                "Perez’s reputation in F1 has been built on opposite"
+                " approaches to Grand Prix racing. On the one hand, "
+                "he is a punchy combatant who wrestles his way through the"
+                " pack and into the points. Never afraid to add a bit of "
+                "spice to his on-track encounters, even his team mates"
+                " don’t always escape the Mexican’s heat."
+                "Then on the other hand, Perez is a smooth operator,"
+                " a master at managing tyres to eke out extra performance "
+                "and give him the upper hand on strategy. A firm favourite"
+                " on the grid after his time with Sauber and Force India, "
+                "Perez has matured into an analytical racer and team leader.",
+            style: TextStyle(color: Colors.pinkAccent),
+            softWrap: true,
+          ),
+        ),
+      ],
+    ),
+  ),
+);
+Widget lanceInfo = Scaffold(
+  appBar: AppBar(
+    title: const Text('Lance Stroll'),
+    backgroundColor: racingPointPink,
+  ),
+  body: Container(
+    decoration: BoxDecoration(
+      image: DecorationImage(
+        image: AssetImage("images/driversback/strollback.jpg"),
+        colorFilter: new ColorFilter.mode(
+            Colors.black.withOpacity(0.2), BlendMode.dstATop),
+        fit: BoxFit.cover,
+      ),
+    ),
+    child: ListView(
+      children: <Widget>[
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: <Widget>[
+            Container(
+              padding: const EdgeInsets.all(16.0),
+              alignment: Alignment.topLeft,
+              child: PhotoHero(
+                photo: 'images/drivers/str.png',
+                width: 150.0,
+              ),
+            ),
+            Expanded(
+              child: Container(
+                padding: const EdgeInsets.all(20.0),
+                child: Column(
+                  mainAxisSize: MainAxisSize.max,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: <Widget>[
+                    Text(
+                      "Takım : Racing Point",
+                      style: TextStyle(color: Colors.pinkAccent),
+                    ),
+                    Text(
+                      "Ülke : Kanada 🇨🇦",
+                      style: TextStyle(color: Colors.pinkAccent),
+                    ),
+                    Text(
+                      "Podyumlar : 1",
+                      style: TextStyle(color: Colors.pinkAccent),
+                    ),
+                    Text(
+                      "Puan : 87",
+                      style: TextStyle(color: Colors.pinkAccent),
+                    ),
+                    Text(
+                      "Yarış : 66",
+                      style: TextStyle(color: Colors.pinkAccent),
+                    ),
+                    Text(
+                      "Şampiyonluk : 0",
+                      style: TextStyle(color: Colors.pinkAccent),
+                    ),
+                    Text(
+                      "Doğum Tarihi : 29/10/1998",
+                      style: TextStyle(color: Colors.pinkAccent),
+                    ),
+                    Text(
+                      "Doğum Yeri : Montreal, Kanada",
+                      style: TextStyle(color: Colors.pinkAccent),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ],
+        ),
+        Container(
+          padding: const EdgeInsets.all(32.0),
+          child: Text(
+            "There is no such thing as too much too soon for Stroll, "
+                "a teenage sensation with a wet weather predilection."
+                " One of the cool kids on the grid, Stroll was unveiled "
+                "shortly after his 18th birthday by Williams – before he"
+                " finished high school and got his road licence."
+                "Stroll meant business in his debut 2017 season, setting "
+                "records on the way. An opportunistic racer he bounded onto"
+                " the podium in Baku, the youngest rookie to do so. As the "
+                "son of a wealthy entrepreneur, Stroll is used to a"
+                " champagne lifestyle but now he knows the fizz tastes"
+                " all the sweeter on the rostrum. Then in Monza he mastered "
+                "the downpours to become the youngest driver in history to "
+                "line up on the front row.",
+            style: TextStyle(color: Colors.pinkAccent),
+            softWrap: true,
+          ),
+        ),
+      ],
+    ),
+  ),
+);
+Widget danielInfo = Scaffold(
+  appBar: AppBar(
+    title: const Text(
+      'Daniel Ricciardo',
+      style: TextStyle(color: Colors.black),
+    ),
+    backgroundColor: renaultYellow,
+  ),
+  body: Container(
+    decoration: BoxDecoration(
+      image: DecorationImage(
+        image: AssetImage("images/driversback/ricback.jpg"),
+        colorFilter: new ColorFilter.mode(
+            Colors.black.withOpacity(0.2), BlendMode.dstATop),
+        fit: BoxFit.cover,
+      ),
+    ),
+    child: ListView(
+      children: <Widget>[
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: <Widget>[
+            Container(
+              padding: const EdgeInsets.all(16.0),
+              alignment: Alignment.topLeft,
+              child: PhotoHero(
+                photo: 'images/drivers/ric.png',
+                width: 150.0,
+              ),
+            ),
+            Expanded(
+              child: Container(
+                padding: const EdgeInsets.all(20.0),
+                child: Column(
+                  mainAxisSize: MainAxisSize.max,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: <Widget>[
+                    Text(
+                      "Takım : Renault",
+                      style: TextStyle(color: Colors.black),
+                    ),
+                    Text(
+                      "Ülke : Avustralya 🇦🇺",
+                      style: TextStyle(color: Colors.black),
+                    ),
+                    Text(
+                      "Podyumlar : 29",
+                      style: TextStyle(color: Colors.black),
+                    ),
+                    Text(
+                      "Puan : 1060",
+                      style: TextStyle(color: Colors.black),
+                    ),
+                    Text(
+                      "Yarış : 175",
+                      style: TextStyle(color: Colors.black),
+                    ),
+                    Text(
+                      "Şampiyonluk : 0",
+                      style: TextStyle(color: Colors.black),
+                    ),
+                    Text(
+                      "Doğum Tarihi : 01/07/1989",
+                      style: TextStyle(color: Colors.black),
+                    ),
+                    Text(
+                      "Doğum Yeri : Perth , Avustralya",
+                      style: TextStyle(color: Colors.black),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ],
+        ),
+        Container(
+          padding: const EdgeInsets.all(32.0),
+          child: Text(
+            "The self-styled “Honey Badger” is fuzzy on the outside and "
+                "feisty on the inside. Drivers beware because behind "
+                "Ricciardo’s laidback persona and big grin is a razor-sharp "
+                "racer with a bite"
+                "The Australian combines all-out speed with impressive race"
+                " craft. Never afraid to push to the limits if it means pulling"
+                " off a pass, Ricciardo is a proven race-winner for Red Bull,"
+                " capable of consistently finishing at the business end of the "
+                "championship table.",
+            style: TextStyle(color: Colors.black),
+            softWrap: true,
+          ),
+        ),
+      ],
+    ),
+  ),
+);
+Widget estebanInfo = Scaffold(
+  appBar: AppBar(
+    title: const Text(
+      'Esteban Ocon',
+      style: TextStyle(color: Colors.black),
+    ),
+    backgroundColor: renaultYellow,
+  ),
+  body: Container(
+    decoration: BoxDecoration(
+      image: DecorationImage(
+        image: AssetImage("images/driversback/ocoback.jpg"),
+        colorFilter: new ColorFilter.mode(
+            Colors.black.withOpacity(0.2), BlendMode.dstATop),
+        fit: BoxFit.cover,
+      ),
+    ),
+    child: ListView(
+      children: <Widget>[
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: <Widget>[
+            Container(
+              padding: const EdgeInsets.all(16.0),
+              alignment: Alignment.topLeft,
+              child: PhotoHero(
+                photo: 'images/drivers/oco.png',
+                width: 150.0,
+              ),
+            ),
+            Expanded(
+              child: Container(
+                padding: const EdgeInsets.all(20.0),
+                child: Column(
+                  mainAxisSize: MainAxisSize.max,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: <Widget>[
+                    Text(
+                      "Takım : Renault",
+                      style: TextStyle(color: Colors.black),
+                    ),
+                    Text(
+                      "Ülke : Fransa 🇫🇷",
+                      style: TextStyle(color: Colors.black),
+                    ),
+                    Text(
+                      "Podyumlar : 0",
+                      style: TextStyle(color: Colors.black),
+                    ),
+                    Text(
+                      "Puan : 148",
+                      style: TextStyle(color: Colors.black),
+                    ),
+                    Text(
+                      "Yarış : 54",
+                      style: TextStyle(color: Colors.black),
+                    ),
+                    Text(
+                      "Şampiyonluk : 0",
+                      style: TextStyle(color: Colors.black),
+                    ),
+                    Text(
+                      "Doğum Tarihi : 17/09/1996",
+                      style: TextStyle(color: Colors.black),
+                    ),
+                    Text(
+                      "Doğum Yeri : Evreux, Normandiya",
+                      style: TextStyle(color: Colors.black),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ],
+        ),
+        Container(
+          padding: const EdgeInsets.all(32.0),
+          child: Text(
+            "If there’s one word that dominates Esteban Ocon’s career, it’s ‘sacrifice’."
+                "Back when he was just a promising karter, Ocon’s "
+                "parents sold their house, put their jobs on hold,"
+                " and began a life on the road, living in a caravan and "
+                "travelling from circuit to circuit to support their son’s"
+                " burgeoning career."
+                "Sacrifice, see – but it worked. 2014 saw Ocon break "
+                "through in the world of single-seaters, as he beat a "
+                "certain Max Verstappen to the European F3 title. Backed"
+                " by Mercedes, he won the GP3 title the following year and"
+                " was halfway through a season of DTM in 2016 when he was"
+                " offered the chance to replace Rio Haryanto at the minnow "
+                "Manor team from the Belgian Grand Prix onwards.",
+            style: TextStyle(color: Colors.black),
+            softWrap: true,
+          ),
+        ),
+      ],
+    ),
+  ),
+);
+Widget kimiInfo = Scaffold(
+  appBar: AppBar(
+    title: const Text('Kimi Räikkönen'),
+    backgroundColor: romeoRed,
+  ),
+  body: Container(
+    child: ListView(
+      children: <Widget>[
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: <Widget>[
+            Container(
+              padding: const EdgeInsets.all(16.0),
+              alignment: Alignment.topLeft,
+              child: PhotoHero(
+                photo: 'images/drivers/rai.png',
+                width: 150.0,
+              ),
+            ),
+            Expanded(
+              child: Container(
+                padding: const EdgeInsets.all(20.0),
+                child: Column(
+                  mainAxisSize: MainAxisSize.max,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: <Widget>[
+                    Text(
+                      "Takım : Alfa Romeo",
+                      style: TextStyle(color: romeoRed),
+                    ),
+                    Text(
+                      "Ülke : Finlandiya 🇫🇮",
+                      style: TextStyle(color: romeoRed),
+                    ),
+                    Text(
+                      "Podyumlar : 103",
+                      style: TextStyle(color: romeoRed),
+                    ),
+                    Text(
+                      "Puan : 1859",
+                      style: TextStyle(color: romeoRed),
+                    ),
+                    Text(
+                      "Yarış : 319",
+                      style: TextStyle(color: romeoRed),
+                    ),
+                    Text(
+                      "Şampiyonluk : 1",
+                      style: TextStyle(color: romeoRed),
+                    ),
+                    Text(
+                      "Doğum Tarihi : 17/10/1979",
+                      style: TextStyle(color: romeoRed),
+                    ),
+                    Text(
+                      "Doğum Yeri : Espoo, Finlandiya",
+                      style: TextStyle(color: romeoRed),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ],
+        ),
+        Container(
+          padding: const EdgeInsets.all(32.0),
+          child: Text(
+            "He’s the world-famous racing driver who just wants to be left alone. "
+                "Raikkonen has a cult status in F1 like no other driver of his"
+                " generation, but if you ask him why he just shrugs."
+                "Maybe it’s because of the rugged, raw talent that inspired"
+                " Sauber to give him his debut in 2001 – and re-sign him for 2019."
+                " Or the fast and fearless racing that led to memorable McLaren "
+                "wins. Or the never-say-die attitude that clinched the 2007 world"
+                " title for Ferrari by a single point. Or maybe it’s because this "
+                "is the ‘Iceman’ who jumped straight into a Jacuzzi on his yacht"
+                " after retiring in Monaco and who enjoyed an ice cream when a "
+                "soggy Malaysian GP was red-flagged but still live.",
+            style: TextStyle(color: romeoRed),
+            softWrap: true,
+          ),
+        ),
+      ],
+    ),
+  ),
+);
+Widget antonioInfo = Scaffold(
+  appBar: AppBar(
+    title: const Text('Antonio Giovinazzi'),
+    backgroundColor: romeoRed,
+  ),
+  body: Container(
+    child: ListView(
+      children: <Widget>[
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: <Widget>[
+            Container(
+              padding: const EdgeInsets.all(16.0),
+              alignment: Alignment.topLeft,
+              child: PhotoHero(
+                photo: 'images/drivers/gio.png',
+                width: 150.0,
+              ),
+            ),
+            Expanded(
+              child: Container(
+                padding: const EdgeInsets.all(20.0),
+                child: Column(
+                  mainAxisSize: MainAxisSize.max,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: <Widget>[
+                    Text(
+                      "Takım : Alfa Romeo",
+                      style: TextStyle(color: romeoRed),
+                    ),
+                    Text(
+                      "Ülke : İtalya 🇫🇮",
+                      style: TextStyle(color: romeoRed),
+                    ),
+                    Text(
+                      "Podyumlar : 0",
+                      style: TextStyle(color: romeoRed),
+                    ),
+                    Text(
+                      "Puan : 16",
+                      style: TextStyle(color: romeoRed),
+                    ),
+                    Text(
+                      "Yarış : 27",
+                      style: TextStyle(color: romeoRed),
+                    ),
+                    Text(
+                      "Şampiyonluk : 0",
+                      style: TextStyle(color: romeoRed),
+                    ),
+                    Text(
+                      "Doğum Tarihi : 14/12/1993",
+                      style: TextStyle(color: romeoRed),
+                    ),
+                    Text(
+                      "Doğum Yeri : Martina Franca , İtalya",
+                      style: TextStyle(color: romeoRed),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ],
+        ),
+        Container(
+          padding: const EdgeInsets.all(32.0),
+          child: Text(
+            "He’s the Italian steed with speed from the stable of the"
+                " Prancing Horse. Antonio Giovinazzi flies the flag for"
+                " Italy as the motorsport mad nation champs at the bit for"
+                " its next F1 star."
+                "The pilota from Puglia can punch his way through the pack and"
+                " pull off a plucky pass. He showcased this natural racing acumen"
+                " during a blistering 2016 GP2 campaign where he finished a close"
+                " runner-up to team mate Pierre Gasly.",
+            style: TextStyle(color: romeoRed),
+            softWrap: true,
+          ),
+        ),
+      ],
+    ),
+  ),
+);
+Widget romainInfo = Scaffold(
+  appBar: AppBar(
+    title: const Text(
+      'Romain Grosjean',
+      style: TextStyle(color: Colors.black),
+    ),
+    backgroundColor: Colors.red,
+  ),
+  body: Container(
+    child: ListView(
+      children: <Widget>[
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: <Widget>[
+            Container(
+              padding: const EdgeInsets.all(16.0),
+              alignment: Alignment.topLeft,
+              child: PhotoHero(
+                photo: 'images/drivers/gro.png',
+                width: 150.0,
+              ),
+            ),
+            Expanded(
+              child: Container(
+                padding: const EdgeInsets.all(20.0),
+                child: Column(
+                  mainAxisSize: MainAxisSize.max,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: <Widget>[
+                    Text(
+                      "Takım : Haas",
+                      style: TextStyle(color: Colors.black),
+                    ),
+                    Text(
+                      "Ülke : Fransa 🇫🇷",
+                      style: TextStyle(color: Colors.black),
+                    ),
+                    Text(
+                      "Podyumlar : 10",
+                      style: TextStyle(color: Colors.black),
+                    ),
+                    Text(
+                      "Puan : 389",
+                      style: TextStyle(color: Colors.black),
+                    ),
+                    Text(
+                      "Yarış : 170",
+                      style: TextStyle(color: Colors.black),
+                    ),
+                    Text(
+                      "Şampiyonluk : 0",
+                      style: TextStyle(color: Colors.black),
+                    ),
+                    Text(
+                      "Doğum Tarihi : 17/04/1986",
+                      style: TextStyle(color: Colors.black),
+                    ),
+                    Text(
+                      "Doğum Yeri : Geneva , İsviçre",
+                      style: TextStyle(color: Colors.black),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ],
+        ),
+        Container(
+          padding: const EdgeInsets.all(32.0),
+          child: Text(
+            "High-speed haute cuisine is on the menu in the Grosjean household, where head chef Romain is also"
+                "a racing star."
+                "Quick and with a natural feel for braking and balance,"
+                " Grosjean has the right ingredients to cook up a storm on track."
+                " Tussling and hustling at the front of the pack, the French racer"
+                " claimed a series of impressive podiums for Renault before moving "
+                "to spearhead the Haas team."
+                "Like the best chefs, the Geneva-born driver occasionally breaks "
+                "a few eggs.  Renault handed Grosjean his debut halfway through "
+                "the 2009 season, but a mix of inexperience and enthusiasm saw "
+                "him move back to the subs bench before making his F1 return in "
+                "2012. A one-race ban after triggering a pile-up in Spa seemed to"
+                " be the final arc of the learning curve for Grosjean. ",
+            style: TextStyle(color: Colors.black),
+            softWrap: true,
+          ),
+        ),
+      ],
+    ),
+  ),
+);
+Widget kevinInfo = Scaffold(
+  appBar: AppBar(
+    title: const Text(
+      'Kevin Magnussen',
+      style: TextStyle(color: Colors.black),
+    ),
+    backgroundColor: Colors.red,
+  ),
+  body: Container(
+    child: ListView(
+      children: <Widget>[
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: <Widget>[
+            Container(
+              padding: const EdgeInsets.all(16.0),
+              alignment: Alignment.topLeft,
+              child: PhotoHero(
+                photo: 'images/drivers/mag.png',
+                width: 150.0,
+              ),
+            ),
+            Expanded(
+              child: Container(
+                padding: const EdgeInsets.all(20.0),
+                child: Column(
+                  mainAxisSize: MainAxisSize.max,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: <Widget>[
+                    Text(
+                      "Takım : Haas",
+                      style: TextStyle(color: Colors.black),
+                    ),
+                    Text(
+                      "Ülke : Danimarka 🇩🇰",
+                      style: TextStyle(color: Colors.black),
+                    ),
+                    Text(
+                      "Podyumlar : 1",
+                      style: TextStyle(color: Colors.black),
+                    ),
+                    Text(
+                      "Puan : 158",
+                      style: TextStyle(color: Colors.black),
+                    ),
+                    Text(
+                      "Yarış : 107",
+                      style: TextStyle(color: Colors.black),
+                    ),
+                    Text(
+                      "Şampiyonluk : 0",
+                      style: TextStyle(color: Colors.black),
+                    ),
+                    Text(
+                      "Doğum Tarihi : 05/10/1992",
+                      style: TextStyle(color: Colors.black),
+                    ),
+                    Text(
+                      "Doğum Yeri : Roskilde , Danimarka",
+                      style: TextStyle(color: Colors.black),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ],
+        ),
+        Container(
+          padding: const EdgeInsets.all(32.0),
+          child: Text(
+            "Call him a lone ranger or a maverick, but Magnussen is here for one reason only – to race. "
+                "He may be a second-generation F1 driver – following his father"
+                " Jan onto the grid – but Magnussen’s idols are from the "
+                "‘golden era’ of Grand Prix racing when the likes of Juan "
+                "Manuel Fangio and Stirling Moss risked it all for the love of the"
+                " sport."
+                "The Roskilde racer’s own prowess was proven on debut for"
+                " McLaren, who guided him through the junior ranks, when he "
+                "cruised into the top-three at the Australian Grand Prix, becoming"
+                " the first Dane to claim a podium in F1.",
+            style: TextStyle(color: Colors.black),
+            softWrap: true,
+          ),
+        ),
+      ],
+    ),
+  ),
+);
+Widget georgeInfo = Scaffold(
+  appBar: AppBar(
+    title: const Text('George Rusell'),
+    backgroundColor: williamsBlue,
+  ),
+  body: Container(
+    child: ListView(
+      children: <Widget>[
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: <Widget>[
+            Container(
+              padding: const EdgeInsets.all(16.0),
+              alignment: Alignment.topLeft,
+              child: PhotoHero(
+                photo: 'images/drivers/rus.png',
+                width: 150.0,
+              ),
+            ),
+            Expanded(
+              child: Container(
+                padding: const EdgeInsets.all(20.0),
+                child: Column(
+                  mainAxisSize: MainAxisSize.max,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: <Widget>[
+                    Text(
+                      "Takım : Williams",
+                      style: TextStyle(color: williamsBlue),
+                    ),
+                    Text(
+                      "Ülke : Birleşik Krallık 🇬🇧",
+                      style: TextStyle(color: williamsBlue),
+                    ),
+                    Text(
+                      "Podyumlar : 0",
+                      style: TextStyle(color: williamsBlue),
+                    ),
+                    Text(
+                      "Puan : 0",
+                      style: TextStyle(color: williamsBlue),
+                    ),
+                    Text(
+                      "Yarış : 25",
+                      style: TextStyle(color: williamsBlue),
+                    ),
+                    Text(
+                      "Şampiyonluk : 0",
+                      style: TextStyle(color: williamsBlue),
+                    ),
+                    Text(
+                      "Doğum Tarihi : 15/02/1998",
+                      style: TextStyle(color: williamsBlue),
+                    ),
+                    Text(
+                      "Doğum Yeri : King's Lynn, İngiltere",
+                      style: TextStyle(color: williamsBlue),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ],
+        ),
+        Container(
+          padding: const EdgeInsets.all(32.0),
+          child: Text(
+            "He’s the driver with the motto: “If in doubt, go flat out”."
+                "George Russell lived by it in his 2019 debut F1 campaign,"
+                " out-qualifying seasoned team mate Robert Kubica at all 21 Grands "
+                "Prix, and proving Williams right in identifying him as a hard "
+                "worker and a tenacious talent"
+                "That brilliant baseline speed had served Russell well as he"
+                " totted up titles on his way to Formula 1. The Briton stormed to"
+                " the 2017 GP3 championship and delivered the 2018 Formula 2 crown"
+                " under immense pressure. ",
+            style: TextStyle(color: williamsBlue),
+            softWrap: true,
+          ),
+        ),
+      ],
+    ),
+  ),
+);
+Widget nicholasInfo = Scaffold(
+  appBar: AppBar(
+    title: const Text('Nicolas Latifi'),
+    backgroundColor: williamsBlue,
+  ),
+  body: Container(
+    child: ListView(
+      children: <Widget>[
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: <Widget>[
+            Container(
+              padding: const EdgeInsets.all(16.0),
+              alignment: Alignment.topLeft,
+              child: PhotoHero(
+                photo: 'images/drivers/lat.png',
+                width: 150.0,
+              ),
+            ),
+            Expanded(
+              child: Container(
+                padding: const EdgeInsets.all(20.0),
+                child: Column(
+                  mainAxisSize: MainAxisSize.max,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: <Widget>[
+                    Text(
+                      "Takım : Williams",
+                      style: TextStyle(color: williamsBlue),
+                    ),
+                    Text(
+                      "Ülke : Kanada 🇨🇦",
+                      style: TextStyle(color: williamsBlue),
+                    ),
+                    Text(
+                      "Podyumlar : 0",
+                      style: TextStyle(color: williamsBlue),
+                    ),
+                    Text(
+                      "Puan : 0",
+                      style: TextStyle(color: williamsBlue),
+                    ),
+                    Text(
+                      "Yarış : 4",
+                      style: TextStyle(color: williamsBlue),
+                    ),
+                    Text(
+                      "Şampiyonluk : 0",
+                      style: TextStyle(color: williamsBlue),
+                    ),
+                    Text(
+                      "Doğum Tarihi : 29/02/1995",
+                      style: TextStyle(color: williamsBlue),
+                    ),
+                    Text(
+                      "Doğum Yeri : Montreal, Kanada",
+                      style: TextStyle(color: williamsBlue),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ],
+        ),
+        Container(
+          padding: const EdgeInsets.all(32.0),
+          child: Text(
+            "Thirteen is an advanced age to begin your karting career these days."
+                " But that’s how old Toronto native Nicholas Latifi was when he "
+                "took his first steps in motorsport. Just 11 years later, he became"
+                " a fully-fledged Formula 1 driver."
+                "That ascension into racing's top category was largely thanks to "
+                "his most impressive season to date in Formula 2 in 2019, with "
+                "Latifi – who’d finished a disappointing ninth in the series’ 2018"
+                " standings – pulling up his bootstraps to claim second in the "
+                "championship. That result, combined with the Williams/Robert "
+                "Kubica union failing to mesh in 2019, meant Williams made the call"
+                " to promote their affable Canadian reserve driver to a full-time"
+                " drive alongside George Russell for 2020.",
+            style: TextStyle(color: williamsBlue),
+            softWrap: true,
+          ),
+        ),
+      ],
+    ),
+  ),
+);
